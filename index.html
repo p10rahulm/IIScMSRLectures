@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+
+    <!--Most Important Scripts-->
+    <script type="text/javascript" src="assets/js/home.js"></script>
+    <script type="text/javascript" src="assets/js/ui-elements.js"></script>
+    <script type="text/javascript" src="assets/js/mdReader.js"></script>
+
+    <!--Fonts-->
+    <!--    <link href='https://fonts.googleapis.com/css?family=Alegreya SC&display=swap' rel='stylesheet'>-->
+    <!--    <link href='https://fonts.googleapis.com/css?family=Lora&display=swap' rel='stylesheet'>-->
+    <!--    <link href='https://fonts.googleapis.com/css?family=Open Sans&display=swap' rel='stylesheet'>-->
+
+    <link rel="icon" type="image/png" href="assets/images/CelticSmall.png">
+    <!--    Content Created by Tomruen: https://en.wikipedia.org/wiki/User:Tomruen / CC BY-SA (https://creativecommons.org/licenses/by-sa/4.0) -->
+
+    <!--Social Media Tags-->
+    <meta property="og:title" content="IISc-Microsoft Research Seminar Series">
+    <meta property="og:site_name" content="IISc-Microsoft Research Seminar Series">
+    <meta property="og:image" itemprop="image"
+          content="http://storage.googleapis.com/poly-algo-theory/assets/images/polyred.png"/>
+    <meta property="og:updated_time" content="2021-06-17T18:19:00+05:30"/>
+    <meta property="og:description"
+          content="Microsoft Research Partners with Indian Institute of Science to bring you this seminar series on Computer Science Theory">
+    <meta property="og:url" content="https://csa.iisc.ac.in">
+    <meta property="og:updated_time" content="1440432930"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123456789-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', '');
+    </script>
+
+    <!--Title-->
+    <title>IISc-Microsoft Research Seminar Series</title>
+</head>
+<body>
+<div class="container">
+    <div class="header container-element">
+        <div id="HeaderLogo" class="header-elem" onclick="clickLogo()">
+            <img id = "headerLogoImage" src="assets/images/celticSVG.svg" alt="logo" />
+        </div>
+
+        <div id="HeaderTitle" class="header-elem" onclick="clickLogo()">
+            IISc MSR Seminar Series
+        </div>
+
+
+    </div>
+    <div id="subscribe-holder">
+        <a href="https://lists.gatech.edu/sympa/info/polyalg" target="_blank">SUBSCRIBE</a>
+    </div>
+    <div class="mainer container-element">
+
+        <div id="Talks" class="main active">
+            <div class="home-header">Upcoming Seminars</div>
+            <div class="home-text" id="upcoming-seminars">
+            </div>
+
+
+            <div class="home-header">Past Seminars</div>
+            <div class="home-text" id="past-seminars">
+            </div>
+
+        </div>
+
+        <div class="footer container-element" onclick="loadHome('content/')">
+            <div id="copyright">
+                &copy; 2020 <a href="https://www.iisc.ac.in" target="_blank">Indian Institute of Science, Bangalore</a>.
+                Website maintained by Rahul Madhavan
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+
+
+
+
+    </script>
+    <script type="text/javascript" defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script type="text/javascript" async src="assets/js/swiped-events.min.js"></script>
+    <script type="text/javascript" defer>
+        WebFontConfig = {
+            google: {
+                families: ['Lora', 'Open Sans', 'Alegreya SC']
+            }
+        };
+
+        (function (d) {
+            var wf = d.createElement('script'), s = d.scripts[0];
+            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+            wf.async = true;
+            s.parentNode.insertBefore(wf, s);
+        })(document);
+    </script>
+
+</body>
+</html>
