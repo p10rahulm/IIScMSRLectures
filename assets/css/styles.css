@@ -330,7 +330,7 @@ a:hover {
     flex-shrink: 0;
     /*float: left;*/
 }
-.mainer #Talks .seminar-card .speaker-details-holder {
+.mainer #Talks .seminar-fullpage .speaker-details-holder {
     flex-basis: 100%;
     flex-grow: 1;
     flex-shrink: 1;
