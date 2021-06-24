@@ -1,4 +1,5 @@
 :: Type the command "cmd < synchronizeCloud.sh"
+:: Ensure "gcloud auth login" is already done
 gsutil -m rsync -r assets gs://www.cstheoryseminars.org/assets
 echo "Assets Directory Synced"
 gsutil -m rsync -r content gs://www.cstheoryseminars.org/content
