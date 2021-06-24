@@ -241,8 +241,8 @@ function loadCollaborators(collabResponse, parentDiv) {
 
 function generateHomeHTML(dirName) {
     //HomePage
-    const introhttp = loadFileAsync(dirName + "home/intro.txt");
-    const collaboratorshttp = loadFileAsync(dirName + "home/collaborators.txt");
+    const introhttp = loadFileAsync(dirName + "homeOld/intro.txt");
+    const collaboratorshttp = loadFileAsync(dirName + "homeOld/collaborators.txt");
 
     homeDiv = document.getElementById("Home");
     introHolder = document.createElement("div");
