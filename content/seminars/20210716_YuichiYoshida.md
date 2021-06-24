@@ -1,12 +1,12 @@
 +++
 title = "Average Sensitivity of Graph Algorithms"
-author = "<a href="https://sites.google.com/view/zongchenchen/home" target="_blank">Zongchen Chen (Georgia Institute of Technology)</a>"
+author = "<a href="https://sites.google.com/view/zongchenchen/home" target="_blank">Yuichi Yoshida (National Institute of Informatics, Japan)</a>"
 author_link = "http://research.nii.ac.jp/~yyoshida/"
-author_image = "/assets/authorImages/yoshida.jpg"
+author_image = "assets/authorImages/yoshida.jpg"
 date = "2021-07-16T11:00:00+05:30"
 date_end = "2021-07-16T12:00:00+05:30"
 location = "To be updated shortly"
-notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" target= "_blank">Microsoft Research Lab - India</a> and <a href='https://www.csa.iisc.ac.in/theoretical-computer-science/'>Theoretical Computer Science @ IISc</a>"
+notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" target= "_blank">Microsoft Research Lab - India</a> and <a href='https://www.csa.iisc.ac.in/theoretical-computer-science/' target= "_blank">Theoretical Computer Science @ IISc</a>"
 +++
 
 <b>Abstract:</b> In modern applications of graph algorithms, where the graphs of interest are large and dynamic, it is
@@ -15,7 +15,7 @@ desirable to use algorithms that, even when provided with only a subgraph that m
 that are close to the solutions output when the whole graph is available. We formalize this feature by introducing the
 notion of average sensitivity of graph algorithms, which is the average earth mover’s distance between the output
 distributions of an algorithm on a graph and its subgraph obtained by removing an edge, where the average is over the
-edges removed and the distance between two outputs is the Hamming distance.<br>
+edges removed and the distance between two outputs is the Hamming distance.<br><br>
 
 In this work, we initiate a systematic study of average sensitivity. After deriving basic properties of average
 sensitivity such as composition, we provide efficient approximation algorithms with low average sensitivities for

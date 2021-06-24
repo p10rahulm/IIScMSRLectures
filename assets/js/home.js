@@ -9,9 +9,9 @@ window.onpopstate = function (event) {
 function start() {
     let contentUrl = getContentUrl();
     //Load Home
-    // loadHome(contentUrl);
+    loadHome(contentUrl);
     //Load Seminars
-    loadTalks(contentUrl, "files.list");
+    // loadTalks(contentUrl, "files.list");
     //Load part of page thats relevant
     // loadPage();
     //Load Swipes
@@ -24,9 +24,10 @@ function reloadonHistory(eventState) {
         window.location.reload();
         return;
     }
-    loadTalks(contentUrl, "files.list");
-    // loadHome(eventState.contentUrl);
-    loadPage();
+    let contentUrl = getContentUrl();
+    // loadTalks(contentUrl, "files.list");
+    loadHome(eventState.contentUrl);
+    // loadPage();
 }
 
 function loadPage() {

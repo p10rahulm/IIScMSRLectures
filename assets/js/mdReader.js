@@ -62,8 +62,8 @@ function loadTalks(contentUrl, filesListPath) {
                             const currTime = new Date();
                             if (seminarDate >= currTime) {
                                 if(isUpcomingEmpty){
-                                    talksDiv.appendChild(upcomingDivHeading);
-                                    talksDiv.appendChild(upcomingDiv);
+                                    talksDiv.prepend(upcomingDiv);
+                                    talksDiv.prepend(upcomingDivHeading);
                                     isUpcomingEmpty = false
                                 }
 
@@ -121,15 +121,27 @@ function isOverflown(element) {
 function createTalk(talkContents, talkFile, divLocation) {
     const talkKV = parseContents(talkContents);
     const seminar = document.createElement("div");
-
+    const talkName = talkFile.slice(0, talkFile.indexOf("."))
+    seminar.id = talkName
     let seminarDate = new Date();
     seminar.className = "seminar";
+    if(talkKV.author_image){
+        const metadiv = document.createElement("div");
+        metadiv.className = "seminar-speaker-image-holder"
+        seminar.appendChild(metadiv);
+
+        const metadiv2 = document.createElement("img")
+        metadiv2.src = talkKV.author_image
+        metadiv2.className = "seminar-speaker-image"
+        metadiv.appendChild(metadiv2);
+    }
+
     if (talkKV.title) {
         let metadiv;
-        if (divLocation == 0) {
+        if (divLocation === 0) {
             metadiv = document.createElement("div");
-            const talkName = talkFile.slice(0, talkFile.indexOf("."))
-            metadiv.id = talkName;
+
+            // metadiv.id = talkName;
             const baseUrl = window.location.origin + window.location.pathname;
             let talkUrl = baseUrl + "?talk=" + talkName;
             metadiv.onclick = function () {
@@ -195,7 +207,7 @@ function createTalk(talkContents, talkFile, divLocation) {
         metadiv.setAttribute("onClick", "seeMoreAbstract(this)")
         seminar.appendChild(metadiv);
     }
-    if (divLocation == 1) {
+    if (divLocation === 1) {
         if (talkKV.notes) {
             const metadiv = document.createElement("div");
             metadiv.innerHTML = talkKV.notes;
