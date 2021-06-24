@@ -1,14 +1,26 @@
 +++
-title = "Talk by Yuichi Yoshida"
+title = "Average Sensitivity of Graph Algorithms"
 author = "<a href="https://sites.google.com/view/zongchenchen/home" target="_blank">Zongchen Chen (Georgia Institute of Technology)</a>"
 author_link = "http://research.nii.ac.jp/~yyoshida/"
+author_image = "/assets/authorImages/yoshida.jpg"
 date = "2021-07-16T11:00:00+05:30"
 date_end = "2021-07-16T12:00:00+05:30"
 location = "To be updated shortly"
-notes = "Joint <a href = "http://www.arc.gatech.edu/" target = "_blank">ARC seminar</a> and <a href='https://polyalg.csa.iisc.ac.in/'>Indo-US virtual center seminar</a>"
+notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" target= "_blank">Microsoft Research Lab - India</a> and <a href='https://www.csa.iisc.ac.in/theoretical-computer-science/'>Theoretical Computer Science @ IISc</a>"
 +++
 
-<b>Abstract:</b> We consider the Glauber dynamics (also called Gibbs sampling) for sampling from a discrete high-dimensional space, where in each step one variable is chosen uniformly at random and gets updated conditional on all other variables. We show an optimal mixing time bound for the Glauber dynamics in a variety of settings. Our work presents an improved version of the spectral independence approach of Anari et al. (2020) and shows O(nlogn) mixing time for graphical models/spin systems on any n-vertex graph of bounded degree when the maximum eigenvalue of an associated influence matrix is bounded. Our proof approach combines classic tools of entropy tensorization/factorization and recent developments of high-dimensional expanders.
-<br><br>
-As an application of our results, for the hard-core model on independent sets weighted by a fugacity lambda, we establish O(nlogn) mixing time for the Glauber dynamics on any n-vertex graph of constant maximum degree D when lambda<lambda_c(D) where lambda_c(D) is the critical point for the uniqueness/non-uniqueness phase transition on the D-regular tree. More generally, for any antiferromagnetic 2-spin system we prove O(nlogn) mixing time of the Glauber dynamics on any bounded degree graph in the corresponding tree uniqueness region. Our results apply more broadly; for example, we also obtain O(nlogn) mixing for sampling random q-colorings of triangle-free graphs of maximum degree D when the number of colors satisfies q > aD where a = 1.763…, and O(mlogn) mixing for generating random matchings of any graph with bounded degree and m edges.
-<br><br>
+<b>Abstract:</b> In modern applications of graph algorithms, where the graphs of interest are large and dynamic, it is
+unrealistic to assume that an input representation contains the full information of a graph being studied. Hence, it is
+desirable to use algorithms that, even when provided with only a subgraph that misses a few edges, output solutions
+that are close to the solutions output when the whole graph is available. We formalize this feature by introducing the
+notion of average sensitivity of graph algorithms, which is the average earth mover’s distance between the output
+distributions of an algorithm on a graph and its subgraph obtained by removing an edge, where the average is over the
+edges removed and the distance between two outputs is the Hamming distance.<br>
+
+In this work, we initiate a systematic study of average sensitivity. After deriving basic properties of average
+sensitivity such as composition, we provide efficient approximation algorithms with low average sensitivities for
+concrete graph problems, including the minimum spanning for- est problem, the global minimum cut problem, the
+minimum s-t cut problem, and the maximum matching problem. One of the main ideas involved in designing our algorithms
+with low average sensitivity is the following fact; if the presence of a vertex or an edge in the solution output by
+an algorithm can be decided locally, then the algorithm has a low average sensitivity, allowing us to reuse the analyses
+of known sublinear-time algorithms and local computation algorithms.

@@ -44,7 +44,7 @@ function loadTalks(contentUrl, filesListPath) {
     filesListPath = "files.list";
     const filesListHttp = loadFileAsync(dirName + filesListPath);
     filesListHttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState === 4 && this.status === 200) {
             const filesListRaw = this.responseText.trim();
             const filenames = filesListRaw.split('\n');
             for (let i = 1; i < filenames.length; i++) {
@@ -57,7 +57,7 @@ function loadTalks(contentUrl, filesListPath) {
                 talkhttp.onreadystatechange = function (talkFileName) {
                     //We need current value of talkFileName, so creating an outer function that returns an inner function
                     innerFunc = function (event) {
-                        if (this.readyState == 4 && this.status == 200) {
+                        if (this.readyState === 4 && this.status === 200) {
                             [seminar, seminarDate, seminarName] = createTalk(this.responseText, talkFile, 0);
                             const currTime = new Date();
                             if (seminarDate >= currTime) {
@@ -100,21 +100,6 @@ function loadTalks(contentUrl, filesListPath) {
 
 }
 
-function removeUpcomingOrPast(isUpcomingEmpty,isPastEmpty){
-    talksDiv = document.getElementById("Talks");
-    if(isUpcomingEmpty){
-        var upcomingDivHeading = document.getElementById("upcoming-seminars-heading")
-        var upcomingDiv = document.getElementById("upcoming-seminars")
-        talksDiv.removeChild(upcomingDivHeading)
-        talksDiv.removeChild(upcomingDiv)
-    }
-    if(isPastEmpty){
-        var pastDivHeading = document.getElementById("past-seminars-heading")
-        var pastDiv = document.getElementById("past-seminars")
-        talksDiv.removeChild(pastDivHeading)
-        talksDiv.removeChild(pastDiv)
-    }
-}
 
 
 function setAbstractsforDiv(abstractdiv) {
