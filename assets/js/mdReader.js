@@ -125,15 +125,37 @@ function createTalk(talkContents, talkFile, divLocation) {
     seminar.id = talkName
     let seminarDate = new Date();
     seminar.className = "seminar";
-    if(talkKV.author_image){
-        const metadiv = document.createElement("div");
-        metadiv.className = "seminar-speaker-image-holder"
-        seminar.appendChild(metadiv);
+    if(divLocation===0){
+        seminar.classList.add("seminar-card");
+    } else{
+        seminar.classList.add("seminar-fullpage");
+    }
 
-        const metadiv2 = document.createElement("img")
-        metadiv2.src = talkKV.author_image
-        metadiv2.className = "seminar-speaker-image"
-        metadiv.appendChild(metadiv2);
+    const imageHolder = document.createElement("div");
+    imageHolder.className = "speaker-image-holder"
+    seminar.appendChild(imageHolder);
+
+    const mainDetailsHolder = document.createElement("div");
+    mainDetailsHolder.className = "speaker-main-holder"
+    seminar.appendChild(mainDetailsHolder);
+
+    const speakerDetailsHolder = document.createElement("div");
+    speakerDetailsHolder.className = "speaker-details-holder"
+    seminar.appendChild(speakerDetailsHolder);
+
+    if(talkKV.author_image){
+        const metadiv = document.createElement("img")
+        metadiv.src = talkKV.author_image
+        metadiv.className = "speaker-image"
+        if(talkKV.author_link){
+            const linkdiv = document.createElement("a")
+            linkdiv.href = talkKV.author_link
+            linkdiv.target = "_blank"
+            linkdiv.appendChild(metadiv)
+            imageHolder.appendChild(linkdiv)
+        } else{
+            imageHolder.appendChild(metadiv);
+        }
     }
 
     if (talkKV.title) {
@@ -154,13 +176,23 @@ function createTalk(talkContents, talkFile, divLocation) {
         }
         metadiv.innerHTML = talkKV.title;
         metadiv.className = "seminar-title"
-        seminar.appendChild(metadiv);
+        mainDetailsHolder.appendChild(metadiv);
     }
     if (talkKV.author) {
         const metadiv = document.createElement("div");
         metadiv.innerHTML = talkKV.author;
         metadiv.className = "seminar-speaker"
-        seminar.appendChild(metadiv);
+
+        if(talkKV.author_link){
+            const linkdiv = document.createElement("a")
+            linkdiv.href = talkKV.author_link
+            linkdiv.target = "_blank"
+            linkdiv.className = "author-link-href"
+            linkdiv.appendChild(metadiv)
+            mainDetailsHolder.appendChild(linkdiv)
+        } else{
+            mainDetailsHolder.appendChild(metadiv);
+        }
     }
     if (talkKV.date || talkKV.location) {
         const metadivholder = document.createElement("div");
@@ -169,19 +201,25 @@ function createTalk(talkContents, talkFile, divLocation) {
             const metadiv = document.createElement("div");
             let dateStartTime = new Date(talkKV.date);
             seminarDate = dateStartTime;
+            metadiv.innerHTML = "ICS: "
             if (talkKV.date_end) {
                 let dateEndTime = new Date(talkKV.date_end);
                 if (dateEndTime.getDate() == dateStartTime.getDate()) {
-                    metadiv.innerHTML = dateStartTime.toLocaleString() + '-' + dateEndTime.toLocaleTimeString();
+                    metadiv.innerHTML += dateStartTime.toLocaleString() + '-' + dateEndTime.toLocaleTimeString();
                 } else {
-                    metadiv.innerHTML = dateStartTime.toLocaleString() + '-' + dateEndTime.toLocaleString();
+                    metadiv.innerHTML += dateStartTime.toLocaleString() + '-' + dateEndTime.toLocaleString();
                 }
 
             } else {
-                metadiv.innerHTML = dateStartTime.toLocaleString();
+                metadiv.innerHTML += dateStartTime.toLocaleString();
             }
             metadiv.className = "seminar-time"
             metadiv.classList.add("seminar-dateloc-child");
+
+            [talkTitle,talkDesc,talkLocation,talkBegin,talkEnd] = generateItemsForCalendar(talkKV)
+            const onClickStr = "downloadCalendar('"+talkTitle+"','"+talkDesc+"','"+
+                                talkLocation+"','"+talkBegin+"','"+talkEnd+"')";
+            metadiv.setAttribute("onClick", onClickStr)
             metadivholder.appendChild(metadiv);
         }
         if (talkKV.location) {
@@ -191,7 +229,7 @@ function createTalk(talkContents, talkFile, divLocation) {
             metadiv.classList.add("seminar-dateloc-child");
             metadivholder.appendChild(metadiv);
         }
-        seminar.appendChild(metadivholder);
+        mainDetailsHolder.appendChild(metadivholder);
     }
     if (talkKV.article) {
         const metadiv = document.createElement("div");
@@ -205,26 +243,26 @@ function createTalk(talkContents, talkFile, divLocation) {
         }
 
         metadiv.setAttribute("onClick", "seeMoreAbstract(this)")
-        seminar.appendChild(metadiv);
+        speakerDetailsHolder.appendChild(metadiv);
     }
     if (divLocation === 1) {
         if (talkKV.notes) {
             const metadiv = document.createElement("div");
             metadiv.innerHTML = talkKV.notes;
             metadiv.className = "seminar-notes"
-            seminar.appendChild(metadiv);
+            speakerDetailsHolder.appendChild(metadiv);
         }
         if (talkKV.link_to_paper) {
             const metadiv = document.createElement("div");
             metadiv.innerHTML = talkKV.link_to_paper;
             metadiv.className = "seminar-paper"
-            seminar.appendChild(metadiv);
+            speakerDetailsHolder.appendChild(metadiv);
         }
         if (talkKV.link_to_recording) {
             const metadiv = document.createElement("div");
             metadiv.innerHTML = talkKV.link_to_recording;
             metadiv.className = "seminar-recording"
-            seminar.appendChild(metadiv);
+            speakerDetailsHolder.appendChild(metadiv);
         }
     }
     return [seminar, seminarDate,talkKV.title];
@@ -285,4 +323,46 @@ function parseContents(contents) {
     return contentKV;
 
 
+}
+
+function generateItemsForCalendar(talkKV){
+    let talkTitle,talkDesc,talkLocation,talkBegin,talkEnd
+    if (talkKV.title){
+        talkTitle = talkKV.title
+    } else {
+        talkTitle = "Seminar organized by IISc-MSR"
+    }
+    if (talkKV.author){
+        talkDesc = "Talk by " + talkKV.author
+    } else {
+        talkDesc = "Details to be announced shortly"
+    }
+    if (talkKV.location){
+        talkLocation = talkKV.location
+    } else {
+        talkLocation = "Indian Institute of Science, Bangalore"
+    }
+    if (talkKV.date){
+        talkBegin = new Date(talkKV.date);
+        if(talkKV.date_end){
+            talkEnd = new Date(talkKV.date_end);
+        } else{
+            Date.prototype.addHours = function(h) {
+                this.setTime(this.getTime() + (h*60*60*1000));
+                return this;
+            }
+
+            talkEnd = new Date(talkKV.date_end).addHours(1)
+        }
+    } else {
+        talkBegin = "TBA"
+        talkEnd = "TBA"
+    }
+    return [talkTitle,talkDesc,talkLocation,talkBegin,talkEnd]
+}
+
+function downloadCalendar(talkTitle,talkDesc,talkLocation,talkBegin,talkEnd){
+    var cal = ics();
+    cal.addEvent(talkTitle, talkDesc, talkLocation, talkBegin, talkEnd);
+    cal.download();
 }

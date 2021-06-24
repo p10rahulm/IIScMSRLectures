@@ -267,77 +267,6 @@ a:hover {
     transform: translateY(-5px);
 }
 
-.mainer #Talks .seminar-card {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.mainer #Talks .seminar-card .speaker-image-holder {
-    flex-basis: 135px;
-    flex-grow: 0;
-    text-align: center;
-    /*float: left;*/
-}
-.mainer #Talks .seminar-card .speaker-image {
-    height: 120px;
-    width: 120px;
-    margin: 15px 15px 0 0;
-    border-radius: 10%;
-}
-
-.mainer #Talks .seminar-card .speaker-main-holder {
-    flex-basis: 200px;
-    flex-grow: 1;
-    flex-shrink: 0;
-    /*float: left;*/
-}
-.mainer #Talks .seminar-card .speaker-details-holder {
-    flex-basis: 100%;
-    flex-grow: 1;
-    flex-shrink: 1;
-    min-width: 0;
-    /*float: left;*/
-}
-
-.mainer #Talks .seminar-fullpage{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.mainer #Talks .seminar-fullpage .speaker-image-holder {
-    flex-basis: 100%;
-    flex-grow: 1;
-    flex-shrink: 1;
-    text-align: center;
-    /*float: left;*/
-}
-.mainer #Talks .seminar-fullpage .speaker-image {
-    height: 120px;
-    width: 120px;
-    margin: 15px 15px 0 0;
-    border-radius: 50%;
-}
-
-.mainer #Talks .seminar-fullpage .speaker-main-holder {
-    flex-basis: 200px;
-    flex-grow: 1;
-    flex-shrink: 0;
-    /*float: left;*/
-}
-.mainer #Talks .seminar-card .speaker-details-holder {
-    flex-basis: 100%;
-    flex-grow: 1;
-    flex-shrink: 1;
-    min-width: 0;
-    /*float: left;*/
-}
-
 
 .mainer #Talks .seminar .seminar-title {
     font-weight: bold;
@@ -357,14 +286,10 @@ a:hover {
     border-bottom: 1px solid rgba(0, 26, 250, 0.12);
 }
 
-.mainer #Talks .seminar .author-link-href{
-    text-decoration-color: #f77e7e;
-}
-
 .mainer #Talks .seminar .seminar-time {
     padding-top: 0.5em;
     line-height: 1.6;
-    /*font-style: italic;*/
+    font-style: italic;
     color: #4eca91;
 }
 
@@ -479,7 +404,7 @@ a:hover {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    /*border-bottom: 1px solid #ececec;*/
+    border-bottom: 1px solid #ececec;
 }
 
 #seminarHome .seminar-dateloc-child{
