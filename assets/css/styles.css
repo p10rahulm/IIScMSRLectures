@@ -185,8 +185,7 @@ a:hover {
     color: rgba(167, 0, 0, 0.85);
     font-size: max(16px,1.75em);
     font-weight: bold;
-    padding-top: 25px;
-    padding-bottom: 10px;
+    padding: 5px 10px 10px 18px;
 }
 
 .mainer .home-header2{
@@ -223,9 +222,6 @@ a:hover {
     flex-shrink: 1;
 
     border-radius: 25px;
-    /*border: 2px solid #5052b5;*/
-    /*border: 1px solid #33aaff;*/
-    /*border: 1px solid #c1c1c1;*/
     border: 1px solid rgba(193, 193, 193, 0.48);
     padding: 20px;
     width: 300px;
@@ -261,18 +257,21 @@ a:hover {
     padding: 15px;
     box-shadow: 5px 10px 18px #f4f4f4;
     padding: 20px;
-    border-radius: 25px;
+    border-radius: 5px;
 }
 
 .mainer #Talks .seminar:hover {
+    /*transition: transform .75s;*/
     transition: transform .75s;
-    transform: translateY(-10px);
+    /*transform: translateY(-10px);*/
+    transform: translateY(-5px);
 }
 
 
 .mainer #Talks .seminar .seminar-title {
     font-weight: bold;
-    color: #005999;
+    /*color: #005999;*/
+    color: #545454;
     line-height: 1.6;
 }
 

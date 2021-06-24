@@ -69,7 +69,7 @@ function loadTalks(contentUrl, filesListPath) {
 
                                 talkHolderUpcoming = document.createElement("div");
                                 talkHolderUpcoming.id = talkFileName + "-upcoming"
-                                upcomingHolderDiv.appendChild(talkHolderUpcoming);
+                                upcomingDiv.appendChild(talkHolderUpcoming);
                                 talkHolderUpcoming.appendChild(seminar);
 
                             } else {
@@ -81,7 +81,7 @@ function loadTalks(contentUrl, filesListPath) {
 
                                 talkHolderPast = document.createElement("div");
                                 talkHolderPast.id = talkFileName + "-past"
-                                pastHolderDiv.prepend(talkHolderPast);
+                                pastDiv.prepend(talkHolderPast);
                                 talkHolderPast.appendChild(seminar);
 
                             }
