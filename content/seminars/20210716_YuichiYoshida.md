@@ -1,5 +1,5 @@
 +++
-title = "Average Sensitivity of Graph Algorithms is my favorite thing"
+title = "Average Sensitivity of Graph Algorithms"
 author = "Yuichi Yoshida (National Institute of Informatics, Japan)"
 author_link = "http://research.nii.ac.jp/~yyoshida/"
 author_image = "assets/authorImages/yoshida.jpg"
