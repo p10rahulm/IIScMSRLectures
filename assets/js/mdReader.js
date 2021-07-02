@@ -37,9 +37,9 @@ function loadTalks(contentUrl, filesListPath) {
     const [upcomingDivHeading,upcomingDiv,pastDivHeading,pastDiv] =  createSeminarHolders();
 
 
-    var isUpcomingEmpty = true
-    var isPastEmpty = true
-
+    var upcomingDatesArray = []
+    var pastDatesArray = []
+    var loc2insert = 0
     dirName = contentUrl + 'seminars/'
     filesListPath = "files.list";
     const filesListHttp = loadFileAsync(dirName + filesListPath);
@@ -61,29 +61,47 @@ function loadTalks(contentUrl, filesListPath) {
                             [seminar, seminarDate, seminarName] = createTalk(this.responseText, talkFile, 0);
                             const currTime = new Date();
                             if (seminarDate >= currTime) {
-                                if(isUpcomingEmpty){
+                                talkHolderUpcoming = document.createElement("div");
+                                // talkHolderUpcoming.id = talkFileName + "-upcoming"
+                                // talkHolderUpcoming.id = seminarDate.getTime() + "-upcoming"
+                                talkHolderUpcoming.id = seminarDate.getTime()
+                                talkHolderUpcoming.appendChild(seminar);
+                                if(upcomingDatesArray.length===0){
+                                    insert(seminarDate.getTime(),upcomingDatesArray)
                                     talksDiv.prepend(upcomingDiv);
                                     talksDiv.prepend(upcomingDivHeading);
-                                    isUpcomingEmpty = false
+                                    isUpcomingEmpty = false;
+                                    upcomingDiv.appendChild(talkHolderUpcoming);
+                                } else {
+                                    loc2insert = locationOf(seminarDate.getTime(), upcomingDatesArray)
+                                    upcomingDatesArray.splice(loc2insert + 1, 0, seminarDate.getTime());
+                                    upcomingDiv.insertBefore(talkHolderUpcoming, upcomingDiv.children[loc2insert+1]);
+                                    // insert(seminarDate.getTime(),upcomingDatesArray)
+                                    // upcomingDiv.appendChild(talkHolderUpcoming);
+
                                 }
 
-                                talkHolderUpcoming = document.createElement("div");
-                                talkHolderUpcoming.id = talkFileName + "-upcoming"
-                                upcomingDiv.appendChild(talkHolderUpcoming);
-                                talkHolderUpcoming.appendChild(seminar);
 
                             } else {
-                                if(isUpcomingEmpty){
+                                talkHolderPast = document.createElement("div");
+                                // talkHolderPast.id = talkFileName + "-past"
+                                talkHolderUpcoming.id = seminarDate.getTime()
+                                talkHolderPast.appendChild(seminar);
+                                if(pastDatesArray.length===0){
+                                    insert(seminarDate.getTime(),pastDatesArray)
                                     talksDiv.appendChild(pastDivHeading);
                                     talksDiv.appendChild(pastDiv);
                                     isPastEmpty = false
+                                    pastDiv.prepend(talkHolderPast);
+
+                                } else {
+                                    loc2insert = locationOf(seminarDate.getTime(), pastDatesArray)
+                                    pastDatesArray.splice(loc2insert + 1, 0, seminarDate.getTime());
+                                    pastDiv.insertBefore(talkHolderPast, pastDiv.children[loc2insert+1]);
+                                    // insert(seminarDate.getTime(),pastDatesArray);
+                                    // pastDiv.prepend(talkHolderPast);
+
                                 }
-
-                                talkHolderPast = document.createElement("div");
-                                talkHolderPast.id = talkFileName + "-past"
-                                pastDiv.prepend(talkHolderPast);
-                                talkHolderPast.appendChild(seminar);
-
                             }
                             //reset Mathjax typesetting
                             MathJax.Hub.Queue(["Typeset", MathJax.Hub, seminar]);
@@ -204,7 +222,7 @@ function createTalk(talkContents, talkFile, divLocation) {
             metadiv.innerHTML = "ICS: "
             if (talkKV.date_end) {
                 let dateEndTime = new Date(talkKV.date_end);
-                if (dateEndTime.getDate() == dateStartTime.getDate()) {
+                if (dateEndTime.getDate() === dateStartTime.getDate()) {
                     metadiv.innerHTML += dateStartTime.toLocaleString() + '-' + dateEndTime.toLocaleTimeString();
                 } else {
                     metadiv.innerHTML += dateStartTime.toLocaleString() + '-' + dateEndTime.toLocaleString();
@@ -234,9 +252,9 @@ function createTalk(talkContents, talkFile, divLocation) {
     if (talkKV.article) {
         const metadiv = document.createElement("div");
         metadiv.innerHTML = talkKV.article;
-        if (divLocation == 0) {
+        if (divLocation === 0) {
             metadiv.className = "seminar-abstract-short"
-        } else if (divLocation == 1) {
+        } else if (divLocation === 1) {
             metadiv.className = "seminar-abstract"
         } else {
             metadiv.className = "seminar-abstract-short"
@@ -281,33 +299,32 @@ function parseContents(contents) {
     let multiline = "";
     let multilineKey = "";
     for (lineNo = 0; lineNo < contentLines.length && !inContent; lineNo++) {
-        if (!inMeta && contentLines[lineNo].trim() == "+++") {
+        if (!inMeta && contentLines[lineNo].trim() === "+++") {
             inMeta = 1;
-            continue;
-        } else if (inMeta && contentLines[lineNo].trim() == '+++') {
+        } else if (inMeta && contentLines[lineNo].trim() === '+++') {
             inContent = 1;
-        } else if (inMeta && multiline != "") {
+        } else if (inMeta && multiline !== "") {
             multiline = multiline.concat('\n', contentLines[lineNo].trim());
-            if (multiline.slice(-3) == "'''") {
+            if (multiline.slice(-3) === "'''") {
                 contentKV[multilineKey] = multiline.slice(0, -3);
                 multiline = "";
                 multilineKey = "";
 
             }
 
-        } else if (inMeta && multiline == "") {
+        } else if (inMeta && multiline === "") {
             keyval = contentLines[lineNo].split(/=(.+)/);
             if (keyval.length > 1) {
                 let key = keyval[0].trim();
                 let val = keyval[1].trim();
-                if (val[0] == "\"") {
+                if (val[0] === "\"") {
                     val = val.slice(1, -1);
                     contentKV[key] = val;
                 }
-                if (val.length > 3 && (val.slice(0, 3) == "'''")) {
+                if (val.length > 3 && (val.slice(0, 3) === "'''")) {
                     multilineKey = key;
                     multiline = val.slice(3).trim();
-                    if (multiline.slice(-3) == "'''") {
+                    if (multiline.slice(-3) === "'''") {
                         contentKV[multilineKey] = multiline.slice(0, -3)
                         multiline = "";
                         multilineKey = "";
@@ -366,3 +383,27 @@ function downloadCalendar(talkTitle,talkDesc,talkLocation,talkBegin,talkEnd){
     cal.addEvent(talkTitle, talkDesc, talkLocation, talkBegin, talkEnd);
     cal.download();
 }
+
+
+function insert(element, array) {
+    array.splice(locationOf(element, array) + 1, 0, element);
+    return array;
+}
+
+function locationOf(element, array, start, end) {
+    start = start || 0;
+    end = end || array.length;
+    var pivot = parseInt(start + (end - start) / 2, 10);
+    if (array[pivot] === element) return pivot;
+    if (end - start <= 1)
+        return array[pivot] > element ? pivot - 1 : pivot;
+    if (array[pivot] < element) {
+        return locationOf(element, array, pivot, end);
+    } else {
+        return locationOf(element, array, start, pivot);
+    }
+}
+// Test:
+// var array = [1,2,3,4,5,6,7,8,9];
+// var element = 0.5;
+// console.log(insert(element, array));
