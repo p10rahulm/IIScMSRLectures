@@ -367,6 +367,9 @@ a:hover {
     /*font-style: italic;*/
     color: #4eca91;
 }
+.mainer #Talks .seminar .seminar-time:hover {
+    text-decoration: underline;
+}
 
 .mainer #Talks .seminar .seminar-location{
     /*color: #777777;*/
@@ -471,6 +474,15 @@ a:hover {
     border-bottom: 1px solid #ececec;
     padding: 5px 0px 10px 0px;
     font-weight: bold;
+}
+
+#seminarHome .seminar-dateloc{
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /*border-bottom: 1px solid #ececec;*/
 }
 
 #seminarHome .seminar-dateloc{

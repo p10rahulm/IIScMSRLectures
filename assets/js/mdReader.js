@@ -212,7 +212,7 @@ function createTalk(talkContents, talkFile, divLocation) {
             mainDetailsHolder.appendChild(metadiv);
         }
     }
-    if (talkKV.date || talkKV.location) {
+    if (talkKV.date || talkKV.location || talkKV.location_link) {
         const metadivholder = document.createElement("div");
         metadivholder.className = "seminar-dateloc"
         if (talkKV.date) {
@@ -240,7 +240,21 @@ function createTalk(talkContents, talkFile, divLocation) {
             metadiv.setAttribute("onClick", onClickStr)
             metadivholder.appendChild(metadiv);
         }
-        if (talkKV.location) {
+        if (talkKV.location_link) {
+            const metadiv = document.createElement("div");
+            metadiv.className = "seminar-location"
+            metadiv.classList.add("seminar-dateloc-child");
+            metadivholder.appendChild(metadiv);
+            const linkdiv = document.createElement("a");
+            linkdiv.href = talkKV.location_link;
+            linkdiv.target = "_blank"
+            if (talkKV.location){
+                linkdiv.innerHTML = talkKV.location
+            } else {
+                linkdiv.innerHTML = "Meeting Link"
+            }
+            metadiv.appendChild(linkdiv)
+        } else if (talkKV.location){
             const metadiv = document.createElement("div");
             metadiv.innerHTML = talkKV.location;
             metadiv.className = "seminar-location"
@@ -351,13 +365,25 @@ function generateItemsForCalendar(talkKV){
     }
     if (talkKV.author){
         talkDesc = "Talk by " + talkKV.author + "."
+        if (talkKV.location_link){
+            talkDesc = talkDesc + " Link to the talk: " + talkKV.location_link +".";
+        } else if (talkKV.location){
+            talkDesc = talkDesc + " Link to the talk: " + talkKV.location_link +".";
+        }
     } else {
-        talkDesc = "Details to be announced shortly"
+        if (talkKV.location_link){
+            talkDesc = talkDesc + " Link to the talk: " + talkKV.location_link +".";
+        } else if (talkKV.location){
+            talkDesc = talkDesc + " Link to the talk: " + talkKV.location_link +".";
+        } else {
+            talkDesc = "Details to be announced shortly"
+        }
     }
+
     if (talkKV.location){
         talkLocation = talkKV.location;
-        talkDesc = talkDesc + "Link to the talk: " + talkKV.location;
-    } else {
+    }
+    else {
         talkLocation = "Indian Institute of Science, Bangalore"
     }
     if (talkKV.date){
