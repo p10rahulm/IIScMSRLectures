@@ -350,12 +350,13 @@ function generateItemsForCalendar(talkKV){
         talkTitle = "Seminar organized by IISc-MSR"
     }
     if (talkKV.author){
-        talkDesc = "Talk by " + talkKV.author
+        talkDesc = "Talk by " + talkKV.author + "."
     } else {
         talkDesc = "Details to be announced shortly"
     }
     if (talkKV.location){
-        talkLocation = talkKV.location
+        talkLocation = talkKV.location;
+        talkDesc = talkDesc + "Link to the talk: " + talkKV.location;
     } else {
         talkLocation = "Indian Institute of Science, Bangalore"
     }
