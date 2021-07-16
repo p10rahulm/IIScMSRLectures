@@ -18,4 +18,4 @@ In this work, we show the first superpolynomial lower bound for low-product-dept
 <br><br>
 In the talk, we discuss the main results and present the proof ideas used in the proof of the superpolynomial lower bound for product-depth 1 circuits.
 <br><br>
-This talk is based on joint work with Srikanth Srinivasan and Sébastein Tavenas.
+This talk is based on joint work with <a href = "https://cs.au.dk/~srikanth/" target = "_blank">Srikanth Srinivasan</a> and <a href = "https://www.lama.univ-savoie.fr/pagesmembres/tavenas/" target = "_blank">Sébastein Tavenas</a>.
