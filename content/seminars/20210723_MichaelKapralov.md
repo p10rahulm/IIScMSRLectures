@@ -11,10 +11,10 @@ notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/researc
 +++
 
 <b>Abstract:</b> Given an n-vertex graph G that can be partitioned into a few clusters with good inner conductance and
-$$\varepsilon$$-sparse boundary, i.e. admits a good clustering, can we quickly tell which cluster a given vertex belongs
+$\varepsilon$-sparse boundary, i.e. admits a good clustering, can we quickly tell which cluster a given vertex belongs
 to?  A clustering oracle is a small space data structure that provides query access to an approximate clustering of the
 input graph in sublinear time. In this talk I will describe a clustering oracle that provides query access to an
-$$O(\varepsilon \log k)$$-approximate clustering in time about $$n^{1/2+O(\e)}$$, where k is the number of clusters,
+$O(\varepsilon \log k)$-approximate clustering in time about $n^{1/2+O(\e)}$, where k is the number of clusters,
 which is essentially optimal for constant k. Our main tool is a new way of obtaining dot product access to the spectral
 embedding of a clusterable graph in sublinear time using the distribution of a few short random walks  started at
 uniformly random vertices in the graph.
