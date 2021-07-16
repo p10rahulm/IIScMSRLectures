@@ -1,5 +1,5 @@
 +++
-title = "Talk by Lars Rohwedder on  3rd September"
+title = "A (2 + $\epsilon$)-approximation algorithm for preemptive weighted flow time on a single machine"
 author = "Lars Rohwedder (EPFL)"
 author_link = "https://larsrohwedder.com/"
 author_image = "assets/authorImages/larsrohwedder.jpg"
@@ -10,4 +10,6 @@ location_link = "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZGE3NDg5
 notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" target= "_blank">Microsoft Research Lab - India</a> and <a href='https://www.csa.iisc.ac.in/theoretical-computer-science/' target= "_blank">Theoretical Computer Science @ IISc</a>"
 +++
 
-<b>Abstract:</b> Will be updated shortly.
+<b>Abstract:</b> In a recent breakthrough in scheduling, Batra, Garg, and Kumar gave the first constant approximation
+algorithm for minimizing the sum of weighted flow times. Wiese and I (STOC'21) managed to improve this large unspecified
+constant to $2 + \epsilon$. I will give a very graphic presentation of the algorithmic techniques behind this.
