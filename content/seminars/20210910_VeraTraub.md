@@ -25,6 +25,6 @@ replaces parts of this starting solution by stronger components.
 <br><br>
 This algorithm achieves an approximation ratio of $(1 + \ln(2) + \epsilon) < 1.7$.
 Second, we present a local search algorithm that achieves an approximation ratio of $1.5 + \epsilon$
-(for any constant $epsilon > 0$).
+(for any constant $\epsilon > 0$).
 <br><br>
 This is joint work with Rico Zenklusen.
