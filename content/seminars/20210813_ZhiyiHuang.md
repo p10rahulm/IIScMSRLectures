@@ -1,5 +1,5 @@
 +++
-title = "Talk by Zhiyi Huang on  13th August"
+title = "Recent progress in online matching - Some open problems in online advertising"
 author = "Zhiyi Huang (University of Hong Kong)"
 author_link = "https://i.cs.hku.hk/~zhiyi/"
 author_image = "assets/authorImages/zhiyi.jpg"
@@ -20,7 +20,7 @@ The first talk focussed on General arrival models and
 today's talk will be looking at some Open problems in online advertising.
 
 <br><br>
-<b>Open problems about online advertising</b>
+<b>Open problems in online advertising</b>
 <br><br>
 
 AdWords and Display Ads are

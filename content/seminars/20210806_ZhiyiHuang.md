@@ -1,5 +1,5 @@
 +++
-title = "Recent progress in online matching"
+title = "Recent progress in online matching - General arrival models"
 author = "Zhiyi Huang (University of Hong Kong)"
 author_link = "https://i.cs.hku.hk/~zhiyi/"
 author_image = "assets/authorImages/zhiyi.jpg"
