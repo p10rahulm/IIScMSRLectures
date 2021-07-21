@@ -14,9 +14,10 @@ notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/researc
 (1990), online matching has been established as one of the most
 fundamental topics in the literature of online algorithms.
 <br><br>
-This is the first of two talks that presents the basics of online matching, and surveys the recent
-progress in two directions. Today's talk will be focussing on General arrival models and
-for the next talk, we will look at some Open problems in online advertising.
+
+This is the second of two talks which presents the basics of online matching.
+The first talk focussed on General arrival models and
+today's talk will be looking at some Open problems in online advertising.
 
 <br><br>
 <b>Open problems about online advertising</b>
