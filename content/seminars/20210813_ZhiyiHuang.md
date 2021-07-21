@@ -10,4 +10,23 @@ location_link = "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZGE3NDg5
 notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" target= "_blank">Microsoft Research Lab - India</a> and <a href='https://www.csa.iisc.ac.in/theoretical-computer-science/' target= "_blank">Theoretical Computer Science @ IISc</a>"
 +++
 
-<b>Abstract:</b> Will be updated shortly.
+<b>Abstract:</b> Originated from the seminal work by Karp, Vazirani, and Vazirani
+(1990), online matching has been established as one of the most
+fundamental topics in the literature of online algorithms.
+<br><br>
+This is the first of two talks that presents the basics of online matching, and surveys the recent
+progress in two directions. Today's talk will be focussing on General arrival models and
+for the next talk, we will look at some Open problems in online advertising.
+
+<br><br>
+<b>Open problems about online advertising</b>
+<br><br>
+
+AdWords and Display Ads are
+generalizations of the online bipartite matching problem by Karp et
+al. These problems capture online advertising which generates tens of
+billions of US dollars annually. This year, we introduce a new
+technique called online correlated selection, and design the first
+online algorithms for the general cases of AdWords and Display Ads
+outperforming greedy, which has remained the state of the art for more
+than 10 years, despite many attempts to find better alternatives.
