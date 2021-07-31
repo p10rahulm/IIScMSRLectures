@@ -85,7 +85,7 @@ function loadTalks(contentUrl, filesListPath) {
                             } else {
                                 talkHolderPast = document.createElement("div");
                                 // talkHolderPast.id = talkFileName + "-past"
-                                talkHolderUpcoming.id = seminarDate.getTime()
+                                talkHolderPast.id = seminarDate.getTime()
                                 talkHolderPast.appendChild(seminar);
                                 if (pastDatesArray.length === 0) {
                                     insert(seminarDate.getTime(), pastDatesArray)
