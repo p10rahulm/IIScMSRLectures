@@ -21,7 +21,7 @@ and $O(2^{n/4})$ space can be improved to an algorithm using the same time and $
 <li>The trivial $O(2^n)$ time and poly(n) space algorithm for Subset Sum can be improved to an $O(2^{0.86n})$ time
 poly(n) space algorithm, assuming random read-only access to random bits.
 <li>The standard algorithm solving Bin Packing with n items in $O(2^n)$ can be improved to an algorithm running in time
-$O((2-\varepsilon_b)^n)$, where n denotes the number of items and \varepsilon_b is a positive number that only depends on the number of
+$O((2-\varepsilon_b)^n)$, where n denotes the number of items and $\varepsilon_b$ is a positive number that only depends on the number of
 bins $b$ available in the instance.
 </ul>
 <br>
