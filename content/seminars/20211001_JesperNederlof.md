@@ -15,14 +15,14 @@ be improved? We study this question for some natural and/or old algorithms for N
 <br><br>
 Specifically, we survey some of the modern techniques to design such improved algorithms, with a focus on the Subset Sum and Bin Packing problems:
 <ul>
-<li>The algorithm by Schroeppel and Shamir (FOCS'79) solving Subset Sum on instances with n items in $O*(2^{n/2})$ time
+<li>The algorithm by Schroeppel and Shamir (FOCS'79) solving Subset Sum on instances with n items in $O(2^{n/2})$ time
 and $O(2^{n/4})$ space can be improved to an algorithm using the same time and $O(2^{0.249999 n})$ space.
 
 <li>The trivial $O(2^n)$ time and poly(n) space algorithm for Subset Sum can be improved to an $O(2^{0.86n})$ time
 poly(n) space algorithm, assuming random read-only access to random bits.
 <li>The standard algorithm solving Bin Packing with n items in $O(2^n)$ can be improved to an algorithm running in time
-$O((2-eps_b)^n)$, where n denotes the number of items and eps_b is a positive number that only depends on the number of
-bins b$$ available in the instance.
+$O((2-\varepsilon_b)^n)$, where n denotes the number of items and \varepsilon_b is a positive number that only depends on the number of
+bins $b$ available in the instance.
 </ul>
 <br>
 
