@@ -27,4 +27,4 @@ This algorithm achieves an approximation ratio of $(1 + \ln(2) + \epsilon) < 1.7
 Second, we present a local search algorithm that achieves an approximation ratio of $1.5 + \epsilon$
 (for any constant $\epsilon > 0$).
 <br><br>
-This is joint work with <a href="https://simons.berkeley.edu/people/rico-zenklusen" target = "_blank">Rico Zenklusen</a>.
+This is joint work with <a href="https://math.ethz.ch/ifor/groups/zenklusen_group/rico-zenklusen.html" target = "_blank">Rico Zenklusen</a>.
