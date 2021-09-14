@@ -1,8 +1,8 @@
 +++
 title = "Talk by Jatin Batra on  12th November"
-author = "Jatin Batra (University of Copenhagen)"
+author = "Jatin Batra (Centrum Wiskunde & Informatica Amsterdam, Networks and Optimization group)"
 author_link = "https://dblp.org/pid/157/6041.html"
-author_image = "assets/authorImages/mikkel.jpg"
+author_image = "assets/authorImages/jatin.jpg"
 date = "2021-10-22T16:00:00+05:30"
 date_end = "2021-10-22T17:00:00+05:30"
 location = "Microsoft Teams Meeting"
