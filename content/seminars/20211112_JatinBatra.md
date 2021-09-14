@@ -1,6 +1,6 @@
 +++
 title = "Talk by Jatin Batra on  12th November"
-author = "Jatin Batra (Centrum Wiskunde & Informatica Amsterdam, Networks and Optimization group)"
+author = "Jatin Batra (IIIT Delhi)"
 author_link = "https://dblp.org/pid/157/6041.html"
 author_image = "assets/authorImages/jatin.jpg"
 date = "2021-10-22T16:00:00+05:30"
