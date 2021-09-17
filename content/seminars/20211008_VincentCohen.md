@@ -1,6 +1,6 @@
 +++
 title = "Talk by Vincent Viallat Cohen-Addad on  8th October"
-author = "Vincent Cohen-Addad (École Normale Supérieure, France)"
+author = "Vincent Cohen-Addad (Google, Zurich)"
 author_link = "https://www.di.ens.fr/~vcohen/"
 author_image = "assets/authorImages/vincent.jpg"
 date = "2021-10-08T16:00:00+05:30"
