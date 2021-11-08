@@ -2,7 +2,7 @@
 title = "Talk by Arnab Bhattacharyya on  3rd December"
 author = "Arnab Bhattacharyya (NUS, Singapore)"
 author_link = "https://www.comp.nus.edu.sg/~arnab/"
-author_image = "assets/authorImages/arnab.jpg"
+author_image = "assets/authorImages/arnab.png"
 date = "2021-11-26T11:00:00+05:30"
 date_end = "2021-11-26T12:00:00+05:30"
 location = "Microsoft Teams Meeting"
