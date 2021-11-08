@@ -1,5 +1,5 @@
 +++
-title = "Talk by Arnab Bhattacharyya on  3rd December"
+title = "Talk by Arnab Bhattacharyya on 26th November"
 author = "Arnab Bhattacharyya (NUS, Singapore)"
 author_link = "https://www.comp.nus.edu.sg/~arnab/"
 author_image = "assets/authorImages/arnab.png"
