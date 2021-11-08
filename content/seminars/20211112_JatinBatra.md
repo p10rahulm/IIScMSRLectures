@@ -23,4 +23,4 @@ Bernoulli random variables, which might be of independent interest and broader u
 to get better tail bounds than Chernoff when the deviation from the mean is very small.
 <br><br>
 We also give a new dual-fitting analysis for min sum set cover, giving tight (upto NP-hardness) bound of
-$$(p+1)^{1+1/p}$$ for the $$\ell_p$$ norm of cover times.
+$(p+1)^{1+1/p}$ for the $\ell_p$ norm of cover times.
