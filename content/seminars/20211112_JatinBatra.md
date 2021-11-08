@@ -1,6 +1,6 @@
 +++
 title = "Min Sum Set Cover and Tail Bounds for Sums of Bernoullis"
-author = "Jatin Batra (IIIT Delhi)"
+author = "Jatin Batra (TIFR School of Technology and Computer Science)"
 author_link = "https://dblp.org/pid/157/6041.html"
 author_image = "assets/authorImages/jatin.jpg"
 date = "2021-11-12T16:00:00+05:30"
