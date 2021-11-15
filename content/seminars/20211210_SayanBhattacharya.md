@@ -1,5 +1,5 @@
 +++
-title = "Some Recent Advances in Dynamic Algorithms for Maximum Matching and Minimum Set Cover: Part 2"
+title = "Some Recent Advances in Dynamic Algorithms for Maximum Matching and Minimum Set Cover (Part 2)"
 author = "Sayan Bhattacharya (University of Warwick)"
 author_link = "https://www.dcs.warwick.ac.uk/~u1671158/"
 author_image = "assets/authorImages/sayan.jpg"
