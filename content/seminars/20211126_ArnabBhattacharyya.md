@@ -1,5 +1,5 @@
 +++
-title = "Talk by Arnab Bhattacharyya on 26th November"
+title = "Efficient inference of interventional distributions"
 author = "Arnab Bhattacharyya (NUS, Singapore)"
 author_link = "https://www.comp.nus.edu.sg/~arnab/"
 author_image = "assets/authorImages/arnab.png"
@@ -10,4 +10,21 @@ location_link = "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZGE3NDg5
 notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" target= "_blank">Microsoft Research Lab - India</a> and <a href='https://www.csa.iisc.ac.in/theoretical-computer-science/' target= "_blank">Theoretical Computer Science @ IISc</a>"
 +++
 
-<b>Abstract:</b> Will be updated shortly.
+<b>Abstract:</b> We consider the problem of efficiently inferring interventional distributions in a causal Bayesian
+network from a finite number of observations. Let P be a causal model on a set V of observable variables on a given
+causal graph G. For sets X,Y⊆V, and setting x to X, let P_x(Y) denote the interventional distribution on Y with respect
+to an intervention x to variables X. Shpitser and Pearl (AAAI 2006), building on the work of Tian and Pearl (AAAI 2001),
+gave an exact characterization of the class of causal graphs for which the interventional
+distribution P_x(Y) can be uniquely determined. We give the first efficient version of the Shpitser-Pearl
+algorithm.
+<br><br>
+In particular, under natural assumptions, we give a polynomial-time algorithm that on input
+a causal graph G on observable variables V, a setting x of a set X⊆V of bounded size, outputs succinct
+descriptions of both an evaluator and a generator for a distribution P^ that is ε-close (in total variation
+distance) to P_x(Y) where Y=V∖X, if P_x(Y) is identifiable. We also show that when Y is an arbitrary set, there
+is no efficient algorithm that outputs an evaluator of a distribution that is ε-close to P_x(Y) unless all
+problems that have statistical zero-knowledge proofs, including the Graph Isomorphism problem,
+have efficient randomized algorithms.
+<br><br>
+Joint work with Sutanu Gayen (NUS), Saravanan Kandasamy (Cornell), Vedant Raval (IIT Delhi), and
+N.V. Vinodchandran (U. Nebraska - Lincoln)
