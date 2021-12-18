@@ -13,7 +13,7 @@ notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/researc
 <b>Abstract:</b>
 
 Take a planar graph with maximum degree $d$. These graphs admit a hyperfinite decompositions, where, for a sufficiently
-small $\epsilon > 0$, one removes \epsilon dn edges to get connected components of size independent of $n$. An important
+small $\epsilon > 0$, one removes $\epsilon dn$ edges to get connected components of size independent of $n$. An important
 tool for sublinear algorithms and property testing for such classes is the partition oracle. A partition oracle is a
 local procedure that gives consistent access to a hyperfinite decomposition, without any preprocessing. Given a query
 vertex v, the partition oracle outputs the component containing v in time independent of n. All the answers are
