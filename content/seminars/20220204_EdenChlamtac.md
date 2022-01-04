@@ -1,6 +1,6 @@
 +++
 title = "Talk by Eden Chlamtac on  28th February"
-author = "Eden Chlamtac (Toyota Technological Institute at Chicago)"
+author = "Eden Chlamtac (Ben Gurion University)"
 author_link = "https://www.cs.bgu.ac.il/~chlamtac/"
 author_image = "assets/authorImages/edenchlamtac.jpg"
 date = "2022-02-04T11:00:00+05:30"
