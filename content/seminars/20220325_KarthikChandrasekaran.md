@@ -1,5 +1,5 @@
 +++
-title = "First Talk by Karthekeyan Chandrasekaran on 25th March"
+title = "Second Talk by Karthekeyan Chandrasekaran on 25th March"
 author = "Karthekeyan Chandrasekaran (University of Illinois, Urbana-Champaign)"
 author_link = "http://karthik.ise.illinois.edu/"
 author_image = "assets/authorImages/KarthikChandrasekharan.jpg"
