@@ -45,7 +45,19 @@ function emptyTalks(talksDiv) {
     }
 }
 
-function createtalkSection(year, holderID, divTitle, textDivID,navTitle) {
+function createNavDiv(navTitle,navID,navDivClass,linkHREF){
+    navDiv = document.createElement("div");
+    navDiv.id = navID
+    navDiv.className = navDivClass
+    linkDiv = document.createElement("a");
+    linkDiv.href = linkHREF
+    linkDiv.innerHTML = navTitle
+    navDiv.appendChild(linkDiv)
+    return navDiv
+
+}
+
+function createtalkSection(year, holderID, divTitle, textDivID, navTitle) {
     talkSectionMap = new Map();
     talkSectionMap["year"] = year
     talkSectionMap["datesArray"] = []
@@ -55,22 +67,16 @@ function createtalkSection(year, holderID, divTitle, textDivID,navTitle) {
     talkSectionMap["talkSectionDiv"].appendChild(divHeading)
     talkSectionMap["talkSectionDiv"].appendChild(divText)
 
-    talkSectionMap["talkSectionNavDiv"] = document.createElement("div");
-    talkSectionMap["talkSectionNavDiv"].id = holderID + "-nav"
-    talkSectionMap["talkSectionNavDiv"].className = "buttonNav"
-    linkDiv = document.createElement("a");
-    linkDiv.href = "#"+holderID
-    linkDiv.innerHTML = navTitle
-    talkSectionMap["talkSectionNavDiv"].appendChild(linkDiv)
 
+    talkSectionMap["talkSectionNavDiv"] = createNavDiv(navTitle,holderID + "-nav","buttonNav","#" + holderID)
     return talkSectionMap
 }
 
 
-function insertTalk(talksDiv,talksNavDiv,talkSectionsMap, talkSectionName, talkHolderID, divTitle, textDivID, talkSectionYear,yearsSoFar,navTitle) {
+function insertTalk(talksDiv, talksNavDiv, talkSectionsMap, talkSectionName, talkHolderID, divTitle, textDivID, talkSectionYear, yearsSoFar, navTitle) {
     var loc2insert = 0
     if (!(talkSectionName in talkSectionsMap)) {
-        talkSectionsMap[talkSectionName] = createtalkSection(talkSectionYear, talkHolderID, divTitle, textDivID,navTitle)
+        talkSectionsMap[talkSectionName] = createtalkSection(talkSectionYear, talkHolderID, divTitle, textDivID, navTitle)
         yearsSoFar.push(talkSectionYear)
         yearsSoFar.sort().reverse();
         loc2insert = yearsSoFar.indexOf(talkSectionYear)
@@ -123,13 +129,13 @@ function loadTalks(contentUrl, filesListPath) {
                             talkHolderDiv.id = seminarDate.getTime()
                             talkHolderDiv.appendChild(seminar);
                             if (seminarDate >= currTime) {
-                                insertTalk(talksDiv,talksNavDiv,talkSections, "upcoming", "upcoming", "Upcoming Seminars in " + currYear, "upcoming-seminars", currYear + 1, yearsSoFar,"Upcoming talks")
+                                insertTalk(talksDiv, talksNavDiv, talkSections, "upcoming", "upcoming", "Upcoming Seminars in " + currYear, "upcoming-seminars", currYear + 1, yearsSoFar, "Upcoming talks")
 
                             } else if (seminarYear === currYear) {
-                                insertTalk(talksDiv,talksNavDiv,talkSections, "pastThisYear", "pastThisYear", "Previous Seminars in " + currYear, "pastThisYear-seminars", currYear, yearsSoFar,"Past talks this year")
+                                insertTalk(talksDiv, talksNavDiv, talkSections, "pastThisYear", "pastThisYear", "Previous Seminars in " + currYear, "pastThisYear-seminars", currYear, yearsSoFar, "Past talks this year")
 
                             } else {
-                                insertTalk(talksDiv,talksNavDiv,talkSections, seminarYear.toString(), "year-" + seminarYear, "Previous Seminars in " + seminarYear, seminarYear + "-seminars", seminarYear, yearsSoFar,"Past talks from " + seminarYear)
+                                insertTalk(talksDiv, talksNavDiv, talkSections, seminarYear.toString(), "year-" + seminarYear, "Previous Seminars in " + seminarYear, seminarYear + "-seminars", seminarYear, yearsSoFar, "Past talks from " + seminarYear)
                             }
                             //reset Mathjax typesetting
                             MathJax.Hub.Queue(["Typeset", MathJax.Hub, seminar]);
