@@ -45,7 +45,7 @@ function emptyTalks(talksDiv) {
     }
 }
 
-function createtalkSection(year, holderID, divTitle, textDivID) {
+function createtalkSection(year, holderID, divTitle, textDivID,navTitle) {
     talkSectionMap = new Map();
     talkSectionMap["year"] = year
     talkSectionMap["datesArray"] = []
@@ -54,17 +54,29 @@ function createtalkSection(year, holderID, divTitle, textDivID) {
     const [divHeading, divText] = createSeminarDivHolders(divTitle, textDivID);
     talkSectionMap["talkSectionDiv"].appendChild(divHeading)
     talkSectionMap["talkSectionDiv"].appendChild(divText)
+
+    talkSectionMap["talkSectionNavDiv"] = document.createElement("div");
+    talkSectionMap["talkSectionNavDiv"].id = holderID + "-nav"
+    talkSectionMap["talkSectionNavDiv"].className = "buttonNav"
+    linkDiv = document.createElement("a");
+    linkDiv.href = "#"+holderID
+    linkDiv.innerHTML = navTitle
+    talkSectionMap["talkSectionNavDiv"].appendChild(linkDiv)
+
     return talkSectionMap
 }
 
-function insertTalk(talkSectionsMap, talkSectionName, talkHolderID, divTitle, textDivID, talkSectionYear,yearsSoFar) {
+
+function insertTalk(talksDiv,talksNavDiv,talkSectionsMap, talkSectionName, talkHolderID, divTitle, textDivID, talkSectionYear,yearsSoFar,navTitle) {
     var loc2insert = 0
     if (!(talkSectionName in talkSectionsMap)) {
-        talkSectionsMap[talkSectionName] = createtalkSection(talkSectionYear, talkHolderID, divTitle, textDivID)
+        talkSectionsMap[talkSectionName] = createtalkSection(talkSectionYear, talkHolderID, divTitle, textDivID,navTitle)
         yearsSoFar.push(talkSectionYear)
         yearsSoFar.sort().reverse();
         loc2insert = yearsSoFar.indexOf(talkSectionYear)
         talksDiv.insertBefore(talkSectionsMap[talkSectionName]["talkSectionDiv"], talksDiv.children[loc2insert]);
+        talksNavDiv.insertBefore(talkSectionsMap[talkSectionName]["talkSectionNavDiv"], talksNavDiv.children[loc2insert]);
+
         insert(seminarDate.getTime(), talkSectionsMap[talkSectionName]["datesArray"])
         talkSectionsMap[talkSectionName]["talkSectionDiv"].lastChild.appendChild(talkHolderDiv);
     } else {
@@ -77,6 +89,7 @@ function insertTalk(talkSectionsMap, talkSectionName, talkHolderID, divTitle, te
 
 function loadTalks(contentUrl, filesListPath) {
     talksDiv = document.getElementById("Talks");
+    talksNavDiv = document.getElementById("talks-navigation");
     emptyTalks(talksDiv)
 
 
@@ -110,13 +123,13 @@ function loadTalks(contentUrl, filesListPath) {
                             talkHolderDiv.id = seminarDate.getTime()
                             talkHolderDiv.appendChild(seminar);
                             if (seminarDate >= currTime) {
-                                insertTalk(talkSections, "upcoming", "upcoming", "Upcoming Seminars in " + currYear, "upcoming-seminars", currYear + 1, yearsSoFar)
+                                insertTalk(talksDiv,talksNavDiv,talkSections, "upcoming", "upcoming", "Upcoming Seminars in " + currYear, "upcoming-seminars", currYear + 1, yearsSoFar,"Upcoming talks")
 
                             } else if (seminarYear === currYear) {
-                                insertTalk(talkSections, "pastThisYear", "pastThisYear", "Previous Seminars in " + currYear, "pastThisYear-seminars", currYear, yearsSoFar)
+                                insertTalk(talksDiv,talksNavDiv,talkSections, "pastThisYear", "pastThisYear", "Previous Seminars in " + currYear, "pastThisYear-seminars", currYear, yearsSoFar,"Past talks this year")
 
                             } else {
-                                insertTalk(talkSections, seminarYear.toString(), "year-" + seminarYear, "Previous Seminars in " + seminarYear, seminarYear + "-seminars", seminarYear, yearsSoFar)
+                                insertTalk(talksDiv,talksNavDiv,talkSections, seminarYear.toString(), "year-" + seminarYear, "Previous Seminars in " + seminarYear, seminarYear + "-seminars", seminarYear, yearsSoFar,"Past talks from " + seminarYear)
                             }
                             //reset Mathjax typesetting
                             MathJax.Hub.Queue(["Typeset", MathJax.Hub, seminar]);
