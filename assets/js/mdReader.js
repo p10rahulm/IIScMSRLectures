@@ -35,6 +35,98 @@ function loadTalks(contentUrl, filesListPath) {
     emptyTalks(talksDiv)
 
     const [upcomingDivHeading, upcomingDiv, pastDivHeading, pastDiv] = createSeminarHolders();
+    // const pastYearTalks ={};
+
+
+    var upcomingDatesArray = []
+    var pastDatesArray = []
+    var loc2insert = 0
+    dirName = contentUrl + 'seminars/'
+    filesListPath = "files.list";
+    const filesListHttp = loadFileAsync(dirName + filesListPath);
+    filesListHttp.onreadystatechange = function () {
+        if (this.readyState === 4 && this.status === 200) {
+            const filesListRaw = this.responseText.trim();
+            const filenames = filesListRaw.split('\n');
+            for (let i = 1; i < filenames.length; i++) {
+                let talkFile = filenames[i];
+                let talkhttp = loadFileAsync(dirName + talkFile);
+                //create holders so that it does not go out of place in async
+                talkFileName = talkFile.slice(0, -3);
+
+
+                talkhttp.onreadystatechange = function (talkFileName) {
+                    //We need current value of talkFileName, so creating an outer function that returns an inner function
+                    innerFunc = function (event) {
+                        if (this.readyState === 4 && this.status === 200) {
+                            [seminar, seminarDate, seminarName] = createTalk(this.responseText, talkFile, 0);
+                            const currTime = new Date();
+                            const currYear = currTime.getFullYear();
+                            console.log("currYear",currYear)
+                            if (seminarDate >= currTime) {
+                                talkHolderUpcoming = document.createElement("div");
+                                // talkHolderUpcoming.id = talkFileName + "-upcoming"
+                                // talkHolderUpcoming.id = seminarDate.getTime() + "-upcoming"
+                                talkHolderUpcoming.id = seminarDate.getTime()
+                                talkHolderUpcoming.appendChild(seminar);
+                                if (upcomingDatesArray.length === 0) {
+                                    insert(seminarDate.getTime(), upcomingDatesArray)
+                                    talksDiv.prepend(upcomingDiv);
+                                    talksDiv.prepend(upcomingDivHeading);
+                                    isUpcomingEmpty = false;
+                                    upcomingDiv.appendChild(talkHolderUpcoming);
+                                } else {
+                                    loc2insert = locationOf(seminarDate.getTime(), upcomingDatesArray)
+                                    upcomingDatesArray.splice(loc2insert + 1, 0, seminarDate.getTime());
+                                    upcomingDiv.insertBefore(talkHolderUpcoming, upcomingDiv.children[loc2insert + 1]);
+                                    // insert(seminarDate.getTime(),upcomingDatesArray)
+                                    // upcomingDiv.appendChild(talkHolderUpcoming);
+
+                                }
+
+
+                            } else {
+                                talkHolderPast = document.createElement("div");
+                                // talkHolderPast.id = talkFileName + "-past"
+                                talkHolderPast.id = seminarDate.getTime()
+                                talkHolderPast.appendChild(seminar);
+                                if (pastDatesArray.length === 0) {
+                                    insert(seminarDate.getTime(), pastDatesArray)
+                                    talksDiv.appendChild(pastDivHeading);
+                                    talksDiv.appendChild(pastDiv);
+                                    isPastEmpty = false
+                                    pastDiv.prepend(talkHolderPast);
+
+                                } else {
+                                    loc2insert = locationOf(seminarDate.getTime(), pastDatesArray)
+                                    pastDatesArray.splice(loc2insert + 1, 0, seminarDate.getTime());
+                                    pastDiv.insertBefore(talkHolderPast, pastDiv.children[loc2insert + 1]);
+                                    // insert(seminarDate.getTime(),pastDatesArray);
+                                    // pastDiv.prepend(talkHolderPast);
+
+                                }
+                            }
+                            //reset Mathjax typesetting
+                            MathJax.Hub.Queue(["Typeset", MathJax.Hub, seminar]);
+                            setAbstractsforDiv(seminar.getElementsByClassName('seminar-abstract-short')[0]);
+                        }
+                    }
+                    return innerFunc;
+                }(talkFileName);
+            }
+        }
+
+    }
+
+
+}
+
+
+function loadTalks10012022(contentUrl, filesListPath) {
+    talksDiv = document.getElementById("Talks");
+    emptyTalks(talksDiv)
+
+    const [upcomingDivHeading, upcomingDiv, pastDivHeading, pastDiv] = createSeminarHolders();
 
 
     var upcomingDatesArray = []
