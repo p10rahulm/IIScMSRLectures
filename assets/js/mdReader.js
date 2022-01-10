@@ -22,10 +22,52 @@ function createSeminarHolders() {
     return [upcomingDivHeading, upcomingDiv, pastDivHeading, pastDiv]
 }
 
+
+function createSeminarDivHolders(divTitle, divID) {
+
+    const divHeading = document.createElement("div");
+    divHeading.className = "home-header";
+    divHeading.id = divID + "-heading"
+    divHeading.innerHTML = divTitle
+
+    const divText = document.createElement("div");
+    divText.className = "home-text";
+    divText.id = divID
+
+    return [divHeading, divText]
+
+}
+
 function emptyTalks(talksDiv) {
     talksDiv = document.getElementById("Talks");
     while (talksDiv.hasChildNodes()) {
         talksDiv.removeChild(talksDiv.lastChild);
+    }
+}
+
+function createtalkSection(year, holderID, divTitle, textDivID) {
+    talkSectionMap = new Map();
+    talkSectionMap["year"] = year
+    talkSectionMap["datesArray"] = []
+    talkSectionMap["talkSectionDiv"] = document.createElement("div");
+    talkSectionMap["talkSectionDiv"].id = holderID
+    const [divHeading, divText] = createSeminarDivHolders(divTitle, textDivID);
+    talkSectionMap["talkSectionDiv"].appendChild(divHeading)
+    talkSectionMap["talkSectionDiv"].appendChild(divText)
+    return talkSectionMap
+}
+
+function insertTalk(talkSectionsMap, talkSectionName,talkHolderID,divTitle,textDivID,talkSectionYear){
+    var loc2insert = 0
+    if (!(talkSectionName in talkSectionsMap)) {
+        talkSectionsMap[talkSectionName] = createtalkSection(talkSectionYear, talkHolderID, divTitle, textDivID)
+        talksDiv.prepend(talkSectionsMap[talkSectionName]["talkSectionDiv"])
+        insert(seminarDate.getTime(), talkSectionsMap[talkSectionName]["datesArray"])
+        talkSectionsMap[talkSectionName]["talkSectionDiv"].lastChild.appendChild(talkHolderDiv);
+    } else {
+        loc2insert = locationOf(seminarDate.getTime(), talkSectionsMap[talkSectionName]["datesArray"])
+        talkSectionsMap[talkSectionName]["datesArray"].splice(loc2insert + 1, 0, seminarDate.getTime());
+        talkSectionsMap[talkSectionName]["talkSectionDiv"].lastChild.insertBefore(talkHolderDiv, talkSectionsMap[talkSectionName]["talkSectionDiv"].lastChild.children[loc2insert + 1]);
     }
 }
 
@@ -34,8 +76,64 @@ function loadTalks(contentUrl, filesListPath) {
     talksDiv = document.getElementById("Talks");
     emptyTalks(talksDiv)
 
-    const [upcomingDivHeading, upcomingDiv, pastDivHeading, pastDiv] = createSeminarHolders();
-    // const pastYearTalks ={};
+
+    const currTime = new Date();
+    const currYear = currTime.getFullYear();
+    const talkSections = new Map();
+
+
+    dirName = contentUrl + 'seminars/'
+    filesListPath = "files.list";
+    const filesListHttp = loadFileAsync(dirName + filesListPath);
+    filesListHttp.onreadystatechange = function () {
+        if (this.readyState === 4 && this.status === 200) {
+            const filesListRaw = this.responseText.trim();
+            const filenames = filesListRaw.split('\n');
+            for (let i = 1; i < filenames.length; i++) {
+                let talkFile = filenames[i];
+                let talkhttp = loadFileAsync(dirName + talkFile);
+                //create holders so that it does not go out of place in async
+                talkFileName = talkFile.slice(0, -3);
+
+
+                talkhttp.onreadystatechange = function (talkFileName) {
+                    //We need current value of talkFileName, so creating an outer function that returns an inner function
+                    innerFunc = function (event) {
+                        if (this.readyState === 4 && this.status === 200) {
+                            [seminar, seminarDate, seminarName] = createTalk(this.responseText, talkFile, 0);
+                            seminarYear = seminarDate.getFullYear();
+                            talkHolderDiv = document.createElement("div");
+                            talkHolderDiv.id = seminarDate.getTime()
+                            talkHolderDiv.appendChild(seminar);
+                            if (seminarDate >= currTime) {
+                                insertTalk(talkSections, "upcoming","upcoming","Upcoming Seminars in " + currYear,"upcoming-seminars",currYear)
+
+                            } else if (seminarYear === currYear) {
+                                insertTalk(talkSections, "pastThisYear","pastThisYear","Previous Seminars in " + currYear,"pastThisYear-seminars",currYear)
+
+                            } else {
+                                insertTalk(talkSections, seminarYear.toString(),"year-" + seminarYear,"Previous Seminars in " + seminarYear,seminarYear + "-seminars",seminarYear)
+                            }
+                            //reset Mathjax typesetting
+                            MathJax.Hub.Queue(["Typeset", MathJax.Hub, seminar]);
+                            setAbstractsforDiv(seminar.getElementsByClassName('seminar-abstract-short')[0]);
+                        }
+                    }
+                    return innerFunc;
+                }(talkFileName);
+            }
+        }
+    }
+}
+
+function loadTalks20220111(contentUrl, filesListPath) {
+    talksDiv = document.getElementById("Talks");
+    emptyTalks(talksDiv)
+
+
+    const currTime = new Date();
+    const currYear = currTime.getFullYear();
+    const talkSections = new Map();
 
 
     var upcomingDatesArray = []
@@ -60,51 +158,49 @@ function loadTalks(contentUrl, filesListPath) {
                     innerFunc = function (event) {
                         if (this.readyState === 4 && this.status === 200) {
                             [seminar, seminarDate, seminarName] = createTalk(this.responseText, talkFile, 0);
-                            const currTime = new Date();
-                            const currYear = currTime.getFullYear();
-                            console.log("currYear",currYear)
+                            seminarYear = seminarDate.getFullYear();
+                            talkHolderDiv = document.createElement("div");
+                            talkHolderDiv.id = seminarDate.getTime()
+                            talkHolderDiv.appendChild(seminar);
                             if (seminarDate >= currTime) {
-                                talkHolderUpcoming = document.createElement("div");
-                                // talkHolderUpcoming.id = talkFileName + "-upcoming"
-                                // talkHolderUpcoming.id = seminarDate.getTime() + "-upcoming"
-                                talkHolderUpcoming.id = seminarDate.getTime()
-                                talkHolderUpcoming.appendChild(seminar);
-                                if (upcomingDatesArray.length === 0) {
-                                    insert(seminarDate.getTime(), upcomingDatesArray)
-                                    talksDiv.prepend(upcomingDiv);
-                                    talksDiv.prepend(upcomingDivHeading);
-                                    isUpcomingEmpty = false;
-                                    upcomingDiv.appendChild(talkHolderUpcoming);
-                                } else {
-                                    loc2insert = locationOf(seminarDate.getTime(), upcomingDatesArray)
-                                    upcomingDatesArray.splice(loc2insert + 1, 0, seminarDate.getTime());
-                                    upcomingDiv.insertBefore(talkHolderUpcoming, upcomingDiv.children[loc2insert + 1]);
-                                    // insert(seminarDate.getTime(),upcomingDatesArray)
-                                    // upcomingDiv.appendChild(talkHolderUpcoming);
+                                insertTalk(talkSections, "upcoming","upcoming","Upcoming Seminars in " + currYear,"upcoming-seminars",currYear)
+                                // if (!("upcoming" in talkSections)) {
+                                //     talkSections["upcoming"] = createtalkSection(currYear, "upcoming", "Upcoming Seminars in " + currYear, "upcoming-seminars")
+                                //     talksDiv.prepend(talkSections["upcoming"]["talkSectionDiv"])
+                                //     insert(seminarDate.getTime(), talkSections["upcoming"]["datesArray"])
+                                //     talkSections["upcoming"]["talkSectionDiv"].lastChild.appendChild(talkHolderDiv);
+                                // } else {
+                                //     loc2insert = locationOf(seminarDate.getTime(), talkSections["upcoming"]["datesArray"])
+                                //     talkSections["upcoming"]["datesArray"].splice(loc2insert + 1, 0, seminarDate.getTime());
+                                //     talkSections["upcoming"]["talkSectionDiv"].lastChild.insertBefore(talkHolderDiv, talkSections["upcoming"]["talkSectionDiv"].lastChild.children[loc2insert + 1]);
+                                // }
 
-                                }
-
-
+                            } else if (seminarYear === currYear) {
+                                insertTalk(talkSections, "pastThisYear","pastThisYear","Previous Seminars in " + currYear,"pastThisYear-seminars",currYear)
+                                // if (!("pastThisYear" in talkSections)) {
+                                //     talkSections["pastThisYear"] = createtalkSection(currYear, "pastThisYear", "Previous Seminars in " + currYear, "pastThisYear-seminars")
+                                //     talksDiv.append(talkSections["pastThisYear"]["talkSectionDiv"])
+                                //     insert(seminarDate.getTime(), talkSections["pastThisYear"]["datesArray"])
+                                //     talkSections["pastThisYear"]["talkSectionDiv"].lastChild.appendChild(talkHolderDiv);
+                                // } else {
+                                //     loc2insert = locationOf(seminarDate.getTime(), talkSections["pastThisYear"]["datesArray"])
+                                //     talkSections["pastThisYear"]["datesArray"].splice(loc2insert + 1, 0, seminarDate.getTime());
+                                //     talkSections["pastThisYear"]["talkSectionDiv"].lastChild.insertBefore(talkHolderDiv, talkSections["pastThisYear"]["talkSectionDiv"].lastChild.children[loc2insert + 1]);
+                                // }
                             } else {
-                                talkHolderPast = document.createElement("div");
-                                // talkHolderPast.id = talkFileName + "-past"
-                                talkHolderPast.id = seminarDate.getTime()
-                                talkHolderPast.appendChild(seminar);
-                                if (pastDatesArray.length === 0) {
-                                    insert(seminarDate.getTime(), pastDatesArray)
-                                    talksDiv.appendChild(pastDivHeading);
-                                    talksDiv.appendChild(pastDiv);
-                                    isPastEmpty = false
-                                    pastDiv.prepend(talkHolderPast);
+                                insertTalk(talkSections, seminarYear.toString(),"year-" + seminarYear,"Previous Seminars in " + seminarYear,seminarYear + "-seminars",seminarYear)
+                                // if (!(seminarYear in talkSections)) {
+                                //     talkSections[seminarYear] = createtalkSection(currYear, "year-" + seminarYear, "Previous Seminars in " + seminarYear, seminarYear + "-seminars")
+                                //     talksDiv.append(talkSections[seminarYear]["talkSectionDiv"])
+                                //     insert(seminarDate.getTime(), talkSections[seminarYear]["datesArray"])
+                                //     talkSections[seminarYear]["talkSectionDiv"].lastChild.appendChild(talkHolderDiv);
+                                // } else {
+                                //     loc2insert = locationOf(seminarDate.getTime(), talkSections[seminarYear]["datesArray"])
+                                //     talkSections[seminarYear]["datesArray"].splice(loc2insert + 1, 0, seminarDate.getTime());
+                                //     talkSections[seminarYear]["talkSectionDiv"].lastChild.insertBefore(talkHolderDiv, talkSections[seminarYear]["talkSectionDiv"].lastChild.children[loc2insert + 1]);
+                                // }
 
-                                } else {
-                                    loc2insert = locationOf(seminarDate.getTime(), pastDatesArray)
-                                    pastDatesArray.splice(loc2insert + 1, 0, seminarDate.getTime());
-                                    pastDiv.insertBefore(talkHolderPast, pastDiv.children[loc2insert + 1]);
-                                    // insert(seminarDate.getTime(),pastDatesArray);
-                                    // pastDiv.prepend(talkHolderPast);
 
-                                }
                             }
                             //reset Mathjax typesetting
                             MathJax.Hub.Queue(["Typeset", MathJax.Hub, seminar]);
