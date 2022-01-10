@@ -132,6 +132,7 @@ function removeChildren(someDiv) {
 function loadHome(contentUrl) {
     //Clear Home
     removeChildren(document.getElementById("Talks"));
+    removeChildren(document.getElementById("talks-navigation"));
     // clickNav("navbar-Talks");
     query = getSearchString();
     const talkIndex = query.indexOf("talk=")
