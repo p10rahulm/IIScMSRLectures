@@ -1,6 +1,6 @@
 +++
 title = "Talk by Suprovat Ghoshal on  28th February"
-author = "Suprovat Ghoshal (Indian Institute of Science)"
+author = "Suprovat Ghoshal (University of Michigan)"
 author_link = "https://sites.google.com/view/suprovat"
 author_image = "assets/authorImages/suprovat.jpg"
 date = "2022-02-28T17:00:00+05:30"
