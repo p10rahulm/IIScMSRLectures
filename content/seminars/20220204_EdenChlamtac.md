@@ -19,14 +19,14 @@ notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/researc
                  function which aggregates the distances of all input points from their
                  respective nearest centers. This includes well-studied notions such as
                  k-Medians Clustering and k-Means Clustering.
-
+                 <br><br>
                  More recently, there has been a focus on 'fairness' in clustering, in
                  which we want to take into consideration not only the global cost but
                  also to counteract structural bias against marginalized groups. To
                  this end, one first aggregates the costs incurred within the given
                  groups of interest, before aggregating the costs incurred by these
                  groups.
-
+                 <br><br>
                  We focus on a very general notion of fairness - the input consists of
                  data points, a target number of centers, and a collection of groups
                  represented by different weight functions. The objective we wish to
@@ -37,5 +37,5 @@ notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/researc
                  all values of p and q that smoothly interpolate between optimal and
                  near-optimal approximations for fundamental parameter settings of
                  (p,q), such as (infinity, q), (p, infinity), and (p,p).
-
+                 <br><br>
                  Based on joint work with Yury Makarychev and Ali Vakilian.
