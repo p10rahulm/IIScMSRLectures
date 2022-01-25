@@ -31,7 +31,7 @@ notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/researc
                  data points, a target number of centers, and a collection of groups
                  represented by different weight functions. The objective we wish to
                  minimize is the ell_q norm of the group costs, where each group cost
-                 is computed as the (weighted) ell_p norm of distances of points in the
+                 is computed as the (weighted) $\ell_p$ norm of distances of points in the
                  group to their respective nearest centers. We study this problem from
                  the point of view of approximation algorithms, giving algorithms for
                  all values of p and q that smoothly interpolate between optimal and
