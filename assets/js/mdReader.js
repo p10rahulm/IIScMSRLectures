@@ -45,7 +45,7 @@ function emptyTalks(talksDiv) {
     }
 }
 
-function createNavDiv(navTitle,navID,navDivClass,linkHREF){
+function createNavDiv2(navTitle,navID,navDivClass,linkHREF){
     navDiv = document.createElement("div");
     navDiv.id = navID
     navDiv.className = navDivClass
@@ -54,6 +54,18 @@ function createNavDiv(navTitle,navID,navDivClass,linkHREF){
     linkDiv.innerHTML = navTitle
     navDiv.appendChild(linkDiv)
     return navDiv
+
+}
+
+function createNavDiv(navTitle,navID,navDivClass,linkHREF){
+    linkDiv = document.createElement("a");
+    linkDiv.href = linkHREF
+    navDiv = document.createElement("div");
+    navDiv.id = navID
+    navDiv.className = navDivClass
+    navDiv.innerHTML = navTitle
+    linkDiv.appendChild(navDiv)
+    return linkDiv
 
 }
 
