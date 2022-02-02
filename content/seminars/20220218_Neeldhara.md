@@ -11,7 +11,7 @@ notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/researc
 +++
 
 <b>Abstract:</b> The Kemeny aggregation method defines a consensus ranking based on a collection of rankings.
-It relies on the Kendall-Tau distance between two rankings, which is defined as the number of pairs that are ranked
+It relies on the Kendall-tau distance between two rankings, which is defined as the number of pairs that are ranked
 differently. An optimal ranking in this context is one that minimizes the total distance from each of the rankings
 in the given collection. In this talk, we survey some early lines of work that approached this problem from a
 parameterized perspective, and its connections with the Feedback Arc Set problem. We then discuss some recent
