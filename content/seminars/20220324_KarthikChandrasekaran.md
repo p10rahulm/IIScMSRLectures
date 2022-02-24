@@ -14,7 +14,6 @@ notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/researc
 evaluation oracle) along with a fixed positive integer k (e.g., k = 2, 3, 4, …) and the goal is to partition
 the ground set into k non-empty parts in order to minimize certain natural objectives of interest. Submodular
 k-partitioning generalizes partitioning problems over several interesting structures including graphs and hypergraphs.
-<br><br>
 The case of 2-partitioning corresponds to the classic and well-studied submodular minimization problem which is
 polynomial-time solvable. In this talk, I will present a polynomial time algorithm for minmax symmetric submodular
 k-partitioning for every fixed k.
