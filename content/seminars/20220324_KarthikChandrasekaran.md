@@ -1,5 +1,5 @@
 +++
-title = "Second Talk by Karthekeyan Chandrasekaran on 24th March"
+title = "Partitioning over Submodular Structures – Part II"
 author = "Karthekeyan Chandrasekaran (University of Illinois, Urbana-Champaign)"
 author_link = "http://karthik.ise.illinois.edu/"
 author_image = "assets/authorImages/KarthikChandrasekharan.jpg"
