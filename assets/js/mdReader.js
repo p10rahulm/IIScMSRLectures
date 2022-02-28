@@ -264,10 +264,20 @@ function createTalk(talkContents, talkFile, divLocation) {
             metadiv.innerHTML = "ICS: "
             if (talkKV.date_end) {
                 let dateEndTime = new Date(talkKV.date_end);
+                // Format for date
+                let dateoptionsobj = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                let timeoptionsobj =  {hour: '2-digit', minute:'2-digit'}
+
+                let localesobj = (navigator.languages && navigator.languages.length) ? navigator.languages[0] : navigator.language;
                 if (dateEndTime.getDate() === dateStartTime.getDate()) {
-                    metadiv.innerHTML += dateStartTime.toLocaleString() + '-' + dateEndTime.toLocaleTimeString();
+                    metadiv.innerHTML += dateStartTime.toLocaleString(undefined, dateoptionsobj)+ " "
+                    metadiv.innerHTML += dateStartTime.toLocaleTimeString(undefined, timeoptionsobj) + '-'
+                    metadiv.innerHTML += dateEndTime.toLocaleTimeString(undefined,timeoptionsobj);
                 } else {
-                    metadiv.innerHTML += dateStartTime.toLocaleString() + '-' + dateEndTime.toLocaleString();
+                    metadiv.innerHTML += dateStartTime.toLocaleString(undefined, dateoptionsobj)+ " "
+                    metadiv.innerHTML += dateStartTime.toLocaleTimeString(undefined,timeoptionsobj) + '-'
+                    metadiv.innerHTML += dateEndTime.toLocaleString(undefined, dateoptionsobj)+ " "
+                    metadiv.innerHTML += dateEndTime.toLocaleTimeString(undefined,timeoptionsobj)
                 }
 
             } else {
