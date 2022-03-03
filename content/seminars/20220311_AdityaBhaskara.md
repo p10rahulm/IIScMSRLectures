@@ -11,15 +11,15 @@ notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/researc
 +++
 
 <b>Abstract:</b> We consider the online learning problem, where at every step the algorithm makes a decision x_t and
-incurs a loss given by a loss function \ell_t, which is then revealed to the algorithm. The goal is to achieve low
+incurs a loss given by a loss function $\ell_t$, which is then revealed to the algorithm. The goal is to achieve low
 regret, which is defined as the difference between the cumulative loss of the algorithm, and the total loss of the best
 fixed decision in hindsight. Classical results in the area show that a sublinear regret can be achieved for a wide
 class of loss functions.
 <br><br>
 I will talk about a line of recent work in which we assume that the learner has access to a "hint" about the loss
-function at every step. For instance, in the setting of online linear optimization where \ell_t(x) is simply the
-inner product <c_t, x> for some cost vector c_t, a hint can correspond to a vector that is "mildly correlated"
-with c_t. In such settings, we show that one can significantly improve upon known regret bounds. We show that
+function at every step. For instance, in the setting of online linear optimization where $\ell_t(x)$ is simply the
+inner product $<c_t, x>$ for some cost vector $c_t$, a hint can correspond to a vector that is "mildly correlated"
+with $c_t$. In such settings, we show that one can significantly improve upon known regret bounds. We show that
 our algorithms can deal with hints occasionally being "bad" (uncorrelated or misleading), and also work in
 settings where we can only ask for hints in a small number of time steps.
 <br><br>
