@@ -18,7 +18,7 @@ class of loss functions.
 <br><br>
 I will talk about a line of recent work in which we assume that the learner has access to a "hint" about the loss
 function at every step. For instance, in the setting of online linear optimization where $\ell_t(x)$ is simply the
-inner product $<c_t, x>$ for some cost vector $c_t$, a hint can correspond to a vector that is "mildly correlated"
+inner product $\langlec_t, x\rangle$ for some cost vector $c_t$, a hint can correspond to a vector that is "mildly correlated"
 with $c_t$. In such settings, we show that one can significantly improve upon known regret bounds. We show that
 our algorithms can deal with hints occasionally being "bad" (uncorrelated or misleading), and also work in
 settings where we can only ask for hints in a small number of time steps.
