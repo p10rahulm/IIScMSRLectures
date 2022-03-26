@@ -17,4 +17,6 @@ k-partitioning generalizes partitioning problems over several interesting struct
 The case of 2-partitioning corresponds to the classic and well-studied submodular minimization problem which is
 polynomial-time solvable. In this talk, I will present a polynomial time algorithm for minmax symmetric submodular
 k-partitioning for every fixed k.
+<br><br>
+Link to <a href="assets/talkFiles/KarthikTalkAtIIScPart2.pdf">notes for the talk</a>
 
