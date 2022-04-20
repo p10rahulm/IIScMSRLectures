@@ -1,6 +1,6 @@
 +++
 title = "Talk by Sai Lakshmi Bhavana on 29th April"
-author = "Sai Lakshmi Bhavana (Microsoft Research, Bangalore)"
+author = "Sai Lakshmi Bhavana (Microsoft Research, India)"
 author_link = "https://www.csa.iisc.ac.in/~crysp/webpages/boonggh.html"
 author_image = "assets/authorImages/oslbhavana.png"
 date = "2022-04-29T16:00:00+05:30"
