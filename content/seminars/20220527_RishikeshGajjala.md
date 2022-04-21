@@ -2,7 +2,7 @@
 title = "Perfect matchings and Quantum Physics"
 author = "Rishikesh Gajjala (Indian Institute of Science)"
 author_link = "https://sites.google.com/view/gajjala"
-author_image = "assets/authorImages/Aravindan.jpg"
+author_image = "assets/authorImages/rishikeshGajjala.jpg"
 date = "2022-05-27T16:00:00+05:30"
 date_end = "2022-05-27T16:00:00+05:30"
 location = "Microsoft Teams Meeting"
