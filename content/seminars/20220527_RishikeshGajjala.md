@@ -26,6 +26,5 @@ only for Type 1 graphs. We give upper bounds for the weighted matching index in 
 for such graphs. Using these bounds, for a slightly simplified version, we settle Krenn's conjecture for the class
 of graphs with vertex connectivity at most 2 and the class of graphs with maximum degree at most 4.
 <br><br>
-Krenn has been publicizing his conjecture in various ways since 2017. He has even declared cash rewards towards
-progress and resolution of his conjecture. For our full paper, see
+For our full paper, see
 <a href='https://arxiv.org/abs/2202.05562'>paper link</a>
