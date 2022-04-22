@@ -10,8 +10,7 @@ location_link = "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZGE3NDg5
 notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" target= "_blank">Microsoft Research Lab - India</a> and <a href='https://www.csa.iisc.ac.in/theoretical-computer-science/' target= "_blank">Theoretical Computer Science @ IISc</a>"
 +++
 
-<b>Abstract:</b> Near Optimal Split-state Non-malleable Codes
-Abstract: At ITCS 2010, Dziembowski, Pietrzak, and Wichs introduced Non-malleable Codes (NMCs) which protect against
+<b>Abstract:</b> At ITCS 2010, Dziembowski, Pietrzak, and Wichs introduced Non-malleable Codes (NMCs) which protect against
 tampering of a codeword of a given message into the codeword of a related message. A well-studied model of tampering
 is the 2-split-state model where the codeword consists of two independently tamperable states. As with standard
 error-correcting codes, it is of great importance to build codes with high rates.
