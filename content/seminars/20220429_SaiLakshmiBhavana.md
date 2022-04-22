@@ -17,7 +17,7 @@ is the 2-split-state model where the codeword consists of two independently tamp
 error-correcting codes, it is of great importance to build codes with high rates.
 <br><br>
 Following a long line of work, Aggarwal and Obremski (FOCS 2020) showed the first constant rate non-malleable code in
-the 2−split state model; however, this constant was a minuscule 10^{-6}! In our work[1], we build a Non-malleable Code
+the 2−split state model; however, this constant was a minuscule $10^{-6}$! In our work[1], we build a Non-malleable Code
 with rate 1/3 (nearly matches the rate 1/2 lower bound for this model). This work will be the focus of my talk!
 <br><br>
 [1] Rate One-Third Non-malleable Codes, STOC 2022.
