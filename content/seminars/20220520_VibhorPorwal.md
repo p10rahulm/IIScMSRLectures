@@ -1,7 +1,7 @@
 +++
 title = "Interventional Complexity of Learning Causal Graphs"
 author = "Vibhor Porwal (Adobe Research)"
-author_link = "http://users.eecs.northwestern.edu/~aravindv/"
+author_link = "https://sites.google.com/view/vibhor-porwal"
 author_image = "assets/authorImages/vibhor.jpg"
 date = "2022-05-20T11:00:00+05:30"
 date_end = "2022-05-20T12:00:00+05:30"
