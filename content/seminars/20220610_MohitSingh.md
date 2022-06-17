@@ -5,8 +5,8 @@ author_link = "https://www2.isye.gatech.edu/~msingh94/"
 author_image = "assets/authorImages/mohitSingh.jpg"
 date = "2022-06-10T11:00:00+05:30"
 date_end = "2022-06-10T12:00:00+05:30"
-location = "IISc CSA Department, Room 254"
-location_link = ""
+location = "YouTube Video Link"
+location_link = "https://www.youtube.com/watch?v=iHKQXGmhJqY"
 notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" target= "_blank">Microsoft Research Lab - India</a> and <a href='https://www.csa.iisc.ac.in/theoretical-computer-science/' target= "_blank">Theoretical Computer Science @ IISc</a>"
 +++
 
