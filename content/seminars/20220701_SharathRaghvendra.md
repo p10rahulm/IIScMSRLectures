@@ -5,8 +5,8 @@ author_link = "https://wordpress.cs.vt.edu/algorithms/dr-sharath-raghvendra/"
 author_image = "assets/authorImages/sharathraghvendra.png"
 date = "2022-07-01T11:00:00+05:30"
 date_end = "2022-07-01T12:00:00+05:30"
-location = "Room 254, CSA Department, IISc"
-location_link = "#"
+location = "YouTube Video Link"
+location_link = "https://www.youtube.com/watch?v=pPZ8j5-kw7Y"
 notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" target= "_blank">Microsoft Research Lab - India</a> and <a href='https://www.csa.iisc.ac.in/theoretical-computer-science/' target= "_blank">Theoretical Computer Science @ IISc</a>"
 +++
 
