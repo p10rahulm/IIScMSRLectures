@@ -1,5 +1,5 @@
 +++
-title = " Algorithms for learning and testing high-dimensional statistical and causal relations"
+title = " Algorithms for learning and testing <br>high-dimensional statistical and causal relations"
 author = "Arnab Bhattacharyya (NUS, Singapore)"
 author_link = "https://www.comp.nus.edu.sg/~arnab/"
 author_image = "assets/authorImages/arnab.png"
@@ -28,4 +28,4 @@ open problems and directions throughout the talk. The talk describes joint work 
 Clement Canonne, Davin Choo, Sutanu Gayen, Saravanan Kandasamy, Ashwin Maran, Kuldeep S. Meel, Dimitrios Myrisiotis,
 A. Pavan, Eric Price, Vedant Raval, Ziteng Sun, N.V. Vinodchandran, Yuhao Wang, and Joy Yang.
 <br><br><hr>
-The slides used in the talk are available <a href="assets/talkFiles/ArnabIIScSurveyTalk.pptx", target = "_blank">here</a>
+The slides used in the talk are available <a href="assets/talkFiles/ArnabIIScSurveyTalk.pptx", target = "_blank">here</a>.
