@@ -27,5 +27,5 @@ I will survey the landscape of problems, and then will focus on our work in stru
 open problems and directions throughout the talk. The talk describes joint work with Jayadev Acharya, Sourbh Bhadane,
 Clement Canonne, Davin Choo, Sutanu Gayen, Saravanan Kandasamy, Ashwin Maran, Kuldeep S. Meel, Dimitrios Myrisiotis,
 A. Pavan, Eric Price, Vedant Raval, Ziteng Sun, N.V. Vinodchandran, Yuhao Wang, and Joy Yang.
-<br><hr><br>
+<br><br><hr>
 The slides used in the talk are available <a href="assets/talkFiles/ArnabIIScSurveyTalk.pptx", target = "_blank">here</a>
