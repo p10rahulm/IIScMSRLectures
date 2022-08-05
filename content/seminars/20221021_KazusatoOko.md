@@ -1,8 +1,8 @@
 +++
-title = "Talk by Kazusato Oko on 21st October"
+title = "Spectral sparsification of directed hypergraphs by spanner’s counterpart"
 author = "Kazusato Oko (University of Tokyo)"
 author_link = "https://home.ttic.edu/~mkghosh/index.html"
-author_image = "assets/authorImages/mrinalKantiGhosh.jpg"
+author_image = "assets/authorImages/kazusatoOko.jpg"
 date = "2022-10-21T11:00:00+05:30"
 date_end = "2022-10-21T12:00:00+05:30"
 location = "Microsoft Teams Meeting"
@@ -10,4 +10,17 @@ location_link = "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZGE3NDg5
 notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" target= "_blank">Microsoft Research Lab - India</a> and <a href='https://www.csa.iisc.ac.in/theoretical-computer-science/' target= "_blank">Theoretical Computer Science @ IISc</a>"
 +++
 
-<b>Abstract:</b> Will be updated shortly.
+<b>Abstract:</b>
+Spectral graph sparsification is the problem of finding a sparse graph that approximates the spectrum of a
+given graph, and has contributed to speeding up various graph-based algorithms,  including linear system solvers
+and GNNs. This notion has recently been extended to hypergraphs. For undirected hypergraphs, Kapralov et al.
+(FOCS 2021) gave a spectral sparsifier of nearly linear size regarding the number of vertices.
+<br><br>
+In this talk, we introduce an algorithm for sparsification of directed hypergraphs, which produces a spectral
+sparsifier of nearly quadratic size. This bound is optimal up to log factors. Our analysis is based on a
+chaining-type argument by Kapralov et al. (FOCS 2021), together with a new combinatorial observation. The
+algorithm is simple and can be seen as an extension of spanner-based graph sparsification algorithms. I also mention
+how our framework is effective for various other settings of undirected hypergraph sparsification.
+<br><br>
+This is a joint work with Shinsaku Sakaue and Shin-ichi Tanigawa (University of Tokyo).
+<br><br>
