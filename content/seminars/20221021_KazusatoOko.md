@@ -1,7 +1,7 @@
 +++
 title = "Spectral sparsification of directed hypergraphs by spanner’s counterpart"
 author = "Kazusato Oko (University of Tokyo)"
-author_link = "#"
+author_link = ""
 author_image = "assets/authorImages/kazusatoOko.jpg"
 date = "2022-10-21T11:00:00+05:30"
 date_end = "2022-10-21T12:00:00+05:30"
