@@ -1,7 +1,7 @@
 +++
 title = "Spectral sparsification of directed hypergraphs by spanner’s counterpart"
 author = "Kazusato Oko (University of Tokyo)"
-author_link = "https://home.ttic.edu/~mkghosh/index.html"
+author_link = "#"
 author_image = "assets/authorImages/kazusatoOko.jpg"
 date = "2022-10-21T11:00:00+05:30"
 date_end = "2022-10-21T12:00:00+05:30"
@@ -24,3 +24,9 @@ how our framework is effective for various other settings of undirected hypergra
 <br><br>
 This is a joint work with Shinsaku Sakaue and Shin-ichi Tanigawa (University of Tokyo).
 <br><br>
+Speaker Bio:<br>
+Kazusato Oko is currently a master’s course student in the Department of Mathematical Informatics at the
+University of Tokyo. He has been advised by Taiji Suzuki. He also belongs to the deep learning theory team at the
+RIKEN AIP as a research part-timer. He received his B.E. and Dean’s Award from the University of Tokyo in 2022,
+supervised by Shin-ichi Tanigawa. His research interests include stochastic optimization, generalization of
+neural networks, and analysis of discrete structures.
