@@ -2,7 +2,7 @@
 title = "Talk by Jaikumar Radhakrishnan on 28th October"
 author = "Jaikumar Radhakrishnan (International Centre for Theoretical Sciences)"
 author_link = "https://en.wikipedia.org/wiki/Jaikumar_Radhakrishnan"
-author_image = "assets/authorImages/jaikumarRadhakrishnan.pnt"
+author_image = "assets/authorImages/jaikumarRadhakrishnan.png"
 date = "2022-10-28T11:00:00+05:30"
 date_end = "2022-10-28T12:00:00+05:30"
 location = "IISc CSA Building, Room 254"
