@@ -10,6 +10,5 @@ location_link = "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZGE3NDg5
 notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" target= "_blank">Microsoft Research Lab - India</a> and <a href='https://www.csa.iisc.ac.in/theoretical-computer-science/' target= "_blank">Theoretical Computer Science @ IISc</a>"
 +++
 
-<b>Abstract:</b> Will be updated shortly.
-<br><br>
-<a href="https://www.tcs.tifr.res.in/~jaikumar/mypage.html" target="_blank">Author Homepage</a>
+<a href="https://www.tcs.tifr.res.in/~jaikumar/mypage.html" target="_blank">Link to Author Homepage</a>. Abstract
+will be updated shortly.
