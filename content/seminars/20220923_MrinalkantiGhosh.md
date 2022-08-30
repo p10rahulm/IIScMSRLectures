@@ -1,5 +1,5 @@
 +++
-title = "Approximability of p -> q Matrix Norms: Some NP-hardness Results and An Approximation Algorithm"
+title = "Approximability of p -> q Matrix Norms: <br>Some NP-hardness Results and An Approximation Algorithm"
 author = "Mrinalkanti Ghosh (Toyota Technological Institute at Chicago)"
 author_link = "https://home.ttic.edu/~mkghosh/index.html"
 author_image = "assets/authorImages/mrinalKantiGhosh.jpg"
