@@ -1,6 +1,6 @@
 +++
 title = "Approximability of p -> q Matrix Norms: <br>Some NP-hardness Results and An Approximation Algorithm"
-author = "Mrinalkanti Ghosh (Toyota Technological Institute at Chicago)"
+author = "Mrinalkanti Ghosh (Indian Institute of Science, Bangalore)"
 author_link = "https://home.ttic.edu/~mkghosh/index.html"
 author_image = "assets/authorImages/mrinalKantiGhosh.jpg"
 date = "2022-09-23T11:00:00+05:30"
@@ -11,9 +11,10 @@ notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/researc
 +++
 
 <b>Abstract:</b>
-A real n x m matrix A represents a linear map from $\mathbb{R}^m$ to $\mathbb{R}^n$. If the domain and the range of the map is endowed
-with $\ell_p$-norm and $\ell_q$-norm respectively, then we can measure the "stretch" of the map A. Thus matrix
-p->q-norm of a matrix A is defined to be $\sup_{x\in \mathbb{R}^n, ||x||_p\le 1} || Ax ||_q$. This quantity generalizes
+A real n x m matrix A represents a linear map from $\mathbb{R}^m$ to $\mathbb{R}^n$. If the domain and the range of
+the map is endowed with $\ell_p$-norm and $\ell_q$-norm respectively, then we can measure the "stretch" of the map A.
+Thus matrix p->q-norm of a matrix A is defined to be $\sup_{x\in \mathbb{R}^n, ||x||_p\le 1} || Ax ||_q$.
+This quantity generalizes
 the well known spectral norm which is very useful in many areas of theoretical computer science (and that of
 mathematics). This can also be seen as a special case of optimizing a polynomial over a convex body. When $p<q$,
 we call this problem hypercontractive matrix norm estimation, and the case of $p \ge q$ is called
