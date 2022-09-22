@@ -13,12 +13,13 @@ notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/researc
 <b>Abstract:</b>
 The classical Cheeger's inequality relates the edge conductance $\phi$ of a graph and the second smallest eigenvalue
 $\lambda_2$ of the Laplacian matrix. Recently, Olesker-Taylor and Zanetti discovered a Cheeger-type inequality
-$\psi_2/log|V|\lesssim\lambda2\lesssim\psi$ connecting the vertex expansion $\psi$ of a graph G=(V,E) and the
-maximum reweighted second smallest eigenvalue $\lambda\star 2$ of the Laplacian matrix.
+$\psi^2 / \log |V| \lesssim \lambda_2^* \lesssim \psi$ connecting the vertex expansion $\psi$ of a graph $G=(V,E)$
+and the maximum reweighted second smallest eigenvalue $\lambda_2^*$ of the Laplacian matrix.
 <br><br>
-In this work, we first improve their result to $\psi_2/logd \lesssim \lambda\star 2 \lesssim \psi$ where d is
-the maximum degree in G, which is optimal assuming the small-set expansion conjecture. Also, the improved result holds
-for weighted vertex expansion, answering an open question by Olesker-Taylor and Zanetti. Building on this connection,
+In this work, we first improve their result to  $\psi^2 / \log d \lesssim \lambda_2^* \lesssim \psi$ where $d$ is the
+maximum degree in $G$, which is optimal up to a constant factor. Also, the improved result holds for weighted vertex
+expansion, answering an open question by Olesker-Taylor and Zanetti.
+Building on this connection,
 we then develop a new spectral theory for vertex expansion. We discover that several interesting generalizations of
 Cheeger inequalities relating edge conductances and eigenvalues have a close analog in relating vertex expansions and
 reweighted eigenvalues. These include an analog of Trevisan's result on bipartiteness, an analog of higher order
