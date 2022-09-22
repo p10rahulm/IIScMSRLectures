@@ -24,8 +24,8 @@ Cheeger inequalities relating edge conductances and eigenvalues have a close ana
 reweighted eigenvalues. These include an analog of Trevisan's result on bipartiteness, an analog of higher order
 Cheeger's inequality, and an analog of improved Cheeger's inequality.
 <br><br>
-Finally, inspired by this connection, we present negative evidence to the 0/1-polytope edge expansion conjecture by
-Mihail and Vazirani. We construct 0/1-polytopes whose graphs have very poor vertex expansion. This implies that the
-fastest mixing time to the uniform distribution on the vertices of these 0/1-polytopes is almost linear in the graph
+Finally, inspired by this connection, we present negative evidence to the $0/1$-polytope edge expansion conjecture by
+Mihail and Vazirani. We construct $0/1$-polytopes whose graphs have very poor vertex expansion. This implies that the
+fastest mixing time to the uniform distribution on the vertices of these $0/1$-polytopes is almost linear in the graph
 size. This does not provide a counterexample to the conjecture, but this is in contrast with known positive results
-which proved poly-logarithmic mixing time to the uniform distribution on the vertices of subclasses of 0/1-polytopes.
+which proved poly-logarithmic mixing time to the uniform distribution on the vertices of subclasses of $0/1$-polytopes.
