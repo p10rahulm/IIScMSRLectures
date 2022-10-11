@@ -1,5 +1,5 @@
 +++
-title = "It is entropy that counts: Part II"
+title = "50th talk of BTS: It is entropy that counts: Part II"
 author = "Jaikumar Radhakrishnan (International Centre for Theoretical Sciences)"
 author_link = "https://en.wikipedia.org/wiki/Jaikumar_Radhakrishnan"
 author_image = "assets/authorImages/jaikumarRadhakrishnan.png"
