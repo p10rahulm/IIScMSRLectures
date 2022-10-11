@@ -1,5 +1,5 @@
 +++
-title = "Talk by Jaikumar Radhakrishnan on 28th October"
+title = "It is entropy that counts: Part I"
 author = "Jaikumar Radhakrishnan (International Centre for Theoretical Sciences)"
 author_link = "https://en.wikipedia.org/wiki/Jaikumar_Radhakrishnan"
 author_image = "assets/authorImages/jaikumarRadhakrishnan.png"
@@ -10,5 +10,13 @@ location_link = "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZGE3NDg5
 notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" target= "_blank">Microsoft Research Lab - India</a> and <a href='https://www.csa.iisc.ac.in/theoretical-computer-science/' target= "_blank">Theoretical Computer Science @ IISc</a>"
 +++
 
-<a href="https://www.tcs.tifr.res.in/~jaikumar/mypage.html" target="_blank">Link to Author Homepage</a>. Abstract
-will be updated shortly.
+<b>Abstract:</b>
+We will discuss applications of Shannon entropy to problems in Combinatorics and Computer Science. We will see examples
+of inequalities in combinatorics where an informal justification based on considerations of information can be
+formalized using the notion of entropy. We will discuss the area of randomized two-party communication complexity
+and use entropy to derive lower bounds for the Set Disjointness problem. Finally, we will discuss Von Neumann entropy,
+the quantum-mechanical analog of Shannon entropy, and its application in the study of the quantum communication
+complexity of the Set Disjointness problem. The talk will be accessible to a general scientific audience; we will
+assume no prior familiarity with concepts from computer science, information theory, or quantum mechanics.
+<br><br>
+<a href="https://www.tcs.tifr.res.in/~jaikumar/mypage.html" target="_blank">Link to Author Homepage</a>.
