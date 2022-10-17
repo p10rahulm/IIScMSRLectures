@@ -1,5 +1,5 @@
 +++
-title = "It is entropy that counts: Part I"
+title = "Set membership with two classical and quantum probes"
 author = "Jaikumar Radhakrishnan (International Centre for Theoretical Sciences)"
 author_link = "https://en.wikipedia.org/wiki/Jaikumar_Radhakrishnan"
 author_image = "assets/authorImages/jaikumarRadhakrishnan.png"
@@ -11,12 +11,12 @@ notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/researc
 +++
 
 <b>Abstract:</b>
-We will discuss applications of Shannon entropy to problems in Combinatorics and Computer Science. We will see examples
-of inequalities in combinatorics where an informal justification based on considerations of information can be
-formalized using the notion of entropy. We will discuss the area of randomized two-party communication complexity
-and use entropy to derive lower bounds for the Set Disjointness problem. Finally, we will discuss Von Neumann entropy,
-the quantum-mechanical analog of Shannon entropy, and its application in the study of the quantum communication
-complexity of the Set Disjointness problem. The talk will be accessible to a general scientific audience; we will
-assume no prior familiarity with concepts from computer science, information theory, or quantum mechanics.
+We consider the following data structure problem. Given an n-element subset S of a universe of size m, represent S in
+memory as a bit string x(S) so that membership queries of the form "Is x in S?" can be answered with a small number t
+of bit probes into x(S). Let s(m,n,t) be the minimum number of bits of memory, the length of x(S), needed for this task.
+We will recall the past lower and upper bounds for s(m,n,t). We will then focus on the case t=2, and present some recent
+upper and lower bounds for s(m,n,t) in the classical and quantum settings. The arguments we use will be graph-theoretic,
+based on (i) constructions of dense graphs with large girth, and (ii) a theorem of Nash-Williams on covering the edges
+of a graph with forests.
 <br><br>
-<a href="https://www.tcs.tifr.res.in/~jaikumar/mypage.html" target="_blank">Link to Author Homepage</a>.
+The recent results were obtained in joint work with Shyam Dhamapurkar and Shubham Pawar.

@@ -1,5 +1,5 @@
 +++
-title = "50th talk of BTS: It is entropy that counts: Part II"
+title = "50th talk of BTS: It is entropy that counts"
 author = "Jaikumar Radhakrishnan (International Centre for Theoretical Sciences)"
 author_link = "https://en.wikipedia.org/wiki/Jaikumar_Radhakrishnan"
 author_image = "assets/authorImages/jaikumarRadhakrishnan.png"
@@ -19,4 +19,4 @@ the quantum-mechanical analog of Shannon entropy, and its application in the stu
 complexity of the Set Disjointness problem. The talk will be accessible to a general scientific audience; we will
 assume no prior familiarity with concepts from computer science, information theory, or quantum mechanics.
 <br><br>
-<a href="https://www.tcs.tifr.res.in/~jaikumar/mypage.html" target="_blank">Link to Author Homepage</a>.
+<b>Organizer's Note</b>: This would be the 50th talk in our seminar series that began last year.
