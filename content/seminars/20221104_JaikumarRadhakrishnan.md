@@ -1,5 +1,5 @@
 +++
-title = "It is entropy that counts"
+title = "Talk by Jaikumar Radhakrishnan on 4th November"
 author = "Jaikumar Radhakrishnan (International Centre for Theoretical Sciences)"
 author_link = "https://en.wikipedia.org/wiki/Jaikumar_Radhakrishnan"
 author_image = "assets/authorImages/jaikumarRadhakrishnan.png"
@@ -11,12 +11,6 @@ notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/researc
 +++
 
 <b>Abstract:</b>
-We will discuss applications of Shannon entropy to problems in Combinatorics and Computer Science. We will see examples
-of inequalities in combinatorics where an informal justification based on considerations of information can be
-formalized using the notion of entropy. We will discuss the area of randomized two-party communication complexity
-and use entropy to derive lower bounds for the Set Disjointness problem. Finally, we will discuss Von Neumann entropy,
-the quantum-mechanical analog of Shannon entropy, and its application in the study of the quantum communication
-complexity of the Set Disjointness problem. The talk will be accessible to a general scientific audience; we will
-assume no prior familiarity with concepts from computer science, information theory, or quantum mechanics.
+Will be updated shortly.
 <br><br>
 <b>Organizer's Note</b>: This would be the 50th talk in our seminar series that began last year.
