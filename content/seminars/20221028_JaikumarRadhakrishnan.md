@@ -1,7 +1,7 @@
 +++
 title = "Set membership with two classical and quantum probes"
 author = "Jaikumar Radhakrishnan (International Centre for Theoretical Sciences)"
-author_link = "https://en.wikipedia.org/wiki/Jaikumar_Radhakrishnan"
+author_link = "https://www.tcs.tifr.res.in/~jaikumar/"
 author_image = "assets/authorImages/jaikumarRadhakrishnan.png"
 date = "2022-10-28T11:00:00+05:30"
 date_end = "2022-10-28T12:00:00+05:30"
