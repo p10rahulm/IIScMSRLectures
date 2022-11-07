@@ -21,4 +21,4 @@ of a graph with forests.
 <br><br>
 The recent results were obtained in joint work with Shyam Dhamapurkar and Shubham Pawar.
 <br><br>
-<a href="assets/talkFiles/JaikumarRadhakrishnanRevisedSlides28Oct2022IIScMSR.pdf" target="_blank">Link to Lecture Notes</a>
+<a href="assets/talkFiles/JaikumarRadhakrishnanRevisedSlides28Oct2022IIScMSR.pdf" target="_blank">Link to Seminar Notes</a>
