@@ -1,6 +1,6 @@
 +++
 title = "All-Pairs Minimum Cuts in Nearly Quadratic Time"
-author = "Debmalya Panigragy (Duke)"
+author = "Debmalya Panigrahy (Duke)"
 author_link = "https://www.debmalyapanigrahi.org/"
 author_image = "assets/authorImages/debmalyaPanigrahy.png"
 date = "2022-12-22T10:30:00+05:30"
