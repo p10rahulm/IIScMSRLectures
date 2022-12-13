@@ -1,5 +1,5 @@
 +++
-title = "Talk by Arnab Bhattacharyya"
+title = "Model Counting meets F0 Estimation"
 author = "Arnab Bhattacharyya (NUS, Singapore)"
 author_link = "https://www.comp.nus.edu.sg/~arnab/"
 author_image = "assets/authorImages/arnab.png"
