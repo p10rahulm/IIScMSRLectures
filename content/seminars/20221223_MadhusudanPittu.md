@@ -13,7 +13,7 @@ notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/researc
 <b>Abstract:</b>
 Determinant maximization provides an elegant generalization of problems in many areas, including convex geometry,
 statistics, machine learning, fair allocation of goods, and network design.  In an instance of the determinant
-maximization problem, we are given a collection of vectors $v_1,\ldots, v_n \in \R^d$, and the goal is to pick a
+maximization problem, we are given a collection of vectors $v_1,\ldots, v_n \in \mathbb{R}^d$, and the goal is to pick a
 subset $S\subseteq [n]$ of given vectors to maximize the determinant of the matrix $\sum_{i \in S} v_iv_i^\top$, where
 the picked set of vectors $S$ must satisfy some combinatorial constraint such as cardinality constraint ($|S| \leq k$)
 or matroid constraint ($S$ is a basis of a matroid defined on $[n]$).
