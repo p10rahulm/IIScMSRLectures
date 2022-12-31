@@ -2,7 +2,7 @@
 title = "Hardness of Approximating Discrete Steiner Tree in L_p metrics"
 author = "Karthik C. S. (Rutgers University)"
 author_link = "http://karthikcs.org/"
-author_image = "assets/authorImages/KarthikCS.jpg"
+author_image = "assets/authorImages/KarthikCS.png"
 date = "2023-01-10T11:00:00+05:30"
 date_end = "2023-01-10T12:00:00+05:30"
 location = "Room No 254, CSA Building, IISc Bangalore"
