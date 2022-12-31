@@ -1,8 +1,8 @@
 +++
-title = "Quantum Worst-case to Average-case reductions for all linear problems"
-author = "Sathyawageeswar Subramanian (University of Warwick)"
-author_link = "https://scholar.google.co.uk/citations?user=s02f_hIAAAAJ&hl=en"
-author_image = "assets/authorImages/sathyaSubramanian.png"
+title = "Probabilistic Hash Functions and Hash Tables: A New Paradigm for Efficient AI Training and Inference"
+author = "Anshumali Shrivastava (Rice University)"
+author_link = "https://www.cs.rice.edu/~as143/"
+author_image = "assets/authorImages/AnshumaliShrivastava.png"
 date = "2023-01-05T16:00:00+05:30"
 date_end = "2023-01-05T17:00:00+05:30"
 location = "Room No 254, CSA Building, IISc Bangalore"
@@ -11,21 +11,21 @@ notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/researc
 +++
 
 <b>Abstract:</b>
-Given an algorithm that has a small non-zero probability of answering correctly on an average input, can we use it to
-design another algorithm that has non-zero probability of answering correctly even on worst-case inputs? In this talk,
-I will focus on quantum algorithms for linear problems, and describe an explicit and efficient transformation that
-turns algorithms which are only correct on a small (even sub-constant) fraction of their inputs into ones that are
-correct on all inputs. This stands in contrast to the classical setting, where such results are only known for a small
-number of specific problems or restricted computational models. Along the way I will also present a tight Omega(n^2)
-lower bound on the average-case quantum query complexity of the Matrix-vector Multiplication problem.
-<br><br>
-The techniques used in this work build on the recently introduced additive combinatorics framework for classical
-worst-case to average-case reductions (STOC 2022). The key quantum ingredients are subroutines based on quantum
-singular value transformations for approximate verification of the output of noisy quantum algorithms, and a
-learner for the heavy Fourier characters of indicator functions with imperfect quantum implementations. I will
-discuss how these tools can be combined to prove a quantum local correction lemma based on a probabilistic
-generalisation of Bogolyubov's lemma in additive combinatorics, leading to our worst-case to average-case
-transformation for linear problems.
-<br><br>
-This talk is based on joint work with Vahid Asadi, Alexander Golovnev, Tom Gur,
-and Igor Shinkar (https://arxiv.org/abs/2212.03348).
+Neural Scaling Law informally states that an increase in model size and data automatically improves AI. However, we
+have reached a point where the growth has reached a tipping end where the cost and energy associated with AI are
+becoming prohibitive.
+
+This talk will demonstrate the algorithmic progress that can exponentially reduce the compute and memory cost of
+training and inference with neural networks. We will show how data structures can fundamentally break the barriers
+of some of the classical adaptive sampling subroutines. In particular, randomized hash tables can be used to design
+an efficient "associative memory" that reduces the number of multiplications associated with the training of the
+neural networks. Implementation of this algorithm challenges the common knowledge prevailing in the community that
+specialized processors like GPUs are significantly superior to CPUs for training large neural networks. The resulting
+algorithm is orders of magnitude cheaper and energy-efficient. Our careful implementations can train billions of
+parameter recommendations and NLP models on commodity desktop CPUs significantly faster than top-of-the-line
+TensorFlow alternatives on the most potent A100 GPU clusters, with the same or better accuracies. The same
+idea can also result in more than 50x faster and cheaper inference.
+
+In the end, I will highlight a cache-friendly compression scheme that can compress embedding models by 10000x
+(100GB Embedding Table to 10MB) and still achieves the MLPerf benchmark AUC of 0.8025 on the Terabyte click-through
+Criteo data, getting 3x inference speedup for free.
