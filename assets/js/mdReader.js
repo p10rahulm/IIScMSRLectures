@@ -140,7 +140,10 @@ function loadTalks(contentUrl, filesListPath) {
                             talkHolderDiv = document.createElement("div");
                             talkHolderDiv.id = seminarDate.getTime()
                             talkHolderDiv.appendChild(seminar);
-                            if (seminarDate >= currTime) {
+                            if (seminarDate >= currTime && seminarYear>currYear) {
+                                insertTalk(talksDiv, talksNavDiv, talkSections, seminarYear.toString(), "upcoming"+"year-" + seminarYear, "Upcoming Seminars in " + seminarYear, seminarYear + "-upcoming-seminars", seminarYear + 1, yearsSoFar, "Upcoming talks in " + seminarYear)
+
+                            } else if (seminarDate >= currTime && seminarYear == currYear) {
                                 insertTalk(talksDiv, talksNavDiv, talkSections, "upcoming", "upcoming", "Upcoming Seminars in " + currYear, "upcoming-seminars", currYear + 1, yearsSoFar, "Upcoming talks")
 
                             } else if (seminarYear === currYear) {
