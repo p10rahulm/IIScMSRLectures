@@ -14,14 +14,14 @@ notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-
 We study the polynomial equivalence problem for orbits of read-once arithmetic formulas (ROFs). Read-once formulas
 have received considerable attention in both algebraic and Boolean complexity and have served as a testbed for
 developing effective tools and techniques for analyzing circuits. Two n-variate polynomials $f, g$  in
-$F[x_1, ..., x_n]$ are equivalent, denoted as $f ~ g$, if there is an A in $GL(n, F)$ such that
+$F[x_1, ..., x_n]$ are equivalent, denoted as $f \sim g$, if there is an A in $GL(n, F)$ such that
 $f = g(A(x_1, ..., x_n)^T)$. The orbit of $f$ is the set of all polynomials equivalent to $f$.
 We investigate the complexity of the following two natural problems on ROFs:
 <br><br>
 1. Equivalence test for ROFs: Given black-box access to $f$, check if it is in the orbit of an ROF. If yes, output an
 ROF C and an A in $GL(n, F)$ such that $f = C(A(x_1, ..., x_n)^T)$.<br>
 2. Polynomial equivalence for orbits of ROFs: Given black-box access to $f$ and $g$ in the orbits of two unknown ROFs,
-check if $f ~ g$. If yes, output an A in $GL(n, F)$ such that $f = g(A(x_1, ..., x_n)^T)$.
+check if $f \sim g$. If yes, output an A in $GL(n, F)$ such that $f = g(A(x_1, ..., x_n)^T)$.
 <br><br>
 These problems are significant generalisations of two well-studied problems in algebraic complexity, namely
 reconstruction of ROFs and quadratic form equivalence. In this work, we give the first randomized polynomial-time
