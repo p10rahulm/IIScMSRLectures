@@ -113,7 +113,7 @@ a:hover {
 
 .header #navbar .navbar_button {
     padding: 10px min(2vw, 10px);
-    font-family: "Alegreya SC", "Felix Titling", "Perpetua Titling MT", Georgia, Times, "Times New Roman", Serif;
+    font-family: "Alegreya SC", Georgia, Times, "Times New Roman", Serif;
     font-size: max(1em, 12px);
     color: #cc0000;
 }
@@ -123,7 +123,7 @@ a:hover {
 }
 
 .header #navbar .navbar_button a {
-    font-family: "Alegreya SC", "Felix Titling", "Perpetua Titling MT", Georgia, Times, "Times New Roman", Serif;
+    font-family: "Alegreya SC", Georgia, Times, "Times New Roman", Serif;
     font-size: max(1em, 12px);
     color: #cc0000;
 }
@@ -527,12 +527,18 @@ a:hover {
 }
 .footer{
     position: fixed;
+    min-height: 25px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    background-color: white;
     /*position: sticky;*/
     /*position: -webkit-sticky;*/
 }
 
 .footer #copyright {
-    font-family: "Alegreya SC", "Felix Titling", "Perpetua Titling MT", Georgia, Times, "Times New Roman", Serif;
+    font-family: "Alegreya SC", Georgia, Times, "Times New Roman", Serif;
     color: #005999;
     text-align: center;
 }
