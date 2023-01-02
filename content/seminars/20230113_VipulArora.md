@@ -12,7 +12,7 @@ notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-
 
 <b>Abstract:</b>
 We study the problem of testing whether a function $f: \mathbb{R}^n \to \mathbb{R}$ is a polynomial of degree at most $d$ in
-the \emph{distribution-free} testing model. Here, the distance between functions is measured with respect to an
+the distribution-free testing model. Here, the distance between functions is measured with respect to an
 unknown distribution $\mathcal{D}$ over $\mathbb{R}^n$ from which we can draw samples. In contrast to previous work,
 we do not assume that $\mathcal{D}$ has finite support.
 <br><br>
