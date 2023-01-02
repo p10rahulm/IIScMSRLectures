@@ -18,7 +18,7 @@ we do not assume that $\mathcal{D}$ has finite support.
 <br><br>
 We design a tester that given query access to $f$, and sample access to $\mathcal{D}$, makes
 $\texttt{poly}(d/\varepsilon)$ many queries to $f$, accepts with probability $1$ if $f$ is a polynomial of degree $d$,
-and rejects with probability at least $\mathfrac{2}{3}$ if every degree-$d$ polynomial $P$ disagrees with $f$ on a
+and rejects with probability at least $\frac{2}{3}$ if every degree-$d$ polynomial $P$ disagrees with $f$ on a
 set of mass at least $\varepsilon$ with respect to $\mathcal{D}$.
 <br><br>
 Our result also holds under mild assumptions when we receive only a polynomial number of bits of precision for each
