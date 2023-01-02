@@ -5,8 +5,8 @@ author_link = "https://www.comp.nus.edu.sg/~arnab/"
 author_image = "assets/authorImages/arnab.png"
 date = "2022-12-22T11:40:00+05:30"
 date_end = "2022-12-22T12:40:00+05:30"
-location = "Room No 254, CSA Building, IISc Bangalore"
-location_link = "https://www.youtube.com/watch?v=qPQMM0VDv7I"
+location = "YouTube Video Link"
+location_link = "https://www.youtube.com/watch?v=GJoGW3Zvies"
 notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" target= "_blank">Microsoft Research Lab - India</a> and <a href='https://www.csa.iisc.ac.in/theoretical-computer-science/' target= "_blank">Theoretical Computer Science @ IISc</a>"
 +++
 
