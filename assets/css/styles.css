@@ -525,6 +525,10 @@ a:hover {
     padding: 10px 0;
     margin-top: 25px;
 }
+.footer{
+    position: sticky;
+    position: -webkit-sticky;
+}
 
 .footer #copyright {
     font-family: "Alegreya SC", "Felix Titling", "Perpetua Titling MT", Georgia, Times, "Times New Roman", Serif;
