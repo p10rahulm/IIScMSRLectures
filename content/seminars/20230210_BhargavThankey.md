@@ -1,7 +1,7 @@
 +++
 title = "Equivalence Test for Read-Once Arithmetic Formulas"
 author = "Bhargav Thankey (Indian Institute of Science, Bangalore)"
-author_link = "https://dblp.org/pid/259/4859.html"
+author_link = "https://sites.google.com/view/bhargav-thankey"
 author_image = "assets/authorImages/BhargavThankey.png"
 date = "2023-02-10T11:00:00+05:30"
 date_end = "2023-02-10T12:00:00+05:30"
@@ -11,16 +11,16 @@ notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-
 +++
 
 <b>Abstract:</b>
-We study the polynomial equivalence problem for orbits of read-once arithmetic formulas (ROFs). Read-once formulas have
-received considerable attention in both algebraic and Boolean complexity and have served as a testbed for developing
-effective tools and techniques for analyzing circuits. Two n-variate polynomials f, g  in F[x1, ..., xn] are
-equivalent, denoted as f ~ g, if there is an A in GL(n, F) such that f = g(A(x1, ..., xn)T). The orbit of f is the
-set of all polynomials equivalent to f. We investigate the complexity of the following two natural problems on ROFs:
+We study the polynomial equivalence problem for orbits of read-once arithmetic formulas (ROFs). Read-once formulas
+have received considerable attention in both algebraic and Boolean complexity and have served as a testbed for
+developing effective tools and techniques for analyzing circuits. Two n-variate polynomials f, g  in F[x_1, ..., x_n]
+are equivalent, denoted as f ~ g, if there is an A in GL(n, F) such that f = g(A(x_1, ..., x_n)^T). The orbit of f is
+the set of all polynomials equivalent to f. We investigate the complexity of the following two natural problems on ROFs:
 <br><br>
-1. Equivalence test for ROFs: Given black-box access to f, check if it is in the orbit of an ROF. If yes, output an ROF
-C and an A in GL(n, F) such that f = C(A(x1, ..., xn)T).
+1. Equivalence test for ROFs: Given black-box access to f, check if it is in the orbit of an ROF. If yes, output an
+ROF C and an A in GL(n, F) such that f = C(A(x_1, ..., x_n)^T).<br>
 2. Polynomial equivalence for orbits of ROFs: Given black-box access to f and g in the orbits of two unknown ROFs,
-check if f ~ g. If yes, output an A in GL(n, F) such that f = g(A(x1, ..., xn)T).
+check if f ~ g. If yes, output an A in GL(n, F) such that f = g(A(x_1, ..., x_n)^T).
 <br><br>
 These problems are significant generalisations of two well-studied problems in algebraic complexity, namely
 reconstruction of ROFs and quadratic form equivalence. In this work, we give the first randomized polynomial-time
@@ -30,8 +30,8 @@ and fan-in (in the high number of variables setting). The algorithm for the seco
 equivalence test, works for mildly restricted ROFs, namely additive-constant-free ROFs.
 <br><br>
 The equivalence test is based on a novel interplay between the factors and the essential variables of the Hessian
-determinant of an ROF, the essential variables of the ROF, and certain special structures in the ROF that we
-call "skewed paths". To our knowledge, the Hessian of a general ROF (or even a depth-4 ROF) has not been analyzed
-before. Analyzing the Hessian and combining the knowledge gained from it with the skewed paths to recursively
-discover formulas in the orbits of sub-ROFs of lower depth (without incurring an exponential blow-up due to
-unbounded depth) constitute the main technical contributions of this work.
+determinant of an ROF, the essential variables of the ROF, and certain special structures in the ROF that we call
+"skewed paths". To our knowledge, the Hessian of a general ROF (or even a depth-4 ROF) has not been analysed before.
+Analysing the Hessian and combining the knowledge gained from it with the skewed paths to recursively discover
+formulas in the orbits of sub-ROFs of lower depth (without incurring an exponential blow-up due to unbounded depth)
+constitute the main technical contributions of this work.
