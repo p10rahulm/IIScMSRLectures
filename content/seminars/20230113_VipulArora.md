@@ -16,10 +16,10 @@ the \emph{distribution-free} testing model. Here, the distance between functions
 unknown distribution $\mathcal{D}$ over $\mathbb{R}^n$ from which we can draw samples. In contrast to previous work,
 we do not assume that $\mathcal{D}$ has finite support.
 <br><br>
-We design a tester that given query access to $f$, and sample access to $\mathcal{D}$, makes $\mathtt{poly}(d/\varepsilon)$ many
-queries to $f$, accepts with probability $1$ if $f$ is a polynomial of degree $d$, and rejects with probability at
-least $\mathfrac{2}{3}$ if every degree-$d$ polynomial $P$ disagrees with $f$ on a set of mass at least $\varepsilon$ with
-respect to $\mathcal{D}$.
+We design a tester that given query access to $f$, and sample access to $\mathcal{D}$, makes
+$\texttt{poly}(d/\varepsilon)$ many queries to $f$, accepts with probability $1$ if $f$ is a polynomial of degree $d$,
+and rejects with probability at least $\mathfrac{2}{3}$ if every degree-$d$ polynomial $P$ disagrees with $f$ on a
+set of mass at least $\varepsilon$ with respect to $\mathcal{D}$.
 <br><br>
 Our result also holds under mild assumptions when we receive only a polynomial number of bits of precision for each
 query to $f$, or when $f$ can only be queried on rational points representable using a logarithmic number of bits.
