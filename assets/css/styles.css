@@ -526,8 +526,9 @@ a:hover {
     margin-top: 25px;
 }
 .footer{
-    position: sticky;
-    position: -webkit-sticky;
+    position: fixed;
+    /*position: sticky;*/
+    /*position: -webkit-sticky;*/
 }
 
 .footer #copyright {
