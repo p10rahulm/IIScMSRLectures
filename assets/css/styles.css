@@ -134,6 +134,7 @@ a:hover {
 
 #subscribe-holder {
     position: fixed;
+    z-index: 10;
     bottom: 5%;
     right: 0%;
     /*background-color: #3356a7;*/
@@ -531,6 +532,7 @@ a:hover {
     bottom: 0px;
     margin-bottom: 0px;
     background-color: white;
+    font-size: 1.6vh;
     /*position: sticky;*/
     /*position: -webkit-sticky;*/
 }
