@@ -266,6 +266,17 @@ a:hover {
     justify-content: space-around;
 }
 
+.mainer #sponsor-thanks{
+    margin-top: 3px;
+    padding-bottom: 24px;
+    font-size: 15px;
+    text-align: center;
+    /*font-family: 'Lora';*/
+    font-family: "Lora", Georgia, Times, "Times New Roman", Serif;
+    /*color: rgba(120, 5, 5, 0.85);*/
+    /*color: rgb(0 89 153)*/
+    color: rgb(0 33 56)
+}
 
 .buttonNav {
     align-items: center;
