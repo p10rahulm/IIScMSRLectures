@@ -131,12 +131,21 @@ function removeChildren(someDiv) {
 
 function loadHome(contentUrl) {
     //Clear Home
+    // sponsorMessage = document.getElementById("sponsor-thanks")
+
     removeChildren(document.getElementById("Talks"));
     removeChildren(document.getElementById("talks-navigation"));
     // clickNav("navbar-Talks");
     query = getSearchString();
     const talkIndex = query.indexOf("talk=")
     if (talkIndex === -1) {
+        const sponsorMessage = document.createElement("div")
+        sponsorMessage.classList.add("main");
+        sponsorMessage.id = "sponsor-thanks";
+        sponsorMessage.innerHTML = "<b>Special Thanks:</b> We are grateful to the " +
+            "<a href=\'https://www.accel.com/people/shekhar-kirani\' target=\'_blank\'>Kirani</a> " +
+            "family for generously supporting this seminar series."
+        document.getElementById("talks-navigation").appendChild(sponsorMessage)
         loadTalks(contentUrl, "files.list");
     } else {
         let talkName = query.substr(talkIndex + 5);
