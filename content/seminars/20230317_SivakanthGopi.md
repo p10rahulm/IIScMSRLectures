@@ -1,7 +1,7 @@
 +++
 title = "Talk by Sivakanth Gopi on  17th March"
 author = "Sivakanth Gopi (MSR, Redmond)"
-author_link = "https://www.linkedin.com/in/sivakanthgopi"
+author_link = "https://www.microsoft.com/en-us/research/people/sigopi/"
 author_image = "assets/authorImages/sivakanthGopi.png"
 date = "2023-03-17T11:00:00+05:30"
 date_end = "2023-03-17T12:00:00+05:30"
