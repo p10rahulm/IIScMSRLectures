@@ -17,18 +17,18 @@ extremely powerful, since its discovery, leading to optimal size lower bounds fo
 AC0 formulae [Rossman 2015] against the parity function
 <br><br>
 More recently, the search for optimal correlation bounds against parity led to the notion of criticality 
-[Rossman 2019]. The criticality of a Boolean function f : {0, 1}^n → {0, 1} is the minimum λ ≥ 1 such that for all 
-positive integers t, we have
+[Rossman 2019]. The criticality of a Boolean function $f : \{0, 1\}^n → \{0, 1\}$ is the minimum $\lambda ≥ 1$ such 
+that for all positive integers $t$, we have
 <br><br>
-Pr_{ρ∼Rp} [ DT_depth (f|_ρ) ≥ t ] ≤ (pλ)^t
+$Pr_{ρ \sim Rp} [ DT_depth (f\mid_ρ) ≥ t ] ≤ (p\lambda)^t$
 <br><br>
-Hastad (2014) proved that size S and depth (d+1) AC0-circuits have criticality at most O((log S)^d) leading to 
-optimal correlation bounds of AC0-circuits against parity. Rossman (2019) subsequently proved that size S and depth 
-(d+1) AC0-formulae, which are regular (ie., all gates of the same depth have equal fan-in) have criticality at most 
-O(((log S)/d)^d).
+Hastad (2014) proved that size S and depth (d+1) AC0-circuits have criticality at most $\mathcal{O}((log S)^d)$ 
+leading to optimal correlation bounds of AC0-circuits against parity. Rossman (2019) subsequently proved that size S 
+and depth (d+1) AC0-formulae, which are regular (ie., all gates of the same depth have equal fan-in) have criticality 
+at most $\mathcal{O}(((log S)/d)^d)$.
 <br><br>
 In this work, we strengthen and unify all the above results by proving that any (not necessarily regular) AC0-formula 
-of size S and depth (d+1) has criticality at most O(((log S)/d)^d).
+of size S and depth (d+1) has criticality at most $\mathcal{O}(((log S)/d)^d)$.
 This criticality bound implies tight correlation bounds against parity, tight Fourier concentration results and 
 improved #SAT algorithm for AC0-formulae.
 <br><br>
