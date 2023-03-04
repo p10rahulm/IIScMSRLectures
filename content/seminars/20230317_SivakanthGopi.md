@@ -11,12 +11,12 @@ notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-
 +++
 
 <b>Abstract:</b>
-We study differentially private optimization of (non-smooth) convex functions F(x)=E_i[f_i(x)]. The classic exponential 
-mechanism minimizes F(x) by sampling from pi(x) ~ exp(-kF(x)), but achieves a suboptimal privacy vs utility tradeoff. 
-We show that modifying the exponential mechanism by adding an ell_2^2 regularizer to F(x) and sampling from 
-pi(x) ~ exp(-k(F(x)+\mu ||x||_2^2/2)) recovers both optimal empirical risk and population loss under (eps,delta)-DP. 
-We also give an algorithm to efficiently sample from the exponential mechanism using optimal number of oracle queries 
-to f_i(x).
+We study differentially private optimization of (non-smooth) convex functions $F(x)=E_i[f_i(x)]$. The classic 
+exponential mechanism minimizes $F(x)$ by sampling from $pi(x) \sim exp(-kF(x))$, but achieves a suboptimal privacy vs 
+utility tradeoff. We show that modifying the exponential mechanism by adding an $\ell_2^2$ regularizer to $F(x)$ and 
+sampling from $pi(x) \sim exp(-k(F(x)+\mu ||x||_2^2/2))$ recovers both optimal empirical risk and population loss under 
+$(\epsilon,\delta)$-DP. We also give an algorithm to efficiently sample from the exponential mechanism using optimal 
+number of oracle queries to $f_i(x)$.
 <br><br>
 We prove that the regularized exponential mechanism satisfies Gaussian Differential Privacy; our privacy bound is 
 optimal (with tight constants), as it includes the analysis of Gaussian mechanism as a special case. The privacy 
