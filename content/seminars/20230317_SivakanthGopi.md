@@ -22,4 +22,5 @@ We prove that the regularized exponential mechanism satisfies Gaussian Different
 optimal (with tight constants), as it includes the analysis of Gaussian mechanism as a special case. The privacy 
 proof uses isoperimetric inequality for strongly log-concave measures.
 <br><br>
-Joint work with Yin Tat Lee and Daogao Liu. The link to the paper is at https://arxiv.org/pdf/2203.00263.pdf.
+Joint work with Yin Tat Lee and Daogao Liu. The link to the paper is at 
+<a href = 'https://arxiv.org/pdf/2203.00263.pdf' target='_blank'>https://arxiv.org/pdf/2203.00263.pdf</a>.
