@@ -31,8 +31,8 @@ the disparity in the first place, a challenge we call the Fundamental
 Problem of Causal Fairness Analysis (FPCFA). In order to solve
 the FPCFA, we study the problem of decomposing variations
 and empirical measures of fairness that attribute such variations
-to structural mechanisms and dierent units of the population.
-Our eort culminates in the Fairness Map, the first systematic
+to structural mechanisms and different units of the population.
+Our effort culminates in the Fairness Map, the first systematic
 attempt to organize and explain the relationship between various
 criteria found in the literature. Finally, we study which causal
 assumptions are minimally needed for performing causal fairness
