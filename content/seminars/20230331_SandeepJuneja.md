@@ -27,3 +27,5 @@ distributions under minimal restrictions. We further discuss how the proposed me
 confidence intervals for distribution means. We discuss further enhancements in the presence of offline data that 
 needs to be combined with online data. We further propose some new algorithms in the best arm identification setting 
 that along with minimising sample complexity, are also computationally efficient. 
+
+<b>Organizer's Note:</b> There are two sessions of 1 hour each, with a break of 1 hour in between for the lunch session.
