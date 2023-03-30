@@ -28,4 +28,5 @@ confidence intervals for distribution means. We discuss further enhancements in 
 needs to be combined with online data. We further propose some new algorithms in the best arm identification setting 
 that along with minimising sample complexity, are also computationally efficient. 
 <br><br>
-<b>Organizer's Note:</b> There are two sessions of 1 hour each, with a break of 1 hour in between for the lunch session.
+<b>Organizer's Note:</b> A second session of the same talk will be held on 6th February at 04.00pm, for those who
+are interested.
