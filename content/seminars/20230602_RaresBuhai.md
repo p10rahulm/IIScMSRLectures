@@ -2,7 +2,7 @@
 title = "Algorithms Approaching the Threshold for Semi-random Planted Clique"
 author = "Rares-Darius Buhai (ETH Zurich)"
 author_link = "https://raresbuhai.github.io/"
-author_image = "assets/authorImages/raresBuhai.png"
+author_image = "assets/authorImages/raresBuhai.jpeg"
 date = "2023-06-02T16:00:00+05:30"
 date_end = "2023-06-02T17:00:00+05:30"
 location = "Online Talk on MS Teams"
