@@ -5,8 +5,8 @@ author_link = "https://www.tcs.tifr.res.in/~sandeepj/"
 author_image = "assets/authorImages/sandeepJuneja.png"
 date = "2023-04-05T16:00:00+05:30"
 date_end = "2023-04-05T18:30:00+05:30"
-location = "CSA Seminar Hall, Room 254, IISc Bangalore"
-location_link = "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZGE3NDg5NzktMWQ0Zi00MzFmLTg5OTgtMTMyYWM4MWQyYjI2%40thread.v2/0?context=%7b%22Tid%22%3a%226f15cd97-f6a7-41e3-b2c5-ad4193976476%22%2c%22Oid%22%3a%227c84465e-c38b-4d7a-9a9d-ff0dfa3638b3%22%7d"
+location = "Youtube Talk Link"
+location_link = "https://www.youtube.com/watch?v=5ztag6JuIdI"
 notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-kirani" target= "_blank">Shekhar Kirani</a> family for generously supporting this seminar series."
 +++
 
@@ -28,5 +28,6 @@ confidence intervals for distribution means. We discuss further enhancements in 
 needs to be combined with online data. We further propose some new algorithms in the best arm identification setting 
 that along with minimising sample complexity, are also computationally efficient. 
 <br><br>
-<b>Organizer's Note:</b> The talk will be in two halves. We will have the first session from 16.00 to 17.00 followed
-by a short break for snacks, post which we have the second session.
+<b>Organizer's Note:</b> The talk is in two halves. The YouTube link above is for the first half of the talk.
+You may view the second half of the talk at the 
+<a href="https://www.youtube.com/watch?v=MOR_5hjKrAo" target="_blank">following link</a>.
