@@ -18,11 +18,11 @@ that we introduce. Roughly it says that the gradient of the function should not 
 in any component as we increase the input vector. We prove that several families of norms, including all monotone 
 symmetric norms, admit a gradient-stable approximation, giving us the first online and bandit algorithms for these 
 norm families.
-
+<br><br>
 In particular, our notion of gradient-stability gives O(log^2(dimension))-competitive algorithms for the symmetric 
 norm generalizations of Online Generalized Load Balancing and Bandits with Knapsacks. Our techniques extend to 
 applications beyond symmetric norms as well, e.g., to Online Vector Scheduling and to Online Generalized Assignment 
 with Convex Costs. Some key properties underlying our applications that are implied by gradient-stable approximations 
 are a “smooth game inequality” and an approximate converse to Jensen’s inequality.
-
+<br><br>
 Joint work with Marco Molinaro and Sahil Singla
