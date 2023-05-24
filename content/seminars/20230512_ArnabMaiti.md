@@ -23,3 +23,4 @@ equilibrium in the sense that the number of rounds depends on the specific prope
 as well as the desired accuracy. We also prove a converse statement: there exist player strategies that achieve 
 this lower bound.
 
+The talk presentation can be found <a href="assets/talkFiles/ArnabMaitiTalk.pdf" target="_blank">here</a>.
