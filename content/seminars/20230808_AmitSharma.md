@@ -2,7 +2,7 @@
 title = "Talk by Amit Sharma on 8th August"
 author = "Amit Sharma (MSR, Bangalore)"
 author_link = "http://www.amitsharma.in/"
-author_image = "assets/authorImages/danielDadush.png"
+author_image = "assets/authorImages/amitSharma.jpeg"
 date = "2023-08-08T11:00:00+05:30"
 date_end = "2023-08-08T14:00:00+05:30"
 location = "Offline Talk at CSA Seminar Hall"
