@@ -1,7 +1,7 @@
 +++
 title = "Learning linear thresholds from label proportions"
 author = "Rishi Saket (Google Research, India)"
-author_link = "https://homes.cs.washington.edu/~voreis/"
+author_link = "https://research.google/people/107857/"
 author_image = "assets/authorImages/rishiSaket.png"
 date = "2023-06-16T11:00:00+05:30"
 date_end = "2023-06-16T12:00:00+05:30"
