@@ -1,5 +1,5 @@
 +++
-title = "Talk by Amit Sharma on 8th August"
+title = "Talk by Amit Sharma on 8th September"
 author = "Amit Sharma (MSR, Bangalore)"
 author_link = "http://www.amitsharma.in/"
 author_image = "assets/authorImages/amitSharma.jpeg"
