@@ -1,5 +1,5 @@
 +++
-title = "Talk by Daniel Dadush on  21st July"
+title = "Talk by Daniel Dadush on  30th June"
 author = "Daniel Dadush (CWI, Netherlands)"
 author_link = "https://homepages.cwi.nl/~dadush/"
 author_image = "assets/authorImages/danielDadush.png"
