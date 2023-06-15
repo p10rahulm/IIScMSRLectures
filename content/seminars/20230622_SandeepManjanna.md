@@ -2,7 +2,7 @@
 title = "Multi-robot planning strategies for spatio-temporal sampling"
 author = "Sandeep Manjanna (Plaksha University)"
 author_link = "https://plaksha.edu.in/faculty-details/dr-sandeep-manjanna"
-author_image = "assets/authorImages/sandeepManjanna.png"
+author_image = "assets/authorImages/sandeepManjanna.jpeg"
 date = "2023-06-22T16:00:00+05:30"
 date_end = "2023-06-22T17:00:00+05:30"
 location = "Offline Talk at CSA Seminar Hall"
