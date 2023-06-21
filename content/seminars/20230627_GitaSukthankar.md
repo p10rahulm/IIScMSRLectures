@@ -1,6 +1,6 @@
 +++
 title = "Data-driven Social Informatics"
-author = "Gita Sukthankar (University of Washington)"
+author = "Gita Sukthankar (University of Central Florida)"
 author_link = "https://www.cs.ucf.edu/person/gita-sukthankar/"
 author_image = "assets/authorImages/gitaSukthankar.jpg"
 date = "2023-06-27T16:00:00+05:30"
