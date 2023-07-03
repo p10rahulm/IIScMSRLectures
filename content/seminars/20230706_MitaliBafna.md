@@ -15,7 +15,7 @@ The Unique Games Conjecture (UGC) is a central open question in computational co
 UGC stipulates that almost satisfiable instances of Unique Games, a certain 2-variable constraint satisfaction problem 
 (CSP), are NP-hard to distinguish from highly unsatisfiable instances. The UGC is known to imply a vast number of 
 hardness-of-approximation results in combinatorial optimization.
-
+<br><br>
 In this talk I will discuss our results that give algorithms for Unique Games (UG) on a large class of restricted 
 instances: certifiable small-set expanders and graphs with certifiable global hypercontractivity. Our first algorithm 
 solves UG instances whenever low-degree sum-of-squares (SoS) proofs certify good bounds on the small-set-expansion of 
