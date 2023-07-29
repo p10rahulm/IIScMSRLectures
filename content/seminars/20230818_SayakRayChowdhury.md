@@ -1,5 +1,5 @@
 +++
-title = "Talk by Sayak Ray Chowdhury"
+title = "Differential Privacy in Multi-armed Bandits"
 author = "Sayak Ray Chowdhury (Microsoft Research, Bangalore)"
 author_link = "https://scholar.google.com/citations?user=Q0_CaxYAAAAJ&hl=en"
 author_image = "assets/authorImages/sayakRayChowdhury.jpeg"
