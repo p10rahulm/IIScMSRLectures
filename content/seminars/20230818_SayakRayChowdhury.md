@@ -6,7 +6,7 @@ author_image = "assets/authorImages/sayakRayChowdhury.jpeg"
 date = "2023-08-18T11:00:00+05:30"
 date_end = "2023-08-18T12:00:00+05:30"
 location = "YouTube Video Link"
-location_link = "#"
+location_link = "https://youtu.be/Zafut3-V9xE?si=y_VC2sztCLtw7td_"
 notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" target= "_blank">Microsoft Research Lab - India</a> and <a href='https://www.csa.iisc.ac.in/theoretical-computer-science/' target= "_blank">Theoretical Computer Science @ IISc</a>"
 +++
 

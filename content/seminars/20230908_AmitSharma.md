@@ -5,8 +5,8 @@ author_link = "http://www.amitsharma.in/"
 author_image = "assets/authorImages/amitSharma.jpeg"
 date = "2023-09-08T16:00:00+05:30"
 date_end = "2023-09-08T18:15:00+05:30"
-location = "Offline Talk at CSA Seminar Hall"
-location_link = "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZGE3NDg5NzktMWQ0Zi00MzFmLTg5OTgtMTMyYWM4MWQyYjI2%40thread.v2/0?context=%7b%22Tid%22%3a%226f15cd97-f6a7-41e3-b2c5-ad4193976476%22%2c%22Oid%22%3a%227c84465e-c38b-4d7a-9a9d-ff0dfa3638b3%22%7d"
+location = "YouTube Video Link"
+location_link = "https://www.youtube.com/watch?v=RbzAtlVopAU"
 notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" target= "_blank">Microsoft Research Lab - India</a> and <a href='https://www.csa.iisc.ac.in/theoretical-computer-science/' target= "_blank">Theoretical Computer Science @ IISc</a>"
 +++
 
@@ -41,3 +41,10 @@ source ecosystem for causal machine learning.
 His work has received many awards including a Best Paper Award at ACM CHI 2021 conference, Best Paper Honorable 
 Mention at ACM CSCW 2016 conference, 2012 Yahoo! Key Scientific Challenges Award and the 2009 Honda Young Engineer 
 and Scientist Award.
+
+<br>
+<b>Talk Videos:</b>
+<a href="https://www.youtube.com/watch?v=RbzAtlVopAU" target="_blank">Part 1 of talk</a>
+<a href="https://www.youtube.com/watch?v=H50DR6tv92I" target="_blank">Part 2 of talk</a>
+
+
