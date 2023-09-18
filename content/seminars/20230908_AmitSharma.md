@@ -44,7 +44,7 @@ and Scientist Award.
 
 <br><br>
 <b>Talk Videos:</b>
-<br><br>
+<br>
 <a href="https://www.youtube.com/watch?v=RbzAtlVopAU" target="_blank">Part 1 of talk</a><br>
 <a href="https://www.youtube.com/watch?v=H50DR6tv92I" target="_blank">Part 2 of talk</a>
 
