@@ -42,9 +42,10 @@ His work has received many awards including a Best Paper Award at ACM CHI 2021 c
 Mention at ACM CSCW 2016 conference, 2012 Yahoo! Key Scientific Challenges Award and the 2009 Honda Young Engineer 
 and Scientist Award.
 
-<br>
+<br><br>
 <b>Talk Videos:</b>
-<a href="https://www.youtube.com/watch?v=RbzAtlVopAU" target="_blank">Part 1 of talk</a>
+<br><br>
+<a href="https://www.youtube.com/watch?v=RbzAtlVopAU" target="_blank">Part 1 of talk</a><br>
 <a href="https://www.youtube.com/watch?v=H50DR6tv92I" target="_blank">Part 2 of talk</a>
 
 
