@@ -1,5 +1,5 @@
 +++
-title = "Talk by Chiranjib Bhattacharyya"
+title = "Random Separating Hyperplane theorem with applications to Topic Modelling."
 author = "Chiranjib Bhattacharyya (Indian Institute of Science, Bangalore)"
 author_link = "https://eecs.iisc.ac.in/people/chiranjib-bhattacharyya/"
 author_image = "assets/authorImages/chiranjibBhattacharyya.png"
@@ -11,4 +11,8 @@ notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/researc
 +++
 
 <b>Abstract:</b>
-Will be updated shortly
+In this talk we will explore interesting new connections between Convex Geometry and Unsupervised Learning.
+We present the Random Separating Hyperplane theorem, a new take on the classic Separating Hyperplane theorem. It 
+potentially has many applications. In particular, we will discuss how RSH can help in learn Topic models provably.
+<br><br>
+Joint work with Ravi Kannan, Amit Kumar
