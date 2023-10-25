@@ -22,4 +22,6 @@ The talk will explain the models, the connection between them, and some recent p
 approximation algorithms.
 <br><br>
 Based on joint work with Rhea Jain which appeared in ICALP 2023.
-<a href="https://drops.dagstuhl.de/opus/volltexte/2023/18088/pdf/LIPIcs-ICALP-2023-36.pdf">Link to paper.</a>
+Link to paper: <a href="https://drops.dagstuhl.de/opus/volltexte/2023/18088/pdf/LIPIcs-ICALP-2023-36.pdf">
+https://drops.dagstuhl.de/opus/volltexte/2023/18088/pdf/LIPIcs-ICALP-2023-36.pdf
+</a>.
