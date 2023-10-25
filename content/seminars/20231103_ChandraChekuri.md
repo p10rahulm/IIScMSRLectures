@@ -21,5 +21,5 @@ Zenklusen in 2015. The approximability of  network design problems in the non-un
 The talk will explain the models, the connection between them, and some recent progress on
 approximation algorithms.
 <br><br>
-Based on joint work with Rhea Jain which appeared in ICALP 2023.<br>
-Link: https://drops.dagstuhl.de/opus/volltexte/2023/18088/pdf/LIPIcs-ICALP-2023-36.pdf
+Based on joint work with Rhea Jain which appeared in ICALP 2023.
+<a href="https://drops.dagstuhl.de/opus/volltexte/2023/18088/pdf/LIPIcs-ICALP-2023-36.pdf">Link to paper.</a>
