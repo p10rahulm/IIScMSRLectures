@@ -16,4 +16,4 @@ some set of constraints. We will discuss problems and approaches when we conside
 linear objective with a submodular objective. Submodular set functions arise naturally in a number of applications 
 and moreover submodularity often helps unify, generalize, and simplify various results. The goal is to give a brief 
 overview of some old and more recent results and the emphasis will be on the power of mathematical programming 
-approaches that are enable by continuous extension of submodular functions. 
+approaches that are enable by continuous extension of submodular functions.
