@@ -22,14 +22,14 @@ highly popular sampling algorithms:  Stein Variational Gradient Descent (SVGD) a
 Dynamics (SGLD).
 <br><br>
 This talk shall be based upon the following works:
-<li>
-    <ol>Das and Nagaraj, “Provably Fast Finite Particle Variants of SVGD via Virtual Particle Stochastic 
+<ol>
+    <li>Das and Nagaraj, “Provably Fast Finite Particle Variants of SVGD via Virtual Particle Stochastic 
         Approximation” : Spotlight Paper at NeurIPS 2023; Oral Presentation at the Optimal Transport and Machine 
         Learning Workshop 2023. <a href="https://arxiv.org/abs/2305.17558" target="_blank">[Link]</a>
-    </ol>
-    <ol>Das, Nagaraj and Raj, "Utilising the CLT Structure in Stochastic Gradient-Based Sampling: Improved Analysis 
+    </li>
+    <li>Das, Nagaraj and Raj, "Utilising the CLT Structure in Stochastic Gradient-Based Sampling: Improved Analysis 
         and Faster Algorithms" : COLT 2023. 
         <a href="https://proceedings.mlr.press/v195/das23b.html" target="_blank">[Link]</a>
-    </ol>
-</li>
+    </li>
+</ol>
 
