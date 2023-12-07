@@ -1,6 +1,6 @@
 +++
 title = "Online Omniprediction"
-author = "Sumegha Garg (Stanford University)"
+author = "Sumegha Garg (Rutgers University)"
 author_link = "https://sites.google.com/view/sumegha-garg/home"
 author_image = "assets/authorImages/sumeghaGarg.png"
 date = "2024-01-09T16:00:00+05:30"
