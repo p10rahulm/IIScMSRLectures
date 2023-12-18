@@ -13,7 +13,8 @@ notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/researc
 <b>Abstract:</b>
 Will be updated shortly.
 
-<b>Notes:</b> The talk will be in two parts. With the first part
+<br><br>
+<b>Organizer's Notes:</b> The talk will be in two parts. With the first part
 from 11am-12pm, followed by lunch between 12.00pm and 12.30pm. 
 The second part of the talk will be between 12.30pm and 01.30pm.
 
