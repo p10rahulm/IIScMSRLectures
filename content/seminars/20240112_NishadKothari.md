@@ -19,11 +19,8 @@ matchings --- my own field of research).
 <br><br>
 Even today, 4CT continues to inspire new research directions and areas in Graph Theory as well as in the wider 
 field of Combinatorics.
-<br><br>
 In this talk, I will discuss some of this colorful history of the 4CT, its significance and equivalent formulations.
-<br><br>
 Anyone who has completed a basic course in Discrete Mathematics, or in Graph Theory, should be able to follow.
-<br><br>
 Hoping to see many of you there!
 
 <br><br>
