@@ -1,5 +1,5 @@
 +++
-title = ""
+title = "Talk by Sitan Chen on February 15th"
 author = "Sitan Chen (Harvard, Cambridge MA)"
 author_link = "https://sitanchen.com/"
 author_image = "assets/authorImages/SitanChen.jpg"
