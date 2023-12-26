@@ -2,7 +2,7 @@
 title = "Spectral Clustering Oracles in Sublinear Time"
 author = "Michael Kapralov (EPFL, Switzerland)"
 author_link = "https://theory.epfl.ch/kapralov/"
-author_image = "assets/authorImages/kapralov2.jpg"
+author_image = "assets/authorImages/kapralov.jpg"
 date = "2021-07-23T16:00:00+05:30"
 date_end = "2021-07-23T17:00:00+05:30"
 location = "YouTube Video Link"
