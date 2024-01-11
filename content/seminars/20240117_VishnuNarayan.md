@@ -2,7 +2,7 @@
 title = "Talk by Vishnu Narayan"
 author = "Vishnu Narayan (Tel-Aviv University, Israel)"
 author_link = "https://www.cs.mcgill.ca/~vnaray4/"
-author_image = "assets/authorImages/VishnuNarayan.jpg"
+author_image = "assets/authorImages/vishnuNarayan.jpg"
 date = "2024-01-17T17:00:00+05:30"
 date_end = "2024-01-17T18:00:00+05:30"
 location = "CSA Seminar Room, Room 254"
