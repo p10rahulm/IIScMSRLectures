@@ -5,7 +5,7 @@ author_link = "https://sites.google.com/view/sumegha-garg/home"
 author_image = "assets/authorImages/sumeghaGarg.png"
 date = "2024-01-09T11:00:00+05:30"
 date_end = "2024-01-09T12:00:00+05:30"
-location = "YouTube Recording"
+location = "Video Not Available"
 location_link = "#"
 notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-kirani" target= "_blank">Shekhar
 Kirani</a> family for generously supporting this seminar series."
