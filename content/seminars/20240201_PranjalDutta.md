@@ -2,7 +2,7 @@
 title = "Border ranks, and de-bordering paradigms in Geometric Complexity Theory"
 author = "Pranjal Dutta (NUS, Singapore)"
 author_link = "https://sites.google.com/view/pduttashomepage"
-author_image = "assets/authorImages/rohitVaish.jpg"
+author_image = "assets/authorImages/pranjalDutta.jpg"
 date = "2024-02-01T11:00:00+05:30"
 date_end = "2024-02-01T12:00:00+05:30"
 location = "Online Talk on Microsoft Teams"
