@@ -14,6 +14,7 @@ Theoretical Computer Science @ IISc</a>"
 +++
 
 <b>Abstract:</b>
+
 Despite the widespread empirical success of transformers, little is known about their learnability from a computational 
 perspective. In practice these models are trained with SGD on a certain next-token prediction objective, but in theory 
 it remains a mystery even to prove that such functions can be learned efficiently at all. In this work, we give the 
