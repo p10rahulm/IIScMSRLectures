@@ -1,6 +1,6 @@
 +++
 title = "Optimized Distribution of Quantum Circuits"
-author = "Ranjani SUndaram (Stony Brook University)"
+author = "Ranjani Sundaram (Stony Brook University)"
 author_link = "https://ieeexplore.ieee.org/author/37089609065"
 author_image = "assets/authorImages/ranjaniSundaram.png"
 date = "2024-03-01T11:00:00+05:30"
