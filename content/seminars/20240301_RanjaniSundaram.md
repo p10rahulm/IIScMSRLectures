@@ -1,7 +1,7 @@
 +++
 title = "Talk by Ranjani Sundaram"
 author = "Ranjani SUndaram (Stony Brook University)"
-author_link = "https://sites.google.com/view/arnab-maiti/home"
+author_link = "https://ieeexplore.ieee.org/author/37089609065"
 author_image = "assets/authorImages/ranjaniSundaram.png"
 date = "2024-03-01T11:00:00+05:30"
 date_end = "2024-03-01T12:00:00+05:30"
