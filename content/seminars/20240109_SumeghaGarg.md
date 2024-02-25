@@ -7,8 +7,7 @@ date = "2024-01-09T11:00:00+05:30"
 date_end = "2024-01-09T12:00:00+05:30"
 location = "Video Not Available"
 location_link = "#"
-notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-kirani" target= "_blank">Shekhar
-Kirani</a> family for generously supporting this seminar series."
+notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-kirani" target= "_blank">Shekhar Kirani</a> family for generously supporting this seminar series."
 +++
 
 <b>Abstract:</b> 
