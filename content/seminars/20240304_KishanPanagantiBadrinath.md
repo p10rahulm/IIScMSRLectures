@@ -26,7 +26,6 @@ all models present in the robust Bellman operator. This poses challenges in
 offline data collection, optimization over the models, and unbiased 
 estimation. In this work, we propose a systematic approach to overcome 
 these challenges, resulting in our RFQI algorithm.
-
 <br><br>
 <b>Research Bio for Kishan Panaganti:</b>
 <br>
