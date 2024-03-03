@@ -2,7 +2,7 @@
 title = "Robust Reinforcement Learning using Offline Data"
 author = "Kishan Panaganti Badrinath (Caltech)"
 author_link = "https://sites.google.com/a/tamu.edu/kpb/home"
-author_image = "assets/authorImages/ranjaniSundaram.png"
+author_image = "assets/authorImages/kishanBadrinathPanaganti.jpg"
 date = "2024-03-04T11:00:00+05:30"
 date_end = "2024-03-04T12:00:00+05:30"
 location = "Offline Talk at CSA 254"
