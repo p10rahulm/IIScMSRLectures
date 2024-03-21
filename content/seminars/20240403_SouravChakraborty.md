@@ -1,5 +1,5 @@
 +++
-title = " Distinct Elements in Streams and the Klee's Measure Problem"
+title = "Distinct Elements in Streams and the Klee's Measure Problem"
 author = "Sourav Chakraborty (ISI Kolkata)"
 author_link = "https://www.isical.ac.in/~sourav/"
 author_image = "assets/authorImages/souravChakraborty.jpg"

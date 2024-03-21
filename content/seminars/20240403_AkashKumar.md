@@ -1,5 +1,5 @@
 +++
-title = " Random Walks and Graph Property Testing"
+title = "Random Walks and Graph Property Testing"
 author = "Akash Kumar (IIT Bombay)"
 author_link = "https://sites.google.com/view/kumarakash/home"
 author_image = "assets/authorImages/akashKumar2.jpg"
