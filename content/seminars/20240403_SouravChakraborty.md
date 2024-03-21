@@ -2,7 +2,7 @@
 title = " Random Walks and Graph Property Testing"
 author = "Akash Kumar (IIT Bombay)"
 author_link = "https://sites.google.com/view/kumarakash/home"
-author_image = "assets/authorImages/akashKumar2.jpg"
+author_image = "assets/authorImages/akashKumar2.png"
 date = "2024-04-03T17:00:00+05:30"
 date_end = "2024-04-03T18:00:00+05:30"
 location = "Online talk on MS Teams"
