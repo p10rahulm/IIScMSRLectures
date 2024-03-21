@@ -1,5 +1,5 @@
 +++
-title = " Random Walks and Graph Property Testing"
+title = " Distinct Elements in Streams and the Klee's Measure Problem"
 author = "Akash Kumar (IIT Bombay)"
 author_link = "https://sites.google.com/view/kumarakash/home"
 author_image = "assets/authorImages/akashKumar2.png"
@@ -11,17 +11,15 @@ notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-
 +++
 
 <b>Abstract:</b>
-Random Walks on graphs reveal lots of interesting information about
-a graph and this information has been used to get a lot of algorithmic
-mileage in the classical literature on algorithms. It is perhaps not
-surprising that this primitive continues to be relevant even in the big data
-era as we deal with larger and larger graphs. In this talk, I will describe
-how random walks were put to use by algorithm designers even in the
-setting of sublinear time algorithms. The talk will cover how you can
-use random walks to gain insights about planar graphs and how you can
-use random walks to also obtain insights about expanding graphs and
-clusterable graphs. The talk will assume minimal background and it will
-attempt to present a standalone narrative which should be of interest to
-students and researchers in Spectral Methods.
+We will present a very simple streaming algorithm on F_0 esimation that also caught the eye of Donald E. Knuth.  
 <br><br>
-Based on joint works with C. Seshadhri, Andrew Stolman, and Agastya Jha.
+This simple algorithm comes out of the first ever "efficient" streaming algorithm (from PODS 21) for the Klee's Measure problem, which was a big open problem in the world of streaming for many years.
+<br><br>
+This work is based on joint works with N. V. Vinodchandran, and Kuldeep S. Meel across multiple articles, 
+notable the following:
+<br>
+<ul>
+    <li>Estimating the Size of Union of Sets in Streaming Models. PODS 2021</li>
+    <li>Estimation of the Size of Union of Delphic Sets: Achieving Independence from Stream Size. PODS 2022</li>
+    <li>Distinct Elements in Streams: An Algorithm for the (Text) Book. ESA 2022</li>
+</ul>
