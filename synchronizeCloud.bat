@@ -1,4 +1,3 @@
-@echo off
 :: Type the command `synchronizeCloud.bat "commit message"`
 :: Preliminary Checks:
 :: 1. Ensure "gcloud auth login" is already done
@@ -12,6 +11,7 @@ if "%~1"=="" (
 )
 
 echo "commit message = %commit_message%"
+
 
 gsutil -m rsync -r assets gs://www.cstheoryseminars.org/assets
 echo "Assets Directory Synced"
