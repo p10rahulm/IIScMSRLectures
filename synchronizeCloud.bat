@@ -13,11 +13,11 @@ if "%~1"=="" (
 
 echo "commit message = %commit_message%"
 
-:: gsutil -m rsync -r assets gs://www.cstheoryseminars.org/assets
+gsutil -m rsync -r assets gs://www.cstheoryseminars.org/assets
 echo "Assets Directory Synced"
-:: gsutil -m rsync -r content gs://www.cstheoryseminars.org/content
+gsutil -m  -D rsync -r content gs://www.cstheoryseminars.org/content
 echo "Contents Directory Synced"
-:: gsutil -m rsync ./ gs://www.cstheoryseminars.org
+gsutil -m  -D rsync ./ gs://www.cstheoryseminars.org
 :: gsutil cp index.html gs://www.cstheoryseminars.org
 echo "Base Directory Synced"
 
