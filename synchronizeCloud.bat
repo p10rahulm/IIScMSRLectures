@@ -30,7 +30,8 @@ git push
 
 
 :: Now attempt to directly update website through SSH
-plink msrseminar@csacloud.iisc.ac.in -P 3232 -pw msr$em1nar
-./sync.sh
+ssh -t msrseminar@csacloud.iisc.ac.in -p 3232 "./sync.sh"
+:: plink msrseminar@csacloud.iisc.ac.in -P 3232 -pw msr$em1nar
+:: ./sync.sh
 echo "Please check that the website https://www.csa.iisc.ac.in/theoryseminars/ is updated"
-exit
+
