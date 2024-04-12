@@ -1,5 +1,5 @@
 +++
-title = "Talk by Ayush Sekhari on unlearning in ML"
+title = "Ticketed Learning-Unlearning Schemes"
 author = "Ayush Sekhari (MIT, Boston)"
 author_link = "https://ayush.sekhari.com/"
 author_image = "assets/authorImages/ayushSekhari.png"
@@ -11,4 +11,24 @@ notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-
 +++
 
 <b>Abstract:</b>
-Talk by Ayush Sekhari on the unlearning problem.
+We consider the learning--unlearning paradigm defined as follows. 
+First given a dataset, the goal is to learn a good predictor, such as 
+one minimizing a certain loss. Subsequently, given any subset of examples 
+that wish to be unlearnt, the goal is to learn, without the knowledge of 
+the original training dataset, a good predictor that is identical to the 
+predictor that would have been produced when learning from scratch on the
+surviving examples. We propose a new ticketed model for 
+learning--unlearning wherein the learning algorithm can send back 
+additional information in the form of a small-sized (encrypted) 
+``ticket'' to each participating training example, in addition to retaining 
+a small amount of ``central'' information for later. Subsequently, the 
+examples that wish to be unlearnt present their tickets to the 
+unlearning algorithm, which additionally uses the central information to 
+return a new predictor. We provide space-efficient ticketed learning--unlearning 
+schemes for a broad family of concept classes, including thresholds, 
+parities, intersection-closed classes, among others. En route, we 
+introduce the count-to-zero problem, where during unlearning, the goal is
+to simply know if there are any examples that survived. We give a ticketed 
+learning--unlearning scheme for this problem that relies on the construction of 
+Sperner families with certain properties, which might be of independent 
+interest.
