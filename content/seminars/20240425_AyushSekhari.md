@@ -27,4 +27,5 @@ rich-observation environments, we show that our approach outperforms a state-of-
 RL baseline which only relies on off-policy policy optimization, demonstrating the empirical
 benefit of combining on-policy and off-policy learning. 
 
+<br><br>
 <b>Brief Bio:</b>  Ayush is a postdoc researcher working with Prof. Sasha Rakhlin at MIT. He completed his Ph.D. from the Computer Science department at Cornell University, advised by Professor Karthik Sridharan and Professor Robert D. Kleinberg. His research interests span stochastic optimization, reinforcement learning, and machine unlearning. Before his Ph.D., he spent a year at Google as a part of the inaugural Brain residency program. Before Google, he completed his undergraduate studies in computer science at IIT Kanpur in India where he was awarded the President's Gold medal. Ayush has also been a winner of a student best paper award at COLT 2019. 
