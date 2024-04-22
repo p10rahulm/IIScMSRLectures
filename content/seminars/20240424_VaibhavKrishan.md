@@ -28,7 +28,6 @@ Along the way, we prove several key results, a highlight of them is given below.
 3. We show that our method can also be used to prove upper bounds, by proving upper bounds for the majority function.<br>
 <br>
 I will briefly describe our approach, and some open questions we propose. This is a joint work with Prof. Sundar Vishwanathan, CSE IITB.
-
 <br><br>
 <b>Brief Bio:</b>  
 Vaibhav is a PhD scholar at CSE IITB, under the guidance of Prof. Sundar Vishwanathan and Prof. Nutan Limaye, where he has submitted his thesis. Before this, he completed his B. Tech. from CSE IITB in 2013. 
