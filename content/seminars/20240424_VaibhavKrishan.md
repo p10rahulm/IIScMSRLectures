@@ -1,7 +1,7 @@
 +++
 title = "New Lower Bounds for Symmetric Boolean Functions"
 author = "Vaibhav Krishan (IIT Bombay)"
-author_link = "https://ayush.sekhari.com/"
+author_link = "https://scholar.google.co.in/citations?user=dVMC44EAAAAJ&hl=en"
 author_image = "assets/authorImages/vaibhavKrishan.jpg"
 date = "2024-04-24T16:00:00+05:30"
 date_end = "2024-04-24T17:00:00+05:30"
