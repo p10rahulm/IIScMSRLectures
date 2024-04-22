@@ -27,9 +27,7 @@ Along the way, we prove several key results, a highlight of them is given below.
 2. We prove the first degree lower bound against asymmetric torus polynomials, which almost matches the degree upper bound, for the AND function.<br>
 3. We show that our method can also be used to prove upper bounds, by proving upper bounds for the majority function.<br>
 <br>
-I will briefly describe our approach, and some open questions we propose.
-<br><br>
-This is a joint work with Prof. Sundar Vishwanathan, CSE IITB.
+I will briefly describe our approach, and some open questions we propose. This is a joint work with Prof. Sundar Vishwanathan, CSE IITB.
 
 <br><br>
 <b>Brief Bio:</b>  
