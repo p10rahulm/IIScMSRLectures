@@ -11,6 +11,7 @@ notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-
 +++
 
 <b>Abstract:</b>
+
 In the Maximum-a-Posteriori (MAP) Inference problem, for any given probability distribution, the goal is to find the 
 point in the support of that distribution with the highest probability. Potts models and Determinantal Point Processes 
 (DPPs) are probabilistic models that were introduced in the context of statistical physics several decades ago. They 
