@@ -22,7 +22,7 @@ we provide a strong justification for the excellent performance of a linear prog
 beyond worst-case analysis (appeared in AISTATS 2021). For MAP Inference in Nonsymmetric Determinantal Point Processes, 
 we provide the first one-pass streaming and online algorithms (appeared in ICML 2022).
 <br><br>
-Bio: Aravind Reddy was a postdoc at the Broad Institute of MIT and Harvard until recently, where he worked on 
+<b>Bio:</b> Aravind Reddy was a postdoc at the Broad Institute of MIT and Harvard until recently, where he worked on 
 Computational Biology. He graduated with a PhD in Computer Science from Northwestern University in 2023, where
 he was advised by Professors Konstantin Makarychev and Aravindan Vijayaraghavan within the theory group. Prior to this, 
 he graduated from IIT Kanpur in 2018 with a B.Tech in CSE and a minor in Physics. His research interests span a diverse 
