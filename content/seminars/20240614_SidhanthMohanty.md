@@ -14,14 +14,11 @@ notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-
 A common algorithmic task is to sample from some probability distribution of choice D. The most popular algorithm for
 such tasks is to run a Markov chain with stationary distribution D, and when the Markov chain mixes rapidly, it does
 indeed produce samples from D.
-<br><br>
 But what if the Markov chain does not mix fast? It is empirically observed that sometimes the output produced by the
 Markov chain is nevertheless still a "good" solution for the downstream applications of sampling, even though it's not
 faithfully sampling from the correct distribution.
-<br><br>
 For example, it appears to find planted cuts in random graphs, or planted solutions in random CSPs, despite the Markov
 chain having bottlenecks to mixing.
-<br><br>
 In this talk, we will see some generic methods to analyze the structure of distributions that non-mixing Markov chains
 sample from, along with some applications.
 <br><br>
