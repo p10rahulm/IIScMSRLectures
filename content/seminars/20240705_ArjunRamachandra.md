@@ -3,8 +3,8 @@ title = "Interplay of submodularity and randomness"
 author = "Arjun Ramachandra (Decision Sciences, Indian Insitute of Management, Bangalore)"
 author_link = "https://www.iimb.ac.in/user/253/arjun-ramachandra"
 author_image = "assets/authorImages/arjunRamachandra.png"
-date = "2024-06-28T11:00:00+05:30"
-date_end = "2024-06-28T12:00:00+05:30"
+date = "2024-07-05T11:00:00+05:30"
+date_end = "2024-07-05T12:00:00+05:30"
 location = "Offline talk at CSA 112"
 location_link = "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZGE3NDg5NzktMWQ0Zi00MzFmLTg5OTgtMTMyYWM4MWQyYjI2%40thread.v2/0?context=%7b%22Tid%22%3a%226f15cd97-f6a7-41e3-b2c5-ad4193976476%22%2c%22Oid%22%3a%227c84465e-c38b-4d7a-9a9d-ff0dfa3638b3%22%7d"
 notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-kirani" target= "_blank">Shekhar Kirani</a> family for generously supporting this seminar series."
@@ -38,15 +38,9 @@ derived by using results from submodular minimization theory.
 (This is joint work with Karthik Natarajan, Singapore University of Technology and Design)
 <br><br>
 <b>Speaker Bio:</b>
-Raghuvansh Saxena is a Reader at the School of Technology and Computer Science at the
-Tata Institute of Fundamental Research, Mumbai. His primary research
-interest is communication complexity and its applications to other
-areas of theoretical computer science, such as coding theory,
-algorithmic game theory, streaming algorithms, and distributed
-systems. Other topics he likes to think about are computational
-complexity, information theory, and things you can convince him to
-think about.
-<br><br>
-Before joining TIFR, he received his Ph.D. from Princeton University
-under the amazing supervision of Prof. Gillat Kol and my Bachelor's
-degree in Computer Science and Engineering from IIT Delhi.
+Arjun is currently an assistant professor in the Decision Sciences area at the Indian Institute of Management,
+Bangalore. Prior to this he was a postdoctoral research fellow at the Singapore University of Technology and Design (
+SUTD) and graduated with a PhD in operations research from the National University of Singapore in 2021. His research
+interests broadly lie in optimization under uncertainty and more specifically in analyzing distributionally robust
+optimization problems under different notions of randomness and functional structure. He holds an integrated master’s
+degree in Maths and Computing from the Indian Institute of Technology, Kharagpur. 
