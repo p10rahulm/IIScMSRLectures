@@ -1,6 +1,6 @@
 +++
 title = "Interplay of submodularity and randomness"
-author = "Arjun Ramachandra (Decision Sciences, Indian Insitute of Management, Bangalore)"
+author = "Arjun Ramachandra (Decision Sciences, IIM Bangalore)"
 author_link = "https://www.iimb.ac.in/user/253/arjun-ramachandra"
 author_image = "assets/authorImages/arjunRamachandra.png"
 date = "2024-07-05T11:00:00+05:30"
