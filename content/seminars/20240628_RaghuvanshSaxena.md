@@ -1,6 +1,6 @@
 +++
 title = "The Rate of Interactive Codes Is Bounded Away from 1"
-author = " Raghuvansh Saxena (Reader, School of Technology and Computer Science, TIFR Mumbai)"
+author = "Raghuvansh Saxena (Reader, School of Technology and Computer Science, TIFR Mumbai)"
 author_link = "https://main.tifr.res.in/raghuvansh.saxena/"
 author_image = "assets/authorImages/raghuvanshSaxena.jpg"
 date = "2024-06-28T11:00:00+05:30"

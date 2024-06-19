@@ -1,8 +1,8 @@
 +++
-title = "The Rate of Interactive Codes Is Bounded Away from 1"
-author = " Raghuvansh Saxena (Reader, School of Technology and Computer Science, TIFR Mumbai)"
-author_link = "https://main.tifr.res.in/raghuvansh.saxena/"
-author_image = "assets/authorImages/raghuvanshSaxena.jpg"
+title = "Interplay of submodularity and randomness"
+author = "Arjun Ramachandra (Decision Sciences, Indian Insitute of Management, Bangalore)"
+author_link = "https://www.iimb.ac.in/user/253/arjun-ramachandra"
+author_image = "assets/authorImages/arjunRamachandra.png"
 date = "2024-06-28T11:00:00+05:30"
 date_end = "2024-06-28T12:00:00+05:30"
 location = "Offline talk at CSA 112"
@@ -10,33 +10,35 @@ location_link = "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZGE3NDg5
 notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-kirani" target= "_blank">Shekhar Kirani</a> family for generously supporting this seminar series."
 +++
 
-<b>Abstract:</b> 
-Kol and Raz [STOC 2013] showed how to simulate any alternating
-two-party communication protocol designed to work over the noiseless
-channel, by a protocol that works over a stochastic channel that
-corrupts each sent symbol with probability \epsilon>0 independently,
-with only a 1+O(\sqrt{\H(\epsilon)}) blowup to the communication. In
-particular, this implies that the maximum rate of such interactive
-codes approaches 1 as \epsilon goes to 0, as is also the case
-for the maximum rate of classical error correcting codes. Over the
-past decade, followup works have strengthened and generalized this
-result to other noisy channels, stressing on how fast the rate
-approaches 1 as \epsilon goes to 0, but retaining the assumption
-that the noiseless protocol is alternating.
+<b>Abstract:</b>
+Submodularity provides a natural context to model a large class of discrete optimization problems including but not
+limited to influence maximization, mechanism design, resource allocation and several machine learning problems. As a set
+functional property, submodularity models the notion of diminishing returns in the discrete space. Theoretically, it has
+intrigued scientists due to strong structural similarity with both convex and concave functions in the continuous space,
+which has been exploited to derive worst-case performance guarantees for deterministic submodular optimization problems.
+Distributionally robust submodular optimization, however, seeks to evaluate or approximate the worst-case expected value
+of a submodular function (subjected to random input) over a set of joint distributions consistent with available
+information on the marginals, moments or statistical distance from a reference distribution. While computing the
+worst-case joint distribution or the corresponding expected value is known to be NP-hard, traditional approaches
+approximate the optimal expected value by assuming the random inputs to be independent. This notion is formalized by the
+concept of correlation gap which quantifies how much we “lose” in the expectation of the function by ignoring the
+correlation structure of the random set and assuming independence instead. For monotone submodular set functions, it was
+shown that the correlation gap is upper bounded by e/(e-1) in Agrawal et.al. (2012). In reality, however, more complex
+notions of randomness are often encountered, such as when weak correlations coexist with higher-order dependencies.
+Inspired by the need to incorporate more realistic notions of randomness and driven by the curiosity to understand the
+interplay between functional properties and randomness, we study the behaviour of monotone submodular set functions with
+pairwise independent random input. We show that in this scenario, the e/(e-1) bound on the correlation gap can be
+improved to 4/3 (and that it is tight) in several cases depending on the size of the random inputs, conditions on the
+marginal probabilities and the type of submodular function considered. Our results illustrate a fundamental difference
+in the behavior of submodular functions under weaker notions of independence with potential ramifications in improving
+existing algorithmic approximations. Interestingly, when the pairwise independence condition is relaxed to admit a
+positively correlated structure, the worst-case expected value can be computed from a compact linear program formulation
+derived by using results from submodular minimization theory.
 <br><br>
-In this paper we consider the general case, where the noiseless
-protocols can have arbitrary orders of speaking. In contrast to
-Kol-Raz and to the followup results in this model, we show that the
-maximum rate of interactive codes that encode general protocols is
-upper bounded by a universal constant strictly smaller than 1. To
-put it differently, we show that there is an inherent blowup in
-communication when protocols with arbitrary orders of speaking are
-faced with any constant fraction of errors \epsilon > 0. We mention
-that our result assumes a large alphabet set and resolves the
-(non-binary variant) of a conjecture by Haeupler [FOCS 2014].
+(This is joint work with Karthik Natarajan, Singapore University of Technology and Design)
 <br><br>
-<b>Speaker Bio:</b> 
-Raghuvansh Saxena is a Reader at the School of Technology and Computer Science at the 
+<b>Speaker Bio:</b>
+Raghuvansh Saxena is a Reader at the School of Technology and Computer Science at the
 Tata Institute of Fundamental Research, Mumbai. His primary research
 interest is communication complexity and its applications to other
 areas of theoretical computer science, such as coding theory,
