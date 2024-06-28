@@ -27,7 +27,7 @@ offline data collection, optimization over the models, and unbiased
 estimation. In this work, we propose a systematic approach to overcome 
 these challenges, resulting in our RFQI algorithm.
 <br><br>
-<b>Research Bio for Kishan Panaganti:</b>
+<b>Research Bio of Dr. Kishan Panaganti:</b>
 <br>
 Kishan is a PIMCO Postdoctoral Fellow at Caltech. He received PhD in 
 August 2023 from the Department of Electrical and Computer Engineering 
