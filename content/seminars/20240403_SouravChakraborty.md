@@ -6,7 +6,7 @@ author_image = "assets/authorImages/souravChakraborty.jpg"
 date = "2024-04-03T16:00:00+05:30"
 date_end = "2024-04-03T17:00:00+05:30"
 location = "YouTube Video Link"
-location_link = "#"
+location_link = "https://www.youtube.com/watch?v=hvcGl8ER9bY"
 notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-kirani" target= "_blank">Shekhar Kirani</a> family for generously supporting this seminar series."
 +++
 
