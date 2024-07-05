@@ -1,35 +1,46 @@
 +++
-title = "The Sampling Problem Through The Lens of Optimization : Recent Advances and Insights"
+title = "Linear Time Streaming Algorithms for Heavy Tailed Statistics"
 author = "Aniket Das (Google Research)"
 author_link = "https://aniket1998.github.io/"
 author_image = "assets/authorImages/aniketDas.jpg"
-date = "2023-11-24T11:00:00+05:30"
-date_end = "2023-11-24T12:00:00+05:30"
-location = "YouTube Video Link"
-location_link = "https://www.youtube.com/watch?v=ufDU59FSCls"
-notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-kirani" target= "_blank">Shekhar Kirani</a> family for generously supporting this seminar series."
+date = "2024-08-09T11:00:00+05:30"
+date_end = "2024-08-09T12:00:00+05:30"
+location = "Offline talk at CSA 112, IISc Bangalore"
+location_link = "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZGE3NDg5NzktMWQ0Zi00MzFmLTg5OTgtMTMyYWM4MWQyYjI2%40thread.v2/0?context=%7b%22Tid%22%3a%226f15cd97-f6a7-41e3-b2c5-ad4193976476%22%2c%22Oid%22%3a%227c84465e-c38b-4d7a-9a9d-ff0dfa3638b3%22%7d"
+notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-kirani" target= "_blank">Shekhar
+Kirani</a> family for generously supporting this seminar series."
 +++
 
 <b>Abstract:</b>
-The task of sampling from a probability measure on $\mathbb{R}^d$ whose density (w.r.t Lebesgue Measure) 
-$\pi(\mathbf{x}) \propto \exp(-F(\mathbf{x}))$ is known only upto a normalizing constant, is a fundamental problem 
-in High Dimensional Statistics, Theoretical Computer Science and Machine Learning. In this talk, I will discuss how 
-sampling can be analyzed as an optimization-problem over the infinite-dimensional space of probability measures, 
-equipped with the 2-Wasserstein metric from Optimal Transport. This perspective has spurred numerous breakthroughs in 
-the field by allowing the transfer of familiar tools and techniques from the well-developed theory of continuous 
-optimization. I will elucidate the efficacy of this paradigm by discussing the state-of-the-art analysis of two 
-highly popular sampling algorithms:  Stein Variational Gradient Descent (SVGD) and Stochastic Gradient Langevin 
-Dynamics (SGLD).
+In this talk, I shall discuss the problem of high-dimensional statistical estimation under heavy tailed data 
+distributions (i.e. data distributions for which only lower order moments are guaranteed to be finite). 
+This problem finds applications in a wide variety of domains including the natural sciences, finance, machine 
+learning and operations research. 
 <br><br>
-This talk shall be based upon the following works:
-<ol>
-    <li>Das and Nagaraj, “Provably Fast Finite Particle Variants of SVGD via Virtual Particle Stochastic 
-        Approximation” : Spotlight Paper at NeurIPS 2023; Oral Presentation at the Optimal Transport and Machine 
-        Learning Workshop 2023. <a href="https://arxiv.org/abs/2305.17558" target="_blank">[Link]</a>
-    </li>
-    <li>Das, Nagaraj and Raj, "Utilising the CLT Structure in Stochastic Gradient-Based Sampling: Improved Analysis 
-        and Faster Algorithms" : COLT 2023. 
-        <a href="https://proceedings.mlr.press/v195/das23b.html" target="_blank">[Link]</a>
-    </li>
-</ol>
-
+While recent advances in algorithmic statistics has led to the development of efficient polynomial-time algorithms 
+for this problem via the Sum of Squares proofs-to-algorithms paradigm, these algorithms are either: 1) primarily 
+focused on heavy tailed mean estimation, or 2) incur a time and space complexity that is at least quadratic (and 
+often a high degree polynomial) in the dimension d and inverse confidence level δ-1, thereby making them infeasible 
+for deployment in most practical settings.
+<br><br>
+I shall present our recent work which aims to analyze the fine-grained information-computation-memory tradeoffs 
+associated with this problem by considering the task of heavy tailed statistical estimation in the streaming 
+setting (i.e. with an O(d) memory constraint). To this end, we develop linear time streaming algorithms that 
+(nearly) attain the optimal statistical rate for a wide variety of high dimensional estimation tasks such as Mean 
+Estimation, Linear Regression, LAD Regression, Classification and Generalized Linear Models. In particular, by 
+recasting the heavy tailed statistical estimation problem as Stochastic Convex Optimization with a heavy tailed 
+oracle, we present a unified analysis which proves that the widely deployed Clipped Stochastic Gradient Descent 
+Algorithm (nearly) attains the optimal statistical rate in linear time and space.
+<br><br>
+A key component of our analysis is a novel and highly generalizable iterative refinement technique for establishing 
+fine-grained concentration of vector-valued martingales via PAC Bayes Theory, which could be of independent interest 
+for proving sharp concentration guarantees for more general stochastic processes.
+<br><br>
+Joint work with Dheeraj Nagaraj, Arun Suggala, Prateek Varshney and Soumyabrata Pal
+<br><br>
+<b>Speaker Bio:</b>
+Aniket Das is a Pre-Doctoral Researcher at Google DeepMind, Bangalore. Prior to this, he was a dazed and confused 
+undergrad at Indian Institute of Technology Kanpur where he double majored in Electrical Engineering and Mathematics. 
+Aniket’s interests lie in the union of Probability and Theoretical Computer Science. Specific areas of interest 
+include the complexity of sampling from high-dimensional probability distributions, phase transitions in random 
+structures, and information-computation gaps in high-dimensional statistics.
