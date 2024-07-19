@@ -1,8 +1,8 @@
 +++
 title = "What does PAC-learning have to say about adversarial robustness?"
 author = "Vinayak Pathak (University of Waterloo)"
-author_link = "https://sites.google.com/view/sabyaucsc/home"
-author_image = "assets/authorImages/sabyasachiBasu.png"
+author_link = "https://cs.uwaterloo.ca/~vpathak/"
+author_image = "assets/authorImages/vinayakPathak.png"
 date = "2024-08-19T17:00:00+05:30"
 date_end = "2024-08-19T18:00:00+05:30"
 location = "Online Talk on Microsoft Teams"
@@ -11,7 +11,7 @@ notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-
 +++
 
 <b>Abstract:</b>
- Modern neural network architectures have achieved great success on various learning tasks, but they are almost always 
+Modern neural network architectures have achieved great success on various learning tasks, but they are almost always 
 prone to adversarial attacks. These attacks are small, undetectable perturbations of the input that lead the model 
 to change its output. The widespread existence of adversarial attacks is both a security concern, as well as an 
 indication that these models aren't learning the ground truth (since the true label does not change when input is 
