@@ -1,6 +1,6 @@
 +++
 title = "What does PAC-learning have to say about adversarial robustness?"
-author = "Vinayak Pathak (University of Waterloo)"
+author = "Vinayak Pathak"
 author_link = "https://cs.uwaterloo.ca/~vpathak/"
 author_image = "assets/authorImages/vinayakPathak.png"
 date = "2024-08-19T17:00:00+05:30"
