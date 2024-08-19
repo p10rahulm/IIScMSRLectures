@@ -1,5 +1,5 @@
 #!/bin/bash
-# Type from bash/git bash on windows ` ./synchronizeWindows.sh "commit messsage" `
+# Type from bash/git bash on windows ` ./synchronizeWindows.sh "commit messsage"
 # Preliminary Checks:
 # 1. Ensure "gcloud auth login" is already done
 # 2. Ensure that you are on the IISc CISCO VPN
