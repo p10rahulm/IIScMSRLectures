@@ -10,8 +10,14 @@ location_link = "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZGE3NDg5
 +++
 
 <b>Abstract:</b>
-Given a simple polygon P, the minimum convex cover problem seeks to cover P with the fewest
-convex polygons that lie within P. The maximum hidden set problem seeks to place within P a maximum 
-cardinality set of points no two of which see each other. We give constant factor approximation
-algorithms for both problems. Previously, the best approximation factor for the minimum convex cover
-was logarithmic; for the maximum hidden set problem, no approximation algorithm was known.
+Decomposing a polygon into simpler pieces is a fundamental problem in computational geometry. In the Convex Cover 
+problem, we wish to cover our polygonal environment with convex polygons. This problem has been studied for over 
+50 years from the lens of complexity theory as well as approximability.  In this talk, we will look at the first 
+constant-factor approximation algorithm for Convex Cover in simple polygons [Browne, Mitchell, Polischuk, 
+Kasthurirangan; FoCS 23]. En route, we will describe the first constant-factor approximation algorithm for Hidden 
+Set — how many points can you place in a simple polygon so that no two of them see each other?  
+<br><br>
+We will also briefly consider the problem of converting a covering of a polygon into a partition of a polygon (where 
+each piece of the partition is “desirable”) [unpublished]. Finally, we will also touch upon the problem of finding a 
+target in an environment that has already been compromised using a mobile robot with imperfect sensing capabilities 
+[unpublished]. 
