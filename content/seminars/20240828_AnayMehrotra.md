@@ -11,7 +11,7 @@ notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-
 +++
 
 <b>Abstract:</b>
-n many scientific disciplines, data collection processes introduce systematic biases, leading to challenges in 
+In many scientific disciplines, data collection processes introduce systematic biases, leading to challenges in 
 accurately learning from this data. In this talk, we study statistical estimation under systematic bias, 
 focusing on estimating the parameters of an exponential family distribution when samples are only shown if they 
 fall in an unknown subset S of R^d.
