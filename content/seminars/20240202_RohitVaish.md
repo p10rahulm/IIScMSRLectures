@@ -7,7 +7,7 @@ date = "2024-02-02T14:00:00+05:30"
 date_end = "2024-02-02T15:00:00+05:30"
 location = "YouTube Video Link"
 location_link = "https://youtu.be/BUl0oexgs3Y"
-notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" target= "_blank">Microsoft Research Lab - India</a> and <a href='https://www.csa.iisc.ac.in/theoretical-computer-science/' target= "_blank">Theoretical Computer Science @ IISc</a>"
+notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-kirani" target= "_blank">Shekhar Kirani</a> family and the <a href = "https://www.csa.iisc.ac.in/cfe-walmart/" target= "_blank">Walmart Center for Tech Excellence</a> for generously supporting this seminar series."
 +++
 
 <b>Abstract:</b>

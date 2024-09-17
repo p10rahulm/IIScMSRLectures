@@ -7,9 +7,7 @@ date = "2024-02-15T18:30:00+05:30"
 date_end = "2024-02-15T19:30:00+05:30"
 location = "YouTube Video Link"
 location_link = "https://www.youtube.com/watch?v=g0wL2D6zxBo"
-notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" target= "_blank">Microsoft
-Research Lab - India</a> and <a href='https://www.csa.iisc.ac.in/theoretical-computer-science/' target= "_blank">
-Theoretical Computer Science @ IISc</a>"
+notes = "Jointly organized by <a href = "https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" target= "_blank">Microsoft Research Lab - India</a> and <a href='https://www.csa.iisc.ac.in/theoretical-computer-science/' target= "_blank">Theoretical Computer Science @ IISc</a>"
 +++
 
 <b>Abstract:</b>

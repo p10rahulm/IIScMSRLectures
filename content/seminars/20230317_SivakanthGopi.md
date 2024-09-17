@@ -7,7 +7,7 @@ date = "2023-03-16T10:00:00+05:30"
 date_end = "2023-03-16T11:00:00+05:30"
 location = "Youtube Talk Link"
 location_link = "https://www.youtube.com/watch?v=bi1otl_5GPM"
-notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-kirani" target= "_blank">Shekhar Kirani</a> family for generously supporting this seminar series."
+notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-kirani" target= "_blank">Shekhar Kirani</a> family and the <a href = "https://www.csa.iisc.ac.in/cfe-walmart/" target= "_blank">Walmart Center for Tech Excellence</a> for generously supporting this seminar series."
 +++
 
 <b>Abstract:</b>
