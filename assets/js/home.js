@@ -142,9 +142,10 @@ function loadHome(contentUrl) {
         const sponsorMessage = document.createElement("div")
         sponsorMessage.classList.add("main");
         sponsorMessage.id = "sponsor-thanks";
-        sponsorMessage.innerHTML = "<b>Special Thanks:</b> We are grateful to the " +
-            "<a href=\'https://www.accel.com/people/shekhar-kirani\' target=\'_blank\'>Kirani</a> " +
-            "family for generously supporting this seminar series."
+        sponsorMessage.innerHTML = "We are grateful to the " +
+            "<a href = 'https://www.accel.com/people/shekhar-kirani' target= '_blank>Shekhar Kirani</a> family and the " +
+            "<a href = 'https://www.csa.iisc.ac.in/cfe-walmart/' target= '_blank'>Walmart Center for Tech " +
+            "Excellence</a> for generously supporting this seminar series."
         document.getElementById("talks-navigation").appendChild(sponsorMessage)
         loadTalks(contentUrl, "files.list");
     } else {
