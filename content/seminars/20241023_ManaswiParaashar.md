@@ -2,7 +2,7 @@
 title = "Talk by Manaswi Paraashar"
 author = "Manaaswi Parashar (University of Copenhagen)"
 author_link = "https://sites.google.com/view/manaswi-paraashar/home"
-author_image = "assets/authorImages/manaaswiParashar.png"
+author_image = "assets/authorImages/manaswiParaashar.jpg"
 date = "2024-10-23T16:00:00+05:30"
 date_end = "2024-10-23T17:00:00+05:30"
 location = "Offline talk at CSA 104, IISc Bangalore"
