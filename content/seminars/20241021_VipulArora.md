@@ -12,7 +12,7 @@ notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-
 
 <b>Abstract:</b>
 We study the problem of robust multivariate polynomial regression: 
-let $p : \reals^n \to \reals$ be an unknown $n$-variate polynomial of degree at most $d$ in each variable. We are given 
+let $p : \mathbb{R}^n \to \mathbb{R}$ be an unknown $n$-variate polynomial of degree at most $d$ in each variable. We are given 
 as input a set of random samples $(\mathbf{x}_i, y_i) \in [-1,1]^n \times \reals$ that are noisy versions of 
 $(\mathbf{x}_i, p(\mathbf{x}_i))$. More precisely, each $\mathbf{x}_i$ is sampled independently from some distribution 
 $\chi$ on $[-1,1]^n$, and for each $i$ independently, $y_i$ is arbitrary (i.e., an outlier) with probability at most 
