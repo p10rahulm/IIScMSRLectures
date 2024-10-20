@@ -1,5 +1,5 @@
 +++
-title = "Robust Multivariate Polynomial Regression"
+title = "Outlier Robust Multivariate Polynomial Regression"
 author = "Vipul Arora (NUS)"
 author_link = "https://vipularora219.github.io/"
 author_image = "assets/authorImages/VipulArora.png"
