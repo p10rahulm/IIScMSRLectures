@@ -99,8 +99,8 @@ function insertTalk(talksDiv, talksNavDiv, talkSectionsMap, talkSectionName, tal
         talkSectionsMap[talkSectionName]["talkSectionDiv"].lastChild.appendChild(talkHolderDiv);
     } else {
         loc2insert = locationOf(seminarDate.getTime(), talkSectionsMap[talkSectionName]["datesArray"])
-        talkSectionsMap[talkSectionName]["datesArray"].splice(loc2insert + 1, 0, seminarDate.getTime());
-        talkSectionsMap[talkSectionName]["talkSectionDiv"].lastChild.insertBefore(talkHolderDiv, talkSectionsMap[talkSectionName]["talkSectionDiv"].lastChild.children[loc2insert+1]);
+        talkSectionsMap[talkSectionName]["datesArray"].splice(loc2insert, 0, seminarDate.getTime());
+        talkSectionsMap[talkSectionName]["talkSectionDiv"].lastChild.insertBefore(talkHolderDiv, talkSectionsMap[talkSectionName]["talkSectionDiv"].lastChild.children[loc2insert]);
     }
 }
 
