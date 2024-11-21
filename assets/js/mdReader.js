@@ -86,36 +86,31 @@ function createtalkSection(year, holderID, divTitle, textDivID, navTitle) {
 
 
 function insertTalk(talksDiv, talksNavDiv, talkSectionsMap, talkSectionName, talkHolderID, divTitle, textDivID, talkSectionYear, yearsSoFar, navTitle) {
-    var loc2insert = 0
-    const now = new Date().getTime(); // Current timestamp
+    const now = new Date().getTime();
+    
+    // Create new section if it doesn't exist
     if (!(talkSectionName in talkSectionsMap)) {
-        talkSectionsMap[talkSectionName] = createtalkSection(talkSectionYear, talkHolderID, divTitle, textDivID, navTitle)
-        yearsSoFar.push(talkSectionYear)
+        talkSectionsMap[talkSectionName] = createtalkSection(talkSectionYear, talkHolderID, divTitle, textDivID, navTitle);
+        yearsSoFar.push(talkSectionYear);
         yearsSoFar.sort().reverse();
-        loc2insert = yearsSoFar.indexOf(talkSectionYear)
-        talksDiv.insertBefore(talkSectionsMap[talkSectionName]["talkSectionDiv"], talksDiv.children[loc2insert]);
-        talksNavDiv.insertBefore(talkSectionsMap[talkSectionName]["talkSectionNavDiv"], talksNavDiv.children[loc2insert]);
+        
+        const sectionIndex = yearsSoFar.indexOf(talkSectionYear);
+        talksDiv.insertBefore(talkSectionsMap[talkSectionName]["talkSectionDiv"], talksDiv.children[sectionIndex]);
+        talksNavDiv.insertBefore(talkSectionsMap[talkSectionName]["talkSectionNavDiv"], talksNavDiv.children[sectionIndex]);
+    }
 
-        insert(seminarDate.getTime(), talkSectionsMap[talkSectionName]["datesArray"])
-        talkSectionsMap[talkSectionName]["talkSectionDiv"].lastChild.appendChild(talkHolderDiv);
+    // Insert the talk in the correct order
+    const insertionIndex = locationOf(seminarDate.getTime(), talkSectionsMap[talkSectionName]["datesArray"]);
+    const section = talkSectionsMap[talkSectionName]["talkSectionDiv"].lastChild;
+    
+    if (seminarDate.getTime() > now) {
+        // Ascending order for future seminars
+        talkSectionsMap[talkSectionName]["datesArray"].splice(insertionIndex + 1, 0, seminarDate.getTime());
+        section.insertBefore(talkHolderDiv, section.children[insertionIndex + 1]);
     } else {
-        if (seminarDate.getTime() > now) {
-        // Use earlier (ascending) insertion logic for future seminars
-        loc2insert = locationOf(seminarDate.getTime(), talkSectionsMap[talkSectionName]["datesArray"]);
-        talkSectionsMap[talkSectionName]["datesArray"].splice(loc2insert + 1, 0, seminarDate.getTime());
-        talkSectionsMap[talkSectionName]["talkSectionDiv"].lastChild.insertBefore(
-            talkHolderDiv,
-            talkSectionsMap[talkSectionName]["talkSectionDiv"].lastChild.children[loc2insert + 1]
-        );
-        } else {
-            // Use current (descending) insertion logic for past seminars
-            loc2insert = locationOf(seminarDate.getTime(), talkSectionsMap[talkSectionName]["datesArray"]);
-            talkSectionsMap[talkSectionName]["datesArray"].splice(loc2insert, 0, seminarDate.getTime());
-            talkSectionsMap[talkSectionName]["talkSectionDiv"].lastChild.insertBefore(
-                talkHolderDiv,
-                talkSectionsMap[talkSectionName]["talkSectionDiv"].lastChild.children[loc2insert]
-            );
-        }
+        // Descending order for past seminars
+        talkSectionsMap[talkSectionName]["datesArray"].splice(insertionIndex, 0, seminarDate.getTime());
+        section.insertBefore(talkHolderDiv, section.children[insertionIndex]);
     }
 }
 
