@@ -100,7 +100,7 @@ function insertTalk(talksDiv, talksNavDiv, talkSectionsMap, talkSectionName, tal
     } else {
         loc2insert = locationOf(seminarDate.getTime(), talkSectionsMap[talkSectionName]["datesArray"])
         talkSectionsMap[talkSectionName]["datesArray"].splice(loc2insert + 1, 0, seminarDate.getTime());
-        talkSectionsMap[talkSectionName]["talkSectionDiv"].lastChild.insertBefore(talkHolderDiv, talkSectionsMap[talkSectionName]["talkSectionDiv"].lastChild.children[loc2insert + 1]);
+        talkSectionsMap[talkSectionName]["talkSectionDiv"].lastChild.insertBefore(talkHolderDiv, talkSectionsMap[talkSectionName]["talkSectionDiv"].lastChild.children[loc2insert]);
     }
 }
 
@@ -470,7 +470,7 @@ function insert(element, array) {
 }
 
 function insertDescending(element, array) {
-    array.splice(locationOf(element, array) - 1, 0, element);
+    array.splice(locationOf(element, array), 0, element);
     return array;
 }
 
