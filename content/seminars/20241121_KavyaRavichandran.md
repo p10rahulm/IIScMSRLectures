@@ -2,7 +2,7 @@
 title = "Studies in Decision-Making: Nearly-tight Approximation Guarantees for the Improving Multi-Armed Bandits Problem and Algorithmic Interventions for Escaping Pessimism Traps"
 author = "Kavya Ravichandran (TTIC)"
 author_link = "https://kavyar314.github.io/"
-author_image = "assets/authorImages/kavya_ravichandran.png"
+author_image = "assets/authorImages/kavyaRavichandran.png"
 date = "2024-11-21T16:00:00+05:30"
 date_end = "2024-11-21T17:00:00+05:30"
 location = "Online talk on Microsoft Teams"

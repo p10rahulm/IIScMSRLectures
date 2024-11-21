@@ -2,7 +2,7 @@
 title = "A Primer on Distributed Computing"
 author = "Sagnik Mukhopadhyay (University of Birmingham)"
 author_link = "https://sagnikm.github.io/"
-author_image = "assets/authorImages/kavya_ravichandran.png"
+author_image = "assets/authorImages/sagnikMukhopadhyay.png"
 date = "2024-11-22T14:30:00+05:30"
 date_end = "2024-11-22T17:00:00+05:30"
 location = "Online talk on Microsoft Teams"
