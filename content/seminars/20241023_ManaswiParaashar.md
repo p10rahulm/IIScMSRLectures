@@ -14,7 +14,7 @@ notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-
 Understanding and mitigating noise is one of the most important challenges in quantum computing today, and the quantum 
 query model is one of the most natural models of computation for studying the effects of noise. Almost all provable 
 advantages of quantum algorithms over classical ones are in this model, for example, Grover's algorithm for the search 
-problem ([Gro96]) and Shor's algorithm for the period-finding problem ([Sho99]). Also, due to its simplicity, this 
+problem ([Gro96]) and Shor's algorithm for the period-finding problem ([Sho99]). Also, due to its simplicity, this
 model is also naturally connected to many other areas of quantum computing.
 <br><br>
 In this talk, we investigate the impact of noise in the quantum query model. We focus on the scenario where the oracle 
