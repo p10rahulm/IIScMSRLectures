@@ -5,7 +5,7 @@ author_link = "https://vipularora219.github.io/"
 author_image = "assets/authorImages/VipulArora.png"
 date = "2024-10-21T16:00:00+05:30"
 date_end = "2024-10-21T17:00:00+05:30"
-location = "Room No 104, CSA Building, IISc Bangalore"
+location = "YouTube Video Link"
 location_link = "https://www.youtube.com/watch?v=IK_BvWXPY_Q"
 notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-kirani" target= "_blank">Shekhar Kirani</a> family and the <a href = "https://www.csa.iisc.ac.in/cfe-walmart/" target= "_blank">Walmart Center for Tech Excellence</a> for generously supporting this seminar series."
 +++
