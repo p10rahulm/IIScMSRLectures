@@ -95,7 +95,7 @@ function insertTalk(talksDiv, talksNavDiv, talkSectionsMap, talkSectionName, tal
         talksDiv.insertBefore(talkSectionsMap[talkSectionName]["talkSectionDiv"], talksDiv.children[loc2insert]);
         talksNavDiv.insertBefore(talkSectionsMap[talkSectionName]["talkSectionNavDiv"], talksNavDiv.children[loc2insert]);
 
-        insertDescending(seminarDate.getTime(), talkSectionsMap[talkSectionName]["datesArray"])
+        insert(seminarDate.getTime(), talkSectionsMap[talkSectionName]["datesArray"])
         talkSectionsMap[talkSectionName]["talkSectionDiv"].lastChild.appendChild(talkHolderDiv);
     } else {
         loc2insert = locationOf(seminarDate.getTime(), talkSectionsMap[talkSectionName]["datesArray"])
