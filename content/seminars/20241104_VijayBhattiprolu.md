@@ -6,7 +6,7 @@ author_image = "assets/authorImages/vijayBhattiprolu.png"
 date = "2024-11-04T11:00:00+05:30"
 date_end = "2024-11-04T12:00:00+05:30"
 location = "YouTube Video Link"
-location_link = "https://www.youtube.com/watch?v=KEowrXH6DBo"
+location_link = "https://www.youtube.com/watch?v=8jcFgwhQZAE"
 notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-kirani" target= "_blank">Shekhar Kirani</a> family and the <a href = "https://www.csa.iisc.ac.in/cfe-walmart/" target= "_blank">Walmart Center for Tech Excellence</a> for generously supporting this seminar series."
 +++
 
