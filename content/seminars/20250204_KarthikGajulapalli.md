@@ -1,6 +1,6 @@
 +++
 title = "Matrix Multiplication And Verification Using Coding Theory"
-author = "Karthik Gajulapalli (IIIT Delhi)"
+author = "Karthik Gajulapalli (Georgetown University)"
 author_link = "https://kgajulapalli.org/"
 author_image = "assets/authorImages/KarthikGajulapalli.png"
 date = "2025-02-04T16:00:00+05:30"
