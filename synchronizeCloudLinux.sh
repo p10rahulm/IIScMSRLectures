@@ -1,5 +1,5 @@
 # Type the command "cmd < synchronizeCloudLinux.sh" on windows
-# Or the command "./synchronizeCloudLinux.sh" on linux
+# Or the command "cmd < synchronizeCloudLinux.sh" on linux
 # Preliminary Checks:
 # 1. Ensure "gcloud auth login" is already done
 # 2. Ensure that you are on the IISc CISCO VPN
