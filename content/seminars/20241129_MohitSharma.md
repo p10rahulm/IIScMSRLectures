@@ -5,7 +5,7 @@ author_link = "https://mohitsharma29.github.io/"
 author_image = "assets/authorImages/MohitSharma.jpg"
 date = "2024-11-29T11:00:00+05:30"
 date_end = "2024-11-29T12:00:00+05:30"
-location = "Online talk on Microsoft Teams"
+location = "YouTube Video Link"
 location_link = "https://www.youtube.com/watch?v=7zhOXbffZME"
 notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-kirani" target= "_blank">Shekhar Kirani</a> family and the <a href = "https://www.csa.iisc.ac.in/cfe-walmart/" target= "_blank">Walmart Center for Tech Excellence</a> for generously supporting this seminar series."
 +++

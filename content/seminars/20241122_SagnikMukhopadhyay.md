@@ -5,7 +5,7 @@ author_link = "https://sagnikm.github.io/"
 author_image = "assets/authorImages/sagnikMukhopadhyay.png"
 date = "2024-11-22T14:30:00+05:30"
 date_end = "2024-11-22T17:00:00+05:30"
-location = "Room No 104, CSA Building, IISc Bangalore"
+location = "YouTube Video Link"
 location_link = "https://www.youtube.com/watch?v=luQuyvOq3uA"
 notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-kirani" target= "_blank">Shekhar Kirani</a> family and the <a href = "https://www.csa.iisc.ac.in/cfe-walmart/" target= "_blank">Walmart Center for Tech Excellence</a> for generously supporting this seminar series."
 +++

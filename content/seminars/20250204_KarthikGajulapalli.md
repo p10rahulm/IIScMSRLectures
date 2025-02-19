@@ -5,7 +5,7 @@ author_link = "https://kgajulapalli.org/"
 author_image = "assets/authorImages/KarthikGajulapalli.png"
 date = "2025-02-04T16:00:00+05:30"
 date_end = "2025-02-04T17:00:00+05:30"
-location = "Room No 104, CSA Auditorium"
+location = "YouTube Video Link"
 location_link = "https://www.youtube.com/watch?v=YwLJCeu82Ec"
 notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-kirani" target= "_blank">Shekhar Kirani</a> family and the <a href = "https://www.csa.iisc.ac.in/cfe-walmart/" target= "_blank">Walmart Center for Tech Excellence</a> for generously supporting this seminar series."
 +++
