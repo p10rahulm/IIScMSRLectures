@@ -14,14 +14,14 @@ fi
 echo "Committing with message: $commit_message"
 
 # Synchronize directories with Google Cloud Storage
-gsutil -m rsync -r assets gs://www.cstheoryseminars.org/assets
-echo "Assets Directory Synced"
+# gsutil -m rsync -r assets gs://www.cstheoryseminars.org/assets
+# echo "Assets Directory Synced"
 
-gsutil -m rsync -r content gs://www.cstheoryseminars.org/content
-echo "Contents Directory Synced"
+# gsutil -m rsync -r content gs://www.cstheoryseminars.org/content
+# echo "Contents Directory Synced"
 
-gsutil -m rsync ./ gs://www.cstheoryseminars.org
-echo "Base Directory Synced"
+# gsutil -m rsync ./ gs://www.cstheoryseminars.org
+# echo "Base Directory Synced"
 
 # Git changes
 git add -A
