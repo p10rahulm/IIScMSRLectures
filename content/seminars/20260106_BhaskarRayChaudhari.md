@@ -11,7 +11,7 @@ notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-
 +++
 
 <b>Abstract:</b>
-The algorithmic study of market equilibria has been a cornerstone of economics and computation since its inception, with rich theories developed around equilibrium/ stability notions such as *Nash*, *Stackelberg*, and *Competitive Equilibria*. In this talk, I explore how these classical concepts extend—or fail to extend—to a new and increasingly central economy: the data economy.
+The algorithmic study of market equilibria has been a cornerstone of economics and computation since its inception, with rich theories developed around equilibrium/ stability notions such as <i>Nash</i>, <i>Stackelberg</i>, and *Competitive Equilibria*. In this talk, I explore how these classical concepts extend—or fail to extend—to a new and increasingly central economy: the data economy.
 <br><br>
 With the increasing integration of AI-ML technologies in the industry, data has emerged as one of the most valuable assets of the 21st century. However, unlike traditional goods, data is *non-rival* — it can be freely duplicated and shared without depletion. This fundamental property challenges standard equilibrium frameworks that assume scarcity (limited supply) and exclusivity (no two agents can simultaneously benefit from a resource).
 <br><br>
