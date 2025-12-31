@@ -5,7 +5,7 @@ author_link = "https://sites.google.com/view/sabyaucsc/home"
 author_image = "assets/authorImages/sabyasachiBasu.png"
 date = "2025-12-05T11:00:00+05:30"
 date_end = "2025-12-05T12:00:00+05:30"
-location = "Room No 104 (CSA Auditorium), CSA Building, IISc"
+location = "YouTube Video Link"
 location_link = "https://youtu.be/plFLxmAEd3Y"
 notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-kirani" target= "_blank">Shekhar Kirani</a> family and the <a href = "https://www.csa.iisc.ac.in/cfe-walmart/" target= "_blank">Walmart Center for Tech Excellence</a> for generously supporting this seminar series."
 +++
