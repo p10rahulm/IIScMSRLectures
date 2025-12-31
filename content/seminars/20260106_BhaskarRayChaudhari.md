@@ -11,10 +11,10 @@ notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-
 +++
 
 <b>Abstract:</b>
-The algorithmic study of market equilibria has been a cornerstone of economics and computation since its inception, with rich theories developed around equilibrium/ stability notions such as <i>Nash</i>, <i>Stackelberg</i>, and *Competitive Equilibria*. In this talk, I explore how these classical concepts extend—or fail to extend—to a new and increasingly central economy: the data economy.
+The algorithmic study of market equilibria has been a cornerstone of economics and computation since its inception, with rich theories developed around equilibrium/ stability notions such as <i>Nash</i>, <i>Stackelberg</i>, and <i>Competitive Equilibria</i>. In this talk, I explore how these classical concepts extend—or fail to extend—to a new and increasingly central economy: the data economy.
 <br><br>
-With the increasing integration of AI-ML technologies in the industry, data has emerged as one of the most valuable assets of the 21st century. However, unlike traditional goods, data is *non-rival* — it can be freely duplicated and shared without depletion. This fundamental property challenges standard equilibrium frameworks that assume scarcity (limited supply) and exclusivity (no two agents can simultaneously benefit from a resource).
+With the increasing integration of AI-ML technologies in the industry, data has emerged as one of the most valuable assets of the 21st century. However, unlike traditional goods, data is <i>non-rival</i> — it can be freely duplicated and shared without depletion. This fundamental property challenges standard equilibrium frameworks that assume scarcity (limited supply) and exclusivity (no two agents can simultaneously benefit from a resource).
 <br><br>
 We introduce a formal model of data markets, explicitly capturing (1) the role of data in improving predictive performance as data buyers’ utility functions, and (2) the implications of data’s non-rival nature for equilibrium concepts. Building on this model, we examine the existence, geometry, and computational aspects of various equilibrium notions, highlighting key parallels and departures from traditional markets.
 <br><br>
-**The talk will begin with a brief tutorial on equilibrium concepts—no prior background required**—and conclude with open problems and emerging directions for the theory and design of data-markets.
+<b><i>The talk will begin with a brief tutorial on equilibrium concepts—no prior background required</i></b>—and conclude with open problems and emerging directions for the theory and design of data-markets.
