@@ -302,7 +302,10 @@ a:hover {
     text-overflow: ellipsis;
 }
 .nav-dropdown .nav-dropdown-content a:hover { background: #fff8f7; }
-.nav-dropdown:hover .nav-dropdown-content, .nav-dropdown:focus-within .nav-dropdown-content { display: block; }
+.nav-dropdown.open .nav-dropdown-content, .nav-dropdown:hover .nav-dropdown-content, .nav-dropdown:focus-within .nav-dropdown-content { display: block; }
+
+/* Visual cue when dropdown is open */
+.nav-dropdown.open .nav-dropdown-button { box-shadow: 0 2px 8px rgba(0,0,0,0.08) inset; }
 
 .mainer #sponsor-thanks{
     margin-top: 3px;

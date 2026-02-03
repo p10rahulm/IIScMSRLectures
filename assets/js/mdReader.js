@@ -110,6 +110,11 @@ function insertTalk(talksDiv, talksNavDiv, talkSectionsMap, talkSectionName, tal
                 const btn = document.createElement("div");
                 btn.className = "nav-dropdown-button";
                 btn.innerHTML = "More past talks";
+                // accessibility attributes
+                btn.setAttribute('role','button');
+                btn.setAttribute('tabindex','0');
+                btn.setAttribute('aria-expanded','false');
+
                 morePastWrapper.appendChild(btn);
                 const content = document.createElement("div");
                 content.className = "nav-dropdown-content";
@@ -117,6 +122,44 @@ function insertTalk(talksDiv, talksNavDiv, talkSectionsMap, talkSectionName, tal
                 talkSectionsMap["_morePastNav"] = morePastWrapper;
                 // Insert the dropdown into the nav at the position where the first previous-year nav would be
                 talksNavDiv.insertBefore(morePastWrapper, talksNavDiv.children[sectionIndex]);
+
+                // Toggle open/close on click (and keyboard Enter/Space). Keep open state persistent when clicked.
+                btn.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    const isOpen = morePastWrapper.classList.toggle('open');
+                    btn.setAttribute('aria-expanded', isOpen);
+                });
+                btn.addEventListener('keydown', function (e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        btn.click();
+                    }
+                });
+
+                // Close when clicking outside the dropdown
+                document.addEventListener('click', function (evt) {
+                    if (!morePastWrapper.contains(evt.target)) {
+                        morePastWrapper.classList.remove('open');
+                        btn.setAttribute('aria-expanded', 'false');
+                    }
+                });
+
+                // Close on Escape key
+                document.addEventListener('keydown', function (evt) {
+                    if (evt.key === 'Escape') {
+                        morePastWrapper.classList.remove('open');
+                        btn.setAttribute('aria-expanded', 'false');
+                    }
+                });
+
+                // If a year link inside is clicked, close the dropdown (useful if navigation is handled in-place)
+                content.addEventListener('click', function (e) {
+                    const a = e.target.closest('a');
+                    if (a) {
+                        morePastWrapper.classList.remove('open');
+                        btn.setAttribute('aria-expanded', 'false');
+                    }
+                });
             }
             // Insert this year's nav link into the dropdown content in descending order
             const dropdownContent = talkSectionsMap["_morePastNav"].querySelector(".nav-dropdown-content");
