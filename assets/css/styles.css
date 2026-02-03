@@ -277,18 +277,29 @@ a:hover {
     top: calc(100% + 6px);
     background-color: #fff;
     min-width: 180px;
-    max-height: calc(100vh - 120px); /* keep dropdown within viewport */
+    max-height: min(420px, calc(100vh - 160px)); /* limit height and keep within viewport */
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* smooth scrolling for iOS/touch */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: rgba(175,12,69,0.35) rgba(255,255,255,0.95);
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     border-radius: 6px;
     padding: 6px;
     z-index: 1000; /* make sure it's above sticky header (z-index:100) */
+    box-sizing: border-box;
 }
+/* WebKit scrollbar styling */
+.nav-dropdown .nav-dropdown-content::-webkit-scrollbar { width: 8px; }
+.nav-dropdown .nav-dropdown-content::-webkit-scrollbar-track { background: transparent; border-radius: 6px; }
+.nav-dropdown .nav-dropdown-content::-webkit-scrollbar-thumb { background-color: rgba(175,12,69,0.35); border-radius: 6px; }
 .nav-dropdown .nav-dropdown-content a {
     display: block;
     padding: 6px 8px;
     color: #af0c45;
     text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .nav-dropdown .nav-dropdown-content a:hover { background: #fff8f7; }
 .nav-dropdown:hover .nav-dropdown-content, .nav-dropdown:focus-within .nav-dropdown-content { display: block; }
