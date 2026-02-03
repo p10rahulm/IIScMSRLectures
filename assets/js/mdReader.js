@@ -96,7 +96,41 @@ function insertTalk(talksDiv, talksNavDiv, talkSectionsMap, talkSectionName, tal
         
         const sectionIndex = yearsSoFar.indexOf(talkSectionYear);
         talksDiv.insertBefore(talkSectionsMap[talkSectionName]["talkSectionDiv"], talksDiv.children[sectionIndex]);
-        talksNavDiv.insertBefore(talkSectionsMap[talkSectionName]["talkSectionNavDiv"], talksNavDiv.children[sectionIndex]);
+
+        // Create a grouped dropdown for all previous years instead of separate nav buttons
+        const currYear = new Date().getFullYear();
+        const isPreviousYear = /^\d{4}$/.test(talkSectionName) && talkSectionYear < currYear;
+
+        if (isPreviousYear) {
+            // Ensure a single "More past talks" dropdown exists (stored in the map under a reserved key)
+            if (!("_morePastNav" in talkSectionsMap)) {
+                const morePastWrapper = document.createElement("div");
+                morePastWrapper.id = "more-past";
+                morePastWrapper.className = "buttonNav nav-dropdown";
+                const btn = document.createElement("div");
+                btn.className = "nav-dropdown-button";
+                btn.innerHTML = "More past talks";
+                morePastWrapper.appendChild(btn);
+                const content = document.createElement("div");
+                content.className = "nav-dropdown-content";
+                morePastWrapper.appendChild(content);
+                talkSectionsMap["_morePastNav"] = morePastWrapper;
+                // Insert the dropdown into the nav at the position where the first previous-year nav would be
+                talksNavDiv.insertBefore(morePastWrapper, talksNavDiv.children[sectionIndex]);
+            }
+            // Insert this year's nav link into the dropdown content in descending order
+            const dropdownContent = talkSectionsMap["_morePastNav"].querySelector(".nav-dropdown-content");
+            const prevYears = yearsSoFar.filter(y => y < currYear).sort((a,b)=>b-a);
+            const prevIndex = prevYears.indexOf(talkSectionYear);
+            if (dropdownContent.children.length <= prevIndex) {
+                dropdownContent.appendChild(talkSectionsMap[talkSectionName]["talkSectionNavDiv"]);
+            } else {
+                dropdownContent.insertBefore(talkSectionsMap[talkSectionName]["talkSectionNavDiv"], dropdownContent.children[prevIndex]);
+            }
+        } else {
+            // Default behaviour: top-level nav buttons (upcoming, pastThisYear, future-year upcoming etc.)
+            talksNavDiv.insertBefore(talkSectionsMap[talkSectionName]["talkSectionNavDiv"], talksNavDiv.children[sectionIndex]);
+        }
     }
 
     // Insert the talk in the correct order

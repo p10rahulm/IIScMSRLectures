@@ -266,6 +266,29 @@ a:hover {
     justify-content: space-around;
 }
 
+/* Dropdown for grouping all previous years under a single "More past talks" button */
+.nav-dropdown { position: relative; display: inline-block; }
+.nav-dropdown .nav-dropdown-button { cursor: pointer; }
+.nav-dropdown .nav-dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    min-width: 180px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    padding: 6px;
+    z-index: 50;
+}
+.nav-dropdown .nav-dropdown-content a {
+    display: block;
+    padding: 6px 8px;
+    color: #af0c45;
+    text-decoration: none;
+}
+.nav-dropdown .nav-dropdown-content a:hover { background: #fff8f7; }
+.nav-dropdown:hover .nav-dropdown-content, .nav-dropdown:focus-within .nav-dropdown-content { display: block; }
+
 .mainer #sponsor-thanks{
     margin-top: 3px;
     padding-bottom: 24px;
