@@ -2,7 +2,7 @@
 title = "Information, Computation, & Quantization: Infinitely divisible privacy and beyond"
 author = "Aaradhya Pandey (Princeton)"
 author_link = "https://aaradhyapandey98.github.io/aaradhyapandeycs.github.io/"
-author_image = "assets/authorImages/AaradhyaPandey.jpg"
+author_image = "assets/authorImages/AaradhyaPandey.png"
 date = "2026-02-06T18:00:00+05:30"
 date_end = "2026-02-06T19:00:00+05:30"
 location = "Online Talk (Teams Meeting Link)"
