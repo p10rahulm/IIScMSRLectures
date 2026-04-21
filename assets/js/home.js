@@ -143,7 +143,7 @@ function loadHome(contentUrl) {
         sponsorMessage.classList.add("main");
         sponsorMessage.id = "sponsor-thanks";
         sponsorMessage.innerHTML = "We are grateful to the " +
-            "<a href = 'https://www.accel.com/people/shekhar-kirani' target= '_blank>Shekhar Kirani</a> family and the " +
+            "<a href = 'https://www.accel.com/people/shekhar-kirani' target= '_blank'>Shekhar Kirani</a> family and the " +
             "<a href = 'https://www.csa.iisc.ac.in/cfe-walmart/' target= '_blank'>Walmart Center for Tech " +
             "Excellence</a> for generously supporting this seminar series."
         document.getElementById("talks-navigation").appendChild(sponsorMessage)

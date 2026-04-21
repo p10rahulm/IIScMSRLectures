@@ -336,15 +336,15 @@ a:hover {
     display: inline-flex;
     fill: currentcolor;
     font-family: "Open Sans", Roboto, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 800;
-    height: 48px;
+    height: 56px;
     justify-content: center;
     letter-spacing: .25px;
     line-height: normal;
     max-width: 100%;
     overflow: visible;
-    padding: 2px 24px;
+    padding: 4px 30px;
     position: relative;
     text-align: center;
     text-transform: none;
