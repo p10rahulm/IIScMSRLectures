@@ -308,6 +308,9 @@ a:hover {
 .nav-dropdown.open .nav-dropdown-button { box-shadow: 0 2px 8px rgba(0,0,0,0.08) inset; }
 
 .mainer #sponsor-thanks{
+    flex-basis: 100%;
+    width: 100%;
+    order: 99;
     margin-top: 3px;
     padding-bottom: 24px;
     font-size: 15px;
