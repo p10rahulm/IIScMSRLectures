@@ -6,7 +6,7 @@ author_image = "assets/authorImages/DebmalyaMandal.jpg"
 date = "2026-04-23T12:00:00+05:30"
 date_end = "2026-04-23T13:00:00+05:30"
 location = "YouTube Video Link"
-location_link = "https://youtu.be/V5_5x2KkBEk"
+location_link = "https://youtu.be/velr0f9lvIs"
 notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-kirani" target= "_blank">Shekhar Kirani</a> family and the <a href = "https://www.csa.iisc.ac.in/cfe-walmart/" target= "_blank">Walmart Center for Tech Excellence</a> for generously supporting this seminar series."
 +++
 
