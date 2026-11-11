@@ -11,11 +11,10 @@ notes = "We are grateful to the <a href = "https://www.accel.com/people/shekhar-
 +++
 
 <b>Abstract:</b>
-Can competition between misaligned AI agents deliver the benefits of alignment?
-I will present a multi-leader Stackelberg framework extending Bayesian persuasion to multi-round conversations between a user and multiple AI agents.
-Key condition is that the user’s utility lies approximately within the convex hull of the agents’ utilities.
-<br><br>
-Three results show how competition delivers optimal or near-optimal utility in every equilibrium:
-(1) Bayes-optimal utility when a perfectly aligned model would enable the user to learn her optimal action.
-(2) Near-optimal utility for a non-strategic user following a quantal-response rule, under a weaker assumption.
-(3) Near-optimal utility when the user selects the best agent after an evaluation period, without additional distributional assumptions.
+Can competition between misaligned AI agents deliver the benefits of alignment? <br>
+I will present a multi-leader Stackelberg framework extending Bayesian persuasion to multi-round conversations between a user and multiple AI agents. <br>
+Key condition is that the user’s utility lies approximately within the convex hull of the agents’ utilities. <br>
+Three results show how competition delivers optimal or near-optimal utility in every equilibrium: <br>
+(1) Bayes-optimal utility when a perfectly aligned model would enable the user to learn her optimal action. <br>
+(2) Near-optimal utility for a non-strategic user following a quantal-response rule, under a weaker assumption. <br>
+(3) Near-optimal utility when the user selects the best agent after an evaluation period, without additional distributional assumptions. <br>
